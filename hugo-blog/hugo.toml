@@ -1,0 +1,5 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Martina Murphy Blog"
+
+publishDir = "../astro-site/public/blog"

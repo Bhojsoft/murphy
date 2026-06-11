@@ -1,0 +1,18 @@
+{
+  "name": "hugo-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-css": "tailwindcss -i ./assets/css/main.css -o ./static/css/main.css --watch",
+    "build-css": "tailwindcss -i ./assets/css/main.css -o ./static/css/main.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}

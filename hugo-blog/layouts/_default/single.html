@@ -1,0 +1,232 @@
+{{ define "main" }}
+
+<!-- BLOG HEADER -->
+<section class="w-full flex justify-center px-4 md:px-6">
+  <div
+    class="w-full max-w-[1500px]
+           flex flex-col items-center justify-center
+           pt-12 pb-8 px-6
+           md:pt-12 md:pb-8
+           xl:py-[80px]
+           gap-8"
+  >
+
+    <!-- DATE -->
+    <p
+      class="font-dm-sans font-normal
+             text-[21px]
+             leading-[140%]
+             tracking-[-0.005em]
+             text-black/45
+             text-center"
+    >
+      {{ .Date.Format "January 2, 2006" }}
+    </p>
+
+    <!-- TITLE AREA -->
+    <div
+      class="flex flex-col items-center
+             gap-6
+             w-full
+             max-w-[900px]"
+    >
+
+      <h1
+        class="font-dm-sans font-normal
+               text-center
+               text-black
+               tracking-[-0.04em]
+               leading-[100%]
+               text-[50px]
+               md:text-[80px]"
+      >
+        {{ .Title }}
+      </h1>
+
+      {{ with .Params.subtitle }}
+      <p
+        class="font-dm-sans
+               text-[21px]
+               leading-[140%]
+               tracking-[-0.005em]
+               text-black/70
+               text-center"
+      >
+        {{ . }}
+      </p>
+      {{ end }}
+
+      {{ with .Params.author }}
+      <p
+        class="font-dm-sans
+               font-normal
+               text-[21px]
+               leading-[140%]
+               tracking-[-0.005em]
+               text-black/45
+               text-center"
+      >
+        {{ . }}
+      </p>
+      {{ end }}
+
+    </div>
+
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+{{ with .Params.hero_image }}
+<section class="w-full flex justify-center px-4 md:px-6 pb-12">
+
+  <div
+    class="w-full max-w-[1200px]
+           relative overflow-hidden
+           rounded-[30px]
+           h-[500px]
+           md:h-[750px]"
+  >
+
+    <img
+      src="{{ . }}"
+      alt="{{ $.Title }}"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <div class="absolute inset-0 bg-black/30"></div>
+
+  </div>
+
+</section>
+{{ end }}
+
+<!-- BLOG CONTENT -->
+<section class="w-full flex justify-center px-4 md:px-6">
+
+  <div
+    class="w-full max-w-[1200px]
+           flex flex-col
+           gap-[60px]
+           pb-20"
+  >
+
+    <div
+      class="blog-body
+             w-full
+             max-w-[1060px]
+             mx-auto
+             text-[21px]
+             leading-[140%]
+             tracking-[-0.005em]
+             text-black"
+    >
+      {{ .Content }}
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+{{ if .Params.show_testimonial }}
+
+<section class="w-full py-20 px-4">
+
+  <div class="max-w-[1200px] mx-auto">
+
+    <div
+      class="bg-[#F7F4EB]
+             rounded-[30px]
+             p-8
+             md:p-12"
+    >
+
+      <p
+        class="text-[24px]
+               md:text-[32px]
+               leading-[140%]
+               text-black"
+      >
+        “Martina Murphy Solicitors guided us through a difficult legal
+        process with professionalism, clarity and genuine care.”
+      </p>
+
+      <p
+        class="mt-6
+               text-black/60"
+      >
+        Client Testimonial
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+{{ end }}
+
+<!-- CTA -->
+{{ if .Params.show_cta }}
+
+<section
+  class="w-full
+         px-4 md:px-6 lg:px-8
+         py-[80px]
+         md:py-[100px]"
+>
+
+  <div
+    class="max-w-[1200px]
+           mx-auto
+           flex flex-col
+           gap-20"
+  >
+
+    <div
+      class="flex flex-col
+             md:flex-row
+             md:items-start
+             md:justify-between
+             gap-10"
+    >
+
+      <h2
+        class="font-['Crimson_Text']
+               text-[50px]
+               md:text-[54px]
+               lg:text-[60px]
+               leading-[95%]
+               tracking-[-0.03em]
+               text-black"
+      >
+        Let's Discuss
+      </h2>
+
+      <a
+        href="/contact"
+        class="inline-flex
+               items-center
+               gap-2
+               bg-[#0B838E]
+               text-white
+               px-5
+               py-3
+               rounded-full
+               transition-all
+               duration-300
+               hover:scale-105"
+      >
+        Book Appointment
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+{{ end }}
+
+{{ end }}
