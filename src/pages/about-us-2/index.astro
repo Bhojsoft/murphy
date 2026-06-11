@@ -1,0 +1,935 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import disputeHero from "@/assets/Service1.png";
+import martinaImg from "@/assets/martina-2.png";
+import weightImg from "@/assets/Weight.png";
+import redundancyImg from "@/assets/redundancy.png";
+---
+
+<MainLayout>
+    <!-- HEADER SECTION -->
+    <section class="w-full max-w-[1250px] mx-auto px-4 md:px-8 lg:px-0 pt-16 md:pt-30">
+
+  <div
+    class="
+      w-full
+      md:w-[95%]
+      mx-auto
+
+      h-[420px]
+      md:h-[600px]
+      lg:h-[750px]
+
+      rounded-[30px]
+      overflow-hidden
+
+      flex
+      flex-col
+      justify-end
+      items-start
+
+      px-6
+      md:px-[50px]
+
+      py-10
+      md:py-[70px]
+
+      gap-3
+      md:gap-[10px]
+
+      bg-cover
+      bg-center
+      relative
+    "
+    style={`background-image: url(${disputeHero.src})`}
+  >
+
+    <!-- ABOUT US -->
+    <h1
+      class="
+        w-full
+        font-['DM_Sans']
+        font-normal
+        text-white
+        tracking-[-0.04em]
+
+        text-[34px]
+        sm:text-[48px]
+        md:text-[80px]
+        leading-[100%]
+      "
+    >
+      About us
+    </h1>
+
+    <!-- SUBTITLE -->
+    <h2
+      class="
+        w-full
+        font-['Crimson_Text']
+        font-normal
+        text-white
+        tracking-[-0.04em]
+
+        text-[18px]
+        sm:text-[26px]
+        md:text-[40px]
+
+        leading-[110%]
+        md:leading-[105%]
+      "
+    >
+      Legal services with a personal touch
+    </h2>
+
+  </div>
+
+</section>
+
+    <section
+  class="w-full max-w-[1250px] mx-auto
+  flex flex-col lg:flex-row
+  items-start
+
+  px-4 sm:px-6 lg:px-0
+  pb-12 lg:pb-[50px]
+  pt-14 lg:pt-30
+
+  gap-10 lg:gap-[20px]"
+>
+
+  <!-- STAT 1 -->
+  <div
+    class="w-full lg:flex-1
+    flex flex-col
+    items-start
+    gap-6 lg:gap-[40px]
+    py-4
+    pr-0 lg:pr-[16px]
+    border-b lg:border-b-0
+    lg:border-r border-black"
+  >
+
+    <h3
+      class="font-crimson font-normal
+      text-[#0B838E]
+      text-[48px]
+      sm:text-[70px]
+      lg:text-[120px]
+      leading-[95%]
+      tracking-[-0.03em]"
+    >
+      100+
+    </h3>
+
+    <p
+      class="font-dm font-normal
+      text-black
+      text-[16px]
+      sm:text-[18px]
+      lg:text-[21px]
+      leading-[150%]
+      tracking-[-0.005em]"
+    >
+      years of combined experience. Our partners have successfully
+      negotiated and resolved complex disputes across all areas of
+      Irish law.
+    </p>
+
+  </div>
+
+  <!-- STAT 2 -->
+  <div
+    class="w-full lg:flex-1
+    flex flex-col
+    items-start
+    gap-6 lg:gap-[40px]
+    py-4
+    pr-0 lg:pr-[16px]
+    border-b lg:border-b-0
+    lg:border-r border-black"
+  >
+
+    <h3
+      class="font-crimson font-normal
+      text-[#0B838E]
+      text-[48px]
+      sm:text-[70px]
+      lg:text-[120px]
+      leading-[95%]
+      tracking-[-0.03em]"
+    >
+      LQ
+    </h3>
+
+    <p
+      class="font-dm font-normal
+      text-black
+      text-[16px]
+      sm:text-[18px]
+      lg:text-[21px]
+      leading-[150%]
+      tracking-[-0.005em]"
+    >
+      We are proud to hold the LQ Standard of Excellence — an
+      independent verification that we treat every single client with
+      respect, transparency, and genuine care.
+    </p>
+
+  </div>
+
+  <!-- STAT 3 -->
+  <div
+    class="w-full lg:flex-1
+    flex flex-col
+    items-start
+    gap-6 lg:gap-[40px]
+    py-4"
+  >
+
+    <h3
+      class="font-crimson font-normal
+      text-[#0B838E]
+      text-[48px]
+      sm:text-[70px]
+      lg:text-[120px]
+      leading-[95%]
+      tracking-[-0.03em]"
+    >
+      200+
+    </h3>
+
+    <p
+      class="font-dm font-normal
+      text-black
+      text-[16px]
+      sm:text-[18px]
+      lg:text-[21px]
+      leading-[150%]
+      tracking-[-0.005em]"
+    >
+      different clients have sought our expertise. We will give you a
+      candid, realistic assessment of your case from day one.
+    </p>
+
+  </div>
+
+</section>
+
+    <!-- ABOUT SECTION -->
+    <section class="reveal w-full max-w-[1250px] mx-auto px-4 md:px-8 lg:px-0">
+
+  <div
+    class="w-full mx-auto
+    flex flex-col-reverse lg:flex-row
+    items-start
+    gap-10 lg:gap-5
+    py-12 lg:py-[80px]"
+  >
+
+    <!-- IMAGE -->
+    <div
+      class="w-full lg:w-[590px]
+      h-[260px] sm:h-[500px] md:h-[650px] lg:h-[559px]
+      rounded-[30px] overflow-hidden flex-shrink-0"
+    >
+      <img
+        src={martinaImg.src}
+        alt="Martina Murphy"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- TEXT -->
+    <div
+      class="w-full lg:w-[590px]
+      flex flex-col items-start
+      px-0 lg:pl-[60px]
+      pt-6 lg:pt-[60px]
+      pb-6 lg:pb-[80px]
+      gap-8 lg:gap-10"
+    >
+
+      <div class="w-full flex flex-col gap-8 lg:gap-10">
+
+        <!-- TITLE -->
+        <h2
+          class="font-['Crimson_Text'] font-normal
+          text-black tracking-[-0.03em]
+          text-[34px] sm:text-[44px] md:text-[54px] lg:text-[60px]
+          leading-[95%]"
+        >
+          Hello, I’m Martina
+        </h2>
+
+        <!-- DESCRIPTION -->
+        <p
+          class="font-['DM_Sans'] font-normal
+          text-[#6F6F6F] tracking-[-0.005em]
+          text-[16px] sm:text-[18px] lg:text-[21px]
+          leading-[150%]"
+        >
+          And I own Martina Murphy Solicitors, I’m here along with
+          my partners to fully support you in whatever it is that
+          you need. I guarantee that you will feel comfortable,
+          welcome and respected.
+
+          <br /><br />
+
+          We are one of the few practices in the Mid-West to have
+          been awarded the LQ Standard of Excellence – an
+          independent verification of the standard of care we give
+          to all our clients.
+
+          <br /><br />
+
+          Our clients return time and time again when they need
+          legal advice and most importantly, they are happy to
+          refer family and friends to the office.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- OUR TEAM SECTION -->
+<section class="w-full max-w-[1200px] mx-auto px-4 md:px-6 lg:px-[15px] pb-14 md:pb-[80px]">
+
+  <div class="w-full mx-auto flex flex-col gap-10 md:gap-[38px]">
+
+    <!-- Divider -->
+    <div class="w-full border-t border-black"></div>
+
+    <!-- Content -->
+    <div class="flex flex-col md:flex-row md:justify-between gap-10 md:gap-16">
+
+      <!-- Left Title -->
+      <div class="w-full md:max-w-[345px] lg:max-w-[585px]">
+        <h2
+          class="font-['Crimson_Text'] font-normal
+          text-[34px] sm:text-[44px] md:text-[54px] lg:text-[60px]
+          leading-[95%] tracking-[-0.03em] text-black"
+        >
+          Our Team
+        </h2>
+      </div>
+
+      <!-- Right Content -->
+      <div class="reveal w-full md:max-w-[345px] lg:max-w-[585px] flex flex-col gap-10 md:gap-[41px]">
+
+        <!-- Headshots -->
+        <div class="flex flex-col sm:flex-row gap-5">
+
+          <!-- Person 1 -->
+          <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+
+            <img
+              src={martinaImg.src}
+              alt="Martina Murphy"
+              class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+            />
+
+            <div class="flex flex-col gap-2 md:gap-[9px]">
+              <h3
+                class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+              >
+                Martina Murphy
+              </h3>
+
+              <p
+                class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+              >
+                Founder & Solicitor
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Person 2 -->
+          <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+
+            <img
+              src={martinaImg.src}
+              alt="Team Member"
+              class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+            />
+
+            <div class="flex flex-col gap-2 md:gap-[9px]">
+              <h3
+                class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+              >
+                Sarah O’Brien
+              </h3>
+
+              <p
+                class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+              >
+                Legal Executive
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="w-full border-t border-black"></div>
+
+        <!-- Team Rows -->
+        <div class="flex flex-col gap-6 md:gap-10">
+
+          <!-- Row 1 -->
+          <div class="grid grid-cols-2 gap-4 md:gap-[41px]">
+
+            <div class="flex flex-col gap-1 md:gap-[9px]">
+              <h4 class="font-['DM_Sans'] text-[16px] md:text-[21px] text-black">
+                John Kelly
+              </h4>
+              <p class="font-['DM_Sans'] text-[14px] md:text-[21px] text-[#767676]">
+                Solicitor
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-1 md:gap-[9px]">
+              <h4 class="font-['DM_Sans'] text-[16px] md:text-[21px] text-black">
+                Emma Doyle
+              </h4>
+              <p class="font-['DM_Sans'] text-[14px] md:text-[21px] text-[#767676]">
+                Solicitor
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Row 2 -->
+          <div class="grid grid-cols-2 gap-4 md:gap-[41px]">
+
+            <div class="flex flex-col gap-1 md:gap-[9px]">
+              <h4 class="font-['DM_Sans'] text-[16px] md:text-[21px] text-black">
+                David Murphy
+              </h4>
+              <p class="font-['DM_Sans'] text-[14px] md:text-[21px] text-[#767676]">
+                Partner
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-1 md:gap-[9px]">
+              <h4 class="font-['DM_Sans'] text-[16px] md:text-[21px] text-black">
+                Lisa Byrne
+              </h4>
+              <p class="font-['DM_Sans'] text-[14px] md:text-[21px] text-[#767676]">
+                Consultant
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Row 3 -->
+          <div class="grid grid-cols-2 gap-4 md:gap-[51px]">
+
+            <div class="flex flex-col gap-1 md:gap-[9px]">
+              <h4 class="font-['DM_Sans'] text-[16px] md:text-[21px] text-black">
+                Rachel Flynn
+              </h4>
+              <p class="font-['DM_Sans'] text-[14px] md:text-[21px] text-[#767676]">
+                Solicitor
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-1 md:gap-[9px]">
+              <h4 class="font-['DM_Sans'] text-[16px] md:text-[21px] text-black">
+                Brian Walsh
+              </h4>
+              <p class="font-['DM_Sans'] text-[14px] md:text-[21px] text-[#767676]">
+                Associate
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- OUR SERVICES -->
+<section class="w-full max-w-[1250px] mx-auto flex justify-center px-4 lg:px-6 py-12 lg:py-20">
+
+  <div class="w-full flex flex-col gap-10 lg:gap-[30px]">
+
+    <!-- Divider -->
+    <div class="w-full border-t border-black"></div>
+
+    <!-- Content -->
+    <div class="flex flex-col lg:flex-row items-start gap-10 lg:gap-0">
+
+      <!-- Heading -->
+      <div class="w-full lg:w-1/2">
+        <h2
+          class="font-[Crimson_Text] font-normal
+          text-[34px] sm:text-[44px] lg:text-[60px]
+          leading-[95%] lg:leading-[90%]
+          tracking-[-0.03em] text-black"
+        >
+          Our Services
+        </h2>
+      </div>
+
+      <!-- Services Grid -->
+      <div
+        class="reveal w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-y-8 sm:gap-y-10 gap-x-6"
+      >
+
+        <!-- Service cards -->
+        <div class="flex flex-col gap-4 sm:gap-5 max-w-[300px]">
+          <h3 class="font-[DM_Sans] text-[16px] sm:text-[18px] lg:text-[21px] text-[#767676]">
+            BUYING & SELLING
+          </h3>
+
+          <p class="font-[Geist] text-[15px] sm:text-[16px] lg:text-[18px] text-black leading-[140%]">
+            Conveyancing is the legal process of transferring property.
+            This could be buying or selling a house or commercial unit.
+            Read more HERE.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 sm:gap-5 max-w-[300px]">
+          <h3 class="font-[DM_Sans] text-[16px] sm:text-[18px] lg:text-[21px] text-[#767676]">
+            EMPLOYMENT LAW
+          </h3>
+
+          <p class="font-[Geist] text-[15px] sm:text-[16px] lg:text-[18px] text-black leading-[140%]">
+            Expert legal advice for employers and employees regarding
+            workplace disputes, contracts, dismissals and rights.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 sm:gap-5 max-w-[300px]">
+          <h3 class="font-[DM_Sans] text-[16px] sm:text-[18px] lg:text-[21px] text-[#767676]">
+            FAMILY LAW
+          </h3>
+
+          <p class="font-[Geist] text-[15px] sm:text-[16px] lg:text-[18px] text-black leading-[140%]">
+            Compassionate guidance through divorce, separation, child
+            custody and all family-related legal matters.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 sm:gap-5 max-w-[300px]">
+          <h3 class="font-[DM_Sans] text-[16px] sm:text-[18px] lg:text-[21px] text-[#767676]">
+            DISPUTE RESOLUTION
+          </h3>
+
+          <p class="font-[Geist] text-[15px] sm:text-[16px] lg:text-[18px] text-black leading-[140%]">
+            Strategic representation for business and personal disputes,
+            helping clients achieve efficient resolutions.
+          </p>
+        </div>
+
+        <!-- Link -->
+        <div class="flex flex-col gap-2">
+          <a
+            href="#"
+            class="flex items-center gap-[3px]
+                   font-[DM_Sans] text-[16px] sm:text-[18px] lg:text-[21px]
+                   text-[#767676] hover:text-black transition-colors"
+          >
+            <span>See Project</span>
+            <span class="font-[Instrument_Sans] text-[14px] sm:text-[16px]">
+              →
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="w-full h-[260px] sm:h-[450px] lg:h-[694px] rounded-[30px] overflow-hidden relative">
+
+      <img
+        src={redundancyImg.src}
+        alt="Our Services"
+        class="w-full h-full object-cover"
+      />
+
+      <div class="absolute inset-0 bg-black/20"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- LATEST UPDATES SECTION -->
+<section class="w-full max-w-[1250px] mx-auto flex justify-center px-4 lg:px-6">
+
+  <div
+    class="w-full 
+           border-t border-[#929292]
+           flex flex-col items-center
+           py-14 lg:py-[80px]
+           px-4 sm:px-10 lg:px-[240px]
+           gap-10"
+  >
+
+    <!-- TEXT CONTENT -->
+    <div
+      class="w-full max-w-[720px]
+             flex flex-col items-center
+             gap-6 lg:gap-10"
+    >
+
+      <!-- HEADING -->
+      <h2
+        class="w-full text-center
+               font-[Crimson_Text]
+               font-normal
+               text-[34px] sm:text-[44px] lg:text-[60px]
+               leading-[95%] lg:leading-[90%]
+               tracking-[-0.03em]
+               text-black"
+      >
+        Our Latest Updates
+      </h2>
+
+      <!-- DESCRIPTION -->
+      <p
+        class="w-full text-center
+               font-[DM_Sans]
+               font-normal
+               text-[16px] sm:text-[18px] lg:text-[21px]
+               leading-[150%]
+               tracking-[-0.005em]
+               text-[#6F6F6F]"
+      >
+        This article gives some brief pointers on practical steps you can
+        take if you are in an accident. What to do if you have been in a
+        road traffic accident. Check that everyone involved in the accident
+        is ok. Call the guards. Call an ambulance, if required. Exchange
+        details and gather information carefully at the scene.
+      </p>
+
+      <!-- BUTTON -->
+      <a
+        href="#"
+        class="flex items-center justify-center
+               px-[22px] py-[14px]
+               h-12
+               rounded-full
+               bg-[#0B838E]
+               shadow-[0px_4px_4px_rgba(0,0,0,0.25)]
+               hover:scale-105
+               active:scale-95
+               transition-transform duration-300"
+      >
+        <span
+          class="font-[DM_Sans]
+                 font-bold
+                 text-[14px]
+                 leading-[140%]
+                 tracking-[-0.025em]
+                 text-white"
+        >
+          Learn More
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- TESTIMONIAL SECTION -->
+<section class="w-full flex justify-center px-4 lg:px-6">
+  <div
+    class="w-full max-w-[1200px]
+           flex flex-col lg:flex-row
+           items-start
+           gap-10 lg:gap-5
+           pb-10 md:pb-[60px] lg:pb-[80px]"
+  >
+
+    <!-- IMAGE -->
+    <div
+      class="w-full lg:flex-1
+             h-[343px] md:h-[720px] lg:h-[669px]
+             rounded-[30px]
+             overflow-hidden"
+    >
+      <img
+        src={weightImg.src}
+        alt="Testimonial"
+        class="reveal w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- QUOTE -->
+    <div
+      class="w-full lg:flex-1
+             flex flex-col
+             justify-center
+             items-start
+             px-4 pt-10 lg:pt-0 lg:pl-[50px]
+             gap-[50px]
+             min-h-[504px] lg:min-h-[673px]"
+    >
+
+      <!-- TEXT -->
+      <h2
+        class="font-[Crimson_Text]
+               font-normal
+               text-[32px] md:text-[40px]
+               leading-[110%] md:leading-[105%]
+               tracking-[-0.04em]
+               text-black"
+      >
+        “Martina Murphy Solicitors handled my estate planning with such
+        care and professionalism. They listened to my concerns and made
+        the process clear and straightforward. I now have complete peace
+        of mind knowing my family's future is secure.”
+      </h2>
+
+      <!-- NAME -->
+      <div
+        class="flex flex-row items-center gap-2 flex-wrap"
+      >
+        <span
+          class="font-[DM_Sans]
+                 font-normal
+                 text-[21px]
+                 leading-[140%]
+                 tracking-[-0.005em]
+                 text-black"
+        >
+          Dave Luca
+        </span>
+
+        <span
+          class="font-[DM_Sans]
+                 font-normal
+                 text-[10.5px] md:text-[12px]
+                 leading-[140%]
+                 tracking-[-0.03em] md:tracking-[-0.01em]
+                 text-[#8E9C78]"
+        >
+          Business Owner
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- LET'S DISCUSS SECTION -->
+<section
+  class="reveal w-full max-w-[1250px] mx-auto box-border
+         px-4 md:px-0
+         pt-20 md:pt-20
+         pb-[100px] md:pb-[80px] lg:pb-[120px]
+         flex flex-col items-start
+         gap-20"
+>
+  <!-- TOP -->
+  <div
+    class="w-full flex flex-col md:flex-row
+           md:justify-between md:items-start
+           gap-10 md:gap-20"
+  >
+    <h2
+      class="font-['Crimson_Text']
+             text-[50px] md:text-[54px] lg:text-[60px]
+             leading-[95%] md:leading-[90%]
+             tracking-[-0.03em]
+             text-black"
+    >
+      Let’s Discuss
+    </h2>
+
+    <a
+      href="/contact"
+      class="h-12 px-[22px]
+             rounded-full
+             bg-[#0B838E]
+             flex items-center justify-center
+             text-white
+             text-sm
+             font-bold
+             tracking-[-0.025em]
+             leading-[140%]
+             whitespace-nowrap
+             hover:opacity-90
+             transition"
+    >
+      Schedule Consultation
+    </a>
+  </div>
+
+  <!-- 3 CARDS -->
+  <div
+    class="w-full
+           flex flex-col md:flex-row
+           items-start
+           gap-5"
+  >
+    <!-- CARD 1 -->
+    <div
+      class="flex-1 min-w-0
+             pt-[60px] pr-0 md:pr-[30px] pb-5
+             flex flex-col
+             items-start
+             gap-[60px]
+             border-t border-[#D9D9D9]"
+    >
+      <span
+        class="font-['DM_Sans']
+               text-[64px] md:text-[80px]
+               leading-[100%]
+               tracking-[-0.04em]
+               text-[#0B838E]"
+      >
+        01
+      </span>
+
+      <div class="flex flex-col gap-5">
+        <h3
+          class="font-['DM_Sans']
+                 text-[21px]
+                 leading-[140%]
+                 tracking-[-0.005em]
+                 text-black"
+        >
+          Free Consultation
+        </h3>
+
+        <p
+          class="font-['DM_Sans']
+                 text-[21px]
+                 leading-[140%]
+                 tracking-[-0.005em]
+                 text-[#6F6F6F]"
+        >
+          Schedule a complimentary consultation to discuss your legal
+          needs. During this session, our experienced attorneys will
+          assess your situation, provide initial guidance, and outline
+          potential strategies.
+        </p>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div
+      class="flex-1 min-w-0
+             pt-[60px] pr-0 md:pr-[30px] pb-5
+             flex flex-col
+             items-start
+             gap-[60px]
+             border-t border-[#D9D9D9]"
+    >
+      <span
+        class="font-['DM_Sans']
+               text-[64px] md:text-[80px]
+               leading-[100%]
+               tracking-[-0.04em]
+               text-[#0B838E]"
+      >
+        02
+      </span>
+
+      <div class="flex flex-col gap-5">
+        <h3
+          class="font-['DM_Sans']
+                 text-[21px]
+                 leading-[140%]
+                 tracking-[-0.005em]
+                 text-black"
+        >
+          Personalized Case Evaluation
+        </h3>
+
+        <p
+          class="font-['DM_Sans']
+                 text-[21px]
+                 leading-[140%]
+                 tracking-[-0.005em]
+                 text-[#6F6F6F]"
+        >
+          If you choose to move forward, we conduct a detailed review
+          of your case. This includes gathering key documents,
+          outlining your legal options, and developing a tailored
+          plan designed to achieve the best possible outcome.
+        </p>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div
+      class="flex-1 min-w-0
+             pt-[60px] pr-0 md:pr-[30px] pb-5
+             flex flex-col
+             items-start
+             gap-[60px]
+             border-t border-[#D9D9D9]"
+    >
+      <span
+        class="font-['DM_Sans']
+               text-[64px] md:text-[80px]
+               leading-[100%]
+               tracking-[-0.04em]
+               text-[#0B838E]"
+      >
+        03
+      </span>
+
+      <div class="flex flex-col gap-5">
+        <h3
+          class="font-['DM_Sans']
+                 text-[21px]
+                 leading-[140%]
+                 tracking-[-0.005em]
+                 text-black"
+        >
+          Formal Engagement & Representation
+        </h3>
+
+        <p
+          class="font-['DM_Sans']
+                 text-[21px]
+                 leading-[140%]
+                 tracking-[-0.005em]
+                 text-[#6F6F6F]"
+        >
+          Once you decide to proceed, we finalize the paperwork and
+          begin representing you. Our team will keep you informed at
+          every stage, ensuring you feel confident and supported
+          throughout the process.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+</MainLayout>

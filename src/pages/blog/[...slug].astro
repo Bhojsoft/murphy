@@ -1,0 +1,65 @@
+---
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { marked } from "marked";
+import BlogPostLayout from "@/layouts/BlogPostLayout.astro";
+
+// GET ALL SLUGS (SAFE VERSION)
+export function getStaticPaths() {
+  const postsDir = path.join(
+    process.cwd(),
+    "hugo-blog",
+    "content",
+    "posts"
+  );
+
+  const files = fs.readdirSync(postsDir);
+
+  return files.map((file) => ({
+    params: {
+      slug: file.replace(".md", "")
+    }
+  }));
+}
+
+// slug
+const slug = Array.isArray(Astro.params.slug)
+  ? Astro.params.slug.join("/")
+  : Astro.params.slug;
+
+// SAME PATH (SAFE: REDEFINED HERE TOO)
+const postsDir = path.join(
+  process.cwd(),
+  "hugo-blog",
+  "content",
+  "posts"
+);
+
+const markdownPath = path.join(postsDir, `${slug}.md`);
+
+if (!fs.existsSync(markdownPath)) {
+  throw new Error(`Markdown not found: ${markdownPath}`);
+}
+
+const fileContent = fs.readFileSync(markdownPath, "utf8");
+const { data, content } = matter(fileContent);
+
+const post = {
+  title: data.title || "",
+  subtitle: data.subtitle || "",
+  date: data.date || "",
+  author: data.author || "",
+  image: data.image || "",
+  content: marked(content)
+};
+---
+
+<BlogPostLayout
+  title={post.title}
+  date={post.date}
+  author={post.author}
+  image={post.image}
+  content={post.content}
+  relatedPosts={[]}
+/>

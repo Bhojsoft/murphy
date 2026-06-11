@@ -1,0 +1,21 @@
+---
+const { image } = Astro.props;
+---
+
+<section class="w-full flex justify-center px-4 md:px-6">
+  <div class="w-full max-w-[1200px]">
+
+    <div class="relative overflow-hidden rounded-[30px] h-[750px]">
+
+      <img
+        src={image}
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div class="absolute inset-0 bg-black/40"></div>
+
+    </div>
+
+  </div>
+</section>

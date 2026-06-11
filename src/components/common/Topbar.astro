@@ -1,0 +1,63 @@
+---
+---
+
+<header class="top-0 left-0 w-full z-50">
+  <div class="flex justify-between items-center px-6 py-4">
+
+    <a href="/" class="text-[24px] md:text-[28px] font-semibold underline text-black">
+      Home
+    </a>
+
+    <!-- hamburger -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+    <a
+      href="/contact"
+      class="hidden md:inline-block bg-teal-600 text-white px-6 py-3 rounded-full"
+    >
+      Contact Us ↗
+    </a>
+
+  </div>
+</header>
+
+<!-- OVERLAY -->
+<div id="overlay" class="fixed inset-0 bg-black/40 hidden z-[999] md:hidden">
+
+  <div class="absolute right-0 top-0 h-full w-[320px] bg-white p-6 flex flex-col gap-8">
+
+    <!-- close -->
+    <button id="closeBtn" class="text-2xl self-end">
+      ✕
+    </button>
+
+    <a href="/benefits">Benefits</a>
+    <a href="/specifications">Specifications</a>
+    <a href="/how-to">How-to</a>
+    <a href="/contact">Contact Us</a>
+
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script is:inline>
+  const menuBtn = document.getElementById("menuBtn");
+  const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("closeBtn");
+
+  menuBtn?.addEventListener("click", () => {
+    overlay.classList.remove("hidden");
+  });
+
+  closeBtn?.addEventListener("click", () => {
+    overlay.classList.add("hidden");
+  });
+
+  overlay?.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.classList.add("hidden");
+    }
+  });
+</script>

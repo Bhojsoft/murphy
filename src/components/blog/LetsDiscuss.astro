@@ -1,0 +1,147 @@
+  ---
+  const contactSteps = [
+  {
+    number: "01",
+    title: "Free Consultation",
+    description:
+      "Schedule a complimentary consultation to discuss your legal needs. During this session, our experienced attorneys will assess your situation, provide initial guidance, and outline potential strategies.",
+  },
+  {
+    number: "02",
+    title: "Personalized Case Evaluation",
+    description:
+      "If you choose to move forward, we conduct a detailed review of your case. This includes gathering key documents, outlining your legal options, and developing a tailored plan designed to achieve the best possible outcome.",
+  },
+  {
+    number: "03",
+    title: "Formal Engagement & Representation",
+    description:
+      "Once you decide to proceed, we finalize the paperwork and begin representing you. Our team will keep you informed at every stage, ensuring you feel confident and supported throughout the process.",
+  },
+];
+  ---
+  <section class="w-full max-w-[1200px] ml-50 px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+
+  <div class=" reveal w-full flex flex-col gap-20">
+
+    <!-- TOP -->
+    <div
+      class="
+        flex
+        flex-col
+        sm:flex-row
+        sm:items-center
+        justify-between
+        gap-10
+      "
+    >
+
+      <h2
+        class="
+          font-crimson
+          font-normal
+          text-[50px]
+          sm:text-[54px]
+          lg:text-[60px]
+          leading-[90%]
+          tracking-[-0.03em]
+          text-black
+        "
+      >
+        Let’s Discuss
+      </h2>
+
+      <button
+        class="
+          bg-[#0B838E]
+          text-white
+          rounded-full
+          px-[22px]
+          py-[14px]
+          text-[14px]
+          font-bold
+          tracking-[-0.025em]
+          hover:bg-[#086c74]
+          transition-all
+          duration-300
+        "
+      >
+        Schedule a Consult
+      </button>
+
+    </div>
+
+    <!-- CARDS -->
+    <div
+      class="
+        grid
+        grid-cols-1
+        md:grid-cols-2
+        lg:grid-cols-3
+        gap-10
+        lg:gap-8
+      "
+    >
+
+      {contactSteps.map((step) => (
+        <div
+          class="
+            flex
+            flex-col
+            gap-[60px]
+            border-t
+            border-black
+            pt-[60px]
+            pr-4
+          "
+        >
+
+          <span
+            class="
+              font-dm
+              text-[64px]
+              lg:text-[80px]
+              leading-none
+              tracking-[-0.04em]
+              text-[#0B838E]
+            "
+          >
+            {step.number}
+          </span>
+
+          <div class="flex flex-col gap-5">
+
+            <h3
+              class="
+                font-dm
+                text-[21px]
+                leading-[140%]
+                tracking-[-0.005em]
+                text-black
+              "
+            >
+              {step.title}
+            </h3>
+
+            <p
+              class="
+                font-dm
+                text-[20px]
+                leading-[140%]
+                tracking-[-0.005em]
+                text-[#6F6F6F]
+              "
+            >
+              {step.description}
+            </p>
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>

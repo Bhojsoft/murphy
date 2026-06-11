@@ -1,0 +1,47 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+import BlogHeader from "@/components/blog/BlogHeader.astro";
+import BlogHero from "@/components/blog/BlogHero.astro";
+import BlogContent from "@/components/blog/BlogContent.astro";
+import BlogStats from "@/components/blog/BlogStats.astro";
+import RelatedBlogs from "@/components/blog/RelatedBlogs.astro";
+import MartinaSection from "@/components/blog/MartinaSection.astro";
+import LetsDiscuss from "@/components/blog/LetsDiscuss.astro";
+
+interface RelatedPost {
+  title: string;
+  description: string;
+}
+
+const {
+  title = "",
+  date = "",
+  author = "",
+  image = "",
+  content = "",
+  relatedPosts = [],
+} = Astro.props as {
+  title?: string;
+  date?: string;
+  author?: string;
+  image?: string;
+  content?: string;
+  relatedPosts?: RelatedPost[];
+};
+---
+
+<MainLayout>
+  <BlogHeader
+    title={title}
+    date={date}
+    author={author}
+  />
+
+  <BlogHero image={image} />
+
+  <BlogContent content={content} />
+  
+
+  
+</MainLayout>

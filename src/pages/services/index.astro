@@ -1,0 +1,478 @@
+---
+import Footer from "@/components/common/Footer.astro";
+
+import serviceImg1 from "@/assets/Service1.png";
+import serviceImg2 from "@/assets/Service2.png";
+import logoImg from "@/assets/MM - Black 2.png";
+
+import "@/styles/global.css";
+
+const navItems = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About Us",
+    href: "/about-us-2",
+  },
+  {
+    name: "Services",
+    href: "/services",
+  },
+  {
+    name: "News & Blog",
+    href: "/blog-2",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
+
+const stats = [
+  {
+    number: "100+",
+    text: "years of combined experience. Our partners have successfully negotiated and resolved complex disputes across all areas of Irish law.",
+  },
+  {
+    number: "LQ",
+    text: "We are proud to hold the LQ Standard of Excellence - an independent verification that we treat every single client with respect, transparency, and genuine care.",
+  },
+  {
+    number: "200+",
+    text: "different clients have sought our expertise. We will give you a candid, realistic assessment of your case from day one.",
+  },
+];
+
+const services = [
+  {
+    title: "Buying & Selling Property",
+    description:
+      "Conveyancing is the legal process of transferring property. This could be buying or selling a house or commercial unit. Read more HERE.",
+  },
+  {
+    title: "Wills & Probate",
+    description:
+      "A Will is a written document which sets out who will inherit your assets upon your death. If you have minor children, it can also specify who will become Guardians of the children and look after them when you are gone. Read more HERE.",
+  },
+  {
+    title: "Family Law",
+    description:
+      "We provide full guidance on all areas of Family Law from guardianship and maintenance applications to Judicial separations and divorces. We even have a dedicated office for Family Law, read more HERE.",
+  },
+  {
+    title: "Accidents",
+    description:
+      "Did you have an accident that is somebody else’s fault? If so we might be able to help you make a claim. Read more HERE.",
+  },
+  {
+    title: "Employment Law",
+    description:
+      "We can help in different areas of employment law such as unfair dismissals, equality, debt collection, redundancies and much more! Read more HERE.",
+  },
+  {
+    title: "Immigration Law",
+    description:
+      "If you need help regarding your Will, getting your affairs in order, drafting an Enduring Power of Attorney, or any other issues, then you’ve come to the right place. Read more HERE.",
+  },
+  {
+    title: "Charities & Educational Law",
+    description:
+      "We provide expert advice for charities, non profit organisations, boards of management and other entities to keep abreast of compliance and governance. Read more HERE.",
+  },
+  {
+    title: "Commissioner for Oaths",
+    description:
+      "Need a document witnessed? All our solicitors are Commissioners for Oaths and are available to witness documentation. Read more HERE.",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Services</title>
+  </head>
+
+  <body>
+    <main class="w-full min-h-screen ">
+      <!-- PAGE WRAPPER -->
+    
+        <!-- HERO -->
+        <section
+          class="
+            
+            w-full
+            relative
+            mx-auto
+            h-[500px]
+            sm:h-[650px]
+            lg:h-[750px]
+            
+            overflow-hidden
+            flex
+            flex-col
+            justify-end
+            items-start
+            px-6
+            sm:px-[50px]
+            pb-6
+            sm:pb-[70px]
+            isolate
+          "
+        >
+          <!-- BG IMAGE -->
+          <img
+            src={serviceImg1.src}
+            alt="Services"
+            class="
+              absolute
+              inset-0
+              w-full
+              h-full
+              object-cover
+            "
+          />
+
+          <!-- OVERLAY -->
+          
+
+          <!-- NAVBAR -->
+          <div
+            class="
+              absolute
+              top-0
+              left-0
+              right-0
+              z-20
+              px-4
+              sm:px-[50px]
+              py-5
+            "
+          >
+            <div
+              class="
+                flex
+                items-center
+                justify-between
+                gap-4
+              "
+            >
+              <!-- LOGO -->
+              <a
+                href="/"
+                class="shrink-0"
+              >
+                <img
+                  src={logoImg.src}
+                  alt="MM Logo"
+                  class="
+                    h-[42px]
+                    sm:h-[55px]
+                    lg:h-[70px]
+                    w-auto
+                    object-cover
+                    
+                  "
+                />
+              </a>
+
+              <!-- NAV LINKS -->
+              <div
+                class="
+                  flex
+                  items-center
+                  justify-end
+                  gap-3
+                  sm:gap-[37px]
+                  flex-wrap
+                "
+              >
+                {navItems.map((item) => (
+                  <a
+                    href={item.href}
+                    class="
+                      font-geist
+                      font-normal
+                      text-[11px]
+                      sm:text-[13px]
+                      leading-[95%]
+                      tracking-[-0.03em]
+                      text-white
+                      hover:opacity-70
+                      transition-all
+                      duration-300
+                      whitespace-nowrap
+                    "
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <!-- HERO CONTENT -->
+          <div
+            class="
+              relative
+              z-10
+              flex
+              flex-col
+              items-start
+              gap-6
+              max-w-[734px]
+            "
+          >
+            <h1
+              class="
+                font-geist
+                font-medium
+                text-white
+                text-[22px]
+                sm:text-[28px]
+                lg:text-[32px]
+                leading-[109%]
+                tracking-[-0.05em]
+              "
+            >
+              At Martina Murphy Solicitors, we are committed to exceptional
+              service and successful outcomes with:
+            </h1>
+          </div>
+        </section>
+
+        <!-- STATS SECTION -->
+       <section
+  class="
+    relative
+    left-1/2
+    -translate-x-1/2
+    w-screen
+    bg-[#0B838E]
+    overflow-hidden
+    px-7
+    sm:px-[64px]
+    lg:px-[70px]
+    py-[80px]
+  "
+>
+  <div
+    class="
+      grid
+      grid-cols-1
+      md:grid-cols-3
+      gap-10
+      md:gap-5
+    "
+  >
+    {stats.map((stat, index) => (
+      <div
+        class={`
+          flex
+          flex-col
+          gap-10
+          pb-10
+          md:pb-0
+          pr-0
+          md:pr-5
+          ${
+            index !== stats.length - 1
+              ? "border-b md:border-b-0 md:border-r border-white"
+              : ""
+          }
+        `}
+      >
+        <h2
+          class="
+            font-crimson
+            font-normal
+            text-white
+            text-[60px]
+            sm:text-[84px]
+            lg:text-[120px]
+            leading-[95%]
+            tracking-[-0.03em]
+          "
+        >
+          {stat.number}
+        </h2>
+
+        <p
+          class="
+            font-dm
+            font-normal
+            text-white
+            text-[18px]
+            sm:text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]
+            max-w-[350px]
+          "
+        >
+          {stat.text}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
+        <!-- SERVICES SECTION -->
+        <section
+          class="
+            w-full
+            
+            mx-auto
+            px-7
+            sm:px-16
+            lg:px-[150px]
+            py-[80px]
+          "
+        >
+          <div
+            class="
+              w-full
+              border-b
+              border-black/40
+              pb-5
+            "
+          >
+            <div
+              class="
+                flex
+                flex-col
+                gap-16
+                sm:gap-20
+                lg:gap-[123px]
+              "
+            >
+              <!-- HEADING -->
+              <h2
+                class="
+                  font-crimson
+                  font-normal
+                  text-black
+                  text-[50px]
+                  sm:text-[54px]
+                  lg:text-[60px]
+                  leading-[90%]
+                  tracking-[-0.03em]
+                  max-w-[884px]
+                "
+              >
+                Navigating Complex Legal Landscapes? We Can Help.
+              </h2>
+
+              <!-- SERVICES LIST -->
+              <div
+                class="
+                  flex
+                  flex-col
+                  gap-5
+                "
+              >
+                {services.map((service) => (
+                  <div
+                    class="
+                      border-t
+                      border-black/40
+                      py-5
+                    "
+                  >
+                    <div
+                      class="
+                        flex
+                        flex-col
+                        md:flex-row
+                        justify-between
+                        items-start
+                        gap-6
+                        md:gap-12
+                        lg:gap-[266px]
+                      "
+                    >
+                      <!-- TITLE -->
+                      <h3
+                        class="
+                          w-full
+                          md:max-w-[220px]
+                          font-geist
+                          font-medium
+                          text-[18px]
+                          leading-[135%]
+                          tracking-[-0.02em]
+                          text-black
+                        "
+                      >
+                        {service.title}
+                      </h3>
+
+                      <!-- DESCRIPTION -->
+                      <p
+                        class="
+                          w-full
+                          md:max-w-[420px]
+                          font-geist
+                          font-normal
+                          text-[18px]
+                          leading-[135%]
+                          tracking-[-0.02em]
+                          text-black
+                        "
+                      >
+                        {service.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- IMAGE DIVIDER SECTION -->
+        <section
+  class="
+    w-full
+    px-[10px]
+  "
+>
+  <div
+    class="
+      relative
+      w-full
+      h-[280px]
+      sm:h-[480px]
+      lg:h-[625px]
+
+      overflow-hidden
+      bg-black
+    "
+  >
+    <img
+      src={serviceImg2.src}
+      alt="Legal Services"
+      class="
+        absolute
+        inset-0
+        w-full
+        h-full
+        object-contain
+      "
+    />
+  </div>
+</section>
+      
+
+      <!-- FOOTER -->
+      <Footer />
+    </main>
+  </body>
+</html>

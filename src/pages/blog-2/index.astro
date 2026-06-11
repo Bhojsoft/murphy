@@ -1,0 +1,600 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import serviceImg from "@/assets/Service1.png";
+import blog1 from "@/assets/blog-1.png";
+import weightImg from "@/assets/Weight.png";
+import blog3 from "@/assets/blog-3.png";
+import blog4 from "@/assets/blog-4.png";
+import blog5 from "@/assets/blog-5.png";
+import martinaImg from "@/assets/martina-2.png";
+import { ArrowRight } from "lucide-react";
+
+const blogPosts = [
+  {
+    image: blog1,
+    title: "Legal Planning",
+    description: "How proper legal planning protects modern businesses.",
+  },
+  {
+    image: weightImg,
+    title: "Workplace Rights",
+    description: "Understanding employee rights and employer obligations.",
+  },
+  {
+    image: blog3,
+    title: "Family Law",
+    description: "Guidance through sensitive family legal matters.",
+  },
+  {
+    image: blog4,
+    title: "Dispute Resolution",
+    description: "Effective solutions for resolving legal disputes.",
+  },
+  {
+    image: blog5,
+    title: "Property Law",
+    description: "Everything you need to know about property transactions.",
+  },
+];
+---
+<MainLayout>
+<!-- BLOG HEADER SECTION -->
+<section class="w-full flex justify-center px-4 md:px-6">
+  <div
+    class="
+      w-full max-w-[1500px]
+      flex flex-col items-center justify-center
+      pt-12 pb-8 px-6
+      md:px-6 md:pt-12 md:pb-8
+      xl:px-[240px] xl:py-[80px]
+      gap-8
+    "
+  >
+    <!-- Date -->
+    <p
+      class="
+        font-dm-sans font-normal
+        text-[21px] leading-[140%]
+        tracking-[-0.005em]
+        text-black/45
+        text-center
+      "
+    >
+      November 15, 2025
+    </p>
+
+    <!-- Header Content -->
+    <div
+      class="
+        flex flex-col items-center
+        gap-6 md:gap-4
+        w-full max-w-[800px]
+      "
+    >
+      <!-- Title -->
+      <h1
+        class="
+          font-dm-sans font-normal
+          text-center text-black
+          tracking-[-0.04em]
+          leading-[100%]
+
+          text-[50px]
+          md:text-[80px]
+        "
+      >
+        Getting Started with Project Documentation in Green Energy
+        Initiatives
+      </h1>
+
+      <!-- Author -->
+      <p
+        class="
+          font-dm-sans font-normal
+          text-[21px] leading-[140%]
+          tracking-[-0.005em]
+          text-black/45
+          text-center
+        "
+      >
+        Maria Santos
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- HERO + TEXT SECTION -->
+<section class="w-full flex justify-center px-4 md:px-6">
+  <div
+    class="
+      w-full
+      max-w-[1200px]
+      flex flex-col
+      gap-[60px]
+      xl:gap-[70px]
+      pb-10
+      md:pb-20
+    "
+  >
+    <!-- HERO IMAGE -->
+    <div
+      class="
+        relative overflow-hidden rounded-[30px]
+        w-full
+        h-[750px]
+      "
+    >
+      <img
+        src={serviceImg.src}
+        alt="Green energy initiatives"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Optional Content Area -->
+      <div
+        class="
+          relative z-10
+          h-full
+          flex flex-col justify-end items-start
+          px-[50px]
+          pb-[70px]
+        "
+      >
+      </div>
+    </div>
+
+    <!-- TEXT CONTENT -->
+    <div
+      class="
+        w-full
+        flex justify-center
+        px-[24px]
+        md:px-[70px]
+        pb-10
+        md:pb-0
+      "
+    >
+      <p
+        class="
+          w-full
+          max-w-[1060px]
+          font-dm-sans
+          font-normal
+          text-[21px]
+          leading-[140%]
+          tracking-[-0.005em]
+          text-black
+        "
+      >
+        Establishing a consistent documentation framework
+
+        <br /><br />
+
+        Managing documentation across multiple green energy
+        projects requires a structured approach from the
+        beginning. Organizations often find themselves
+        overwhelmed by the various reports, permits, and
+        compliance documents needed for each initiative.
+
+        <br /><br />
+
+        Creating a standardized template system helps teams
+        maintain consistency while reducing the time spent
+        searching for specific information. A well-organized
+        documentation framework ensures that all stakeholders
+        can access the information they need when they need it.
+
+        <br /><br />
+
+        The benefits of systematic documentation extend beyond
+        simple organization. When teams follow established
+        protocols, they reduce the risk of missing critical
+        deadlines or overlooking important compliance
+        requirements.
+
+        <br /><br />
+
+        This structured approach also makes it easier to onboard
+        new team members and share knowledge across different
+        projects within the organization.
+      </p>
+    </div>
+  </div>
+</section>
+
+ <section
+        class="w-full max-w-[1200px] mx-auto
+        flex flex-col lg:flex-row
+        items-start
+        px-[15px]
+        pb-[50px]
+        gap-[20px]"
+    >
+        <!-- STAT 1 -->
+        <div
+            class="w-full lg:flex-1
+          flex flex-col
+          items-start
+          gap-[40px]
+          py-[16px]
+          pr-[16px]
+          border-b lg:border-b-0
+          lg:border-r border-black"
+        >
+            <h3
+                class="font-crimson font-normal
+            text-[#0B838E]
+            text-[60px]
+            sm:text-[84px]
+            lg:text-[120px]
+            leading-[95%]
+            tracking-[-0.03em]"
+            >
+                100+
+            </h3>
+
+            <p
+                class="font-dm font-normal
+            text-black
+            text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]"
+            >
+                years of combined experience. Our partners have successfully
+                negotiated and resolved complex disputes across all areas of
+                Irish law.
+            </p>
+        </div>
+
+        <!-- STAT 2 -->
+        <div
+            class="w-full lg:flex-1
+          flex flex-col
+          items-start
+          gap-[40px]
+          py-[16px]
+          pr-[16px]
+          border-b lg:border-b-0
+          lg:border-r border-black"
+        >
+            <h3
+                class="font-crimson font-normal
+            text-[#0B838E]
+            text-[60px]
+            sm:text-[84px]
+            lg:text-[120px]
+            leading-[95%]
+            tracking-[-0.03em]"
+            >
+                LQ
+            </h3>
+
+            <p
+                class="font-dm font-normal
+            text-black
+            text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]"
+            >
+                We are proud to hold the LQ Standard of Excellence — an
+                independent verification that we treat every single client with
+                respect, transparency, and genuine care.
+            </p>
+        </div>
+
+        <!-- STAT 3 -->
+        <div
+            class="w-full lg:flex-1
+          flex flex-col
+          items-start
+          gap-[40px]
+          py-[16px]"
+        >
+            <h3
+                class="font-crimson font-normal
+            text-[#0B838E]
+            text-[60px]
+            sm:text-[84px]
+            lg:text-[120px]
+            leading-[95%]
+            tracking-[-0.03em]"
+            >
+                200+
+            </h3>
+
+            <p
+                class="font-dm font-normal
+            text-black
+            text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]"
+            >
+                different clients have sought our expertise. We will give you a
+                candid, realistic assessment of your case from day one.
+            </p>
+        </div>
+    </section>
+
+    <!-- BLOG HERO SECTION -->
+<section class="w-full flex justify-center px-4 md:px-6">
+  <div
+    class="
+      w-full
+      max-w-[1200px]
+
+      flex
+      justify-center
+      items-start
+
+      py-10 px-6
+      md:py-[60px] md:px-[80px]
+
+      h-auto md:h-[200px]
+    "
+  >
+    <h1
+      class="
+        w-full
+
+        font-dm-sans
+        font-normal
+        tracking-[-0.04em]
+        text-black
+
+        text-[64px]
+        leading-[100%]
+        text-center
+
+        md:text-left
+        md:text-[80px]
+      "
+    >
+      Blog posts
+    </h1>
+  </div>
+</section>
+
+<section class="w-full bg-white">
+  <div
+    class="mx-auto flex w-full max-w-[1200px] flex-col items-start"
+  >
+    {
+      blogPosts.map((post) => (
+        <article
+          class="flex w-full flex-col items-center gap-16 px-6 py-10 md:px-16 xl:flex-row xl:items-center"
+        >
+          <!-- IMAGE -->
+          <div
+            class="w-full xl:w-1/2"
+          >
+            <img
+              src={post.image.src}
+              alt={post.title}
+              class="h-[226px] w-full rounded-2xl object-cover md:h-[432px]"
+            />
+          </div>
+
+          <!-- CONTENT -->
+          <div
+            class="flex w-full flex-col justify-center gap-12 xl:w-1/2"
+          >
+            <div class="flex flex-col gap-6">
+              <h2
+                class="font-['Crimson_Text'] text-[50px] leading-[95%] tracking-[-0.03em] text-black md:text-[54px] xl:text-[60px] xl:leading-[90%]"
+              >
+                {post.title}
+              </h2>
+
+              <p
+                class="font-['DM_Sans'] text-[21px] leading-[140%] tracking-[-0.005em] text-black/60"
+              >
+                {post.description}
+              </p>
+            </div>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="reveal w-full px-4 py-10 md:py-16 lg:py-20">
+  <div
+    class="mx-auto flex max-w-[1200px] flex-col gap-5 lg:flex-row"
+  >
+    <!-- TEXT CONTENT -->
+    <div
+      class="flex flex-1 flex-col gap-10 px-0 pt-[60px] pb-20"
+    >
+      <div
+        class="flex flex-col gap-10 lg:pr-20"
+      >
+        <h2
+          class="font-['Crimson_Text'] text-[50px] leading-[95%] tracking-[-0.03em] text-black md:text-[54px] md:leading-[90%] lg:text-[60px]"
+        >
+          Hello, I’m Martina
+        </h2>
+
+        <p
+          class="font-['DM_Sans'] text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
+        >
+          And I own Martina Murphy Solicitors, I’m here along with my partners
+          to fully support you in whatever it is that you need. I guarantee
+          that you will feel comfortable, welcome and respected.
+
+          <br /><br />
+
+          We are one of the few practices in the Mid-West to have been awarded
+          the LQ Standard of Excellence – an independent verification of the
+          standard of care we give to all our clients.
+
+          <br /><br />
+
+          Our clients return time and time again when they need legal advice
+          and most importantly, they are happy to refer family and friends to
+          the office.
+        </p>
+      </div>
+
+      <!-- BUTTON -->
+      <a
+        href="/about-us-2"
+        class="hidden h-12 w-fit items-center justify-center rounded-full bg-[#0B838E] px-[22px] py-[14px] font-['DM_Sans'] text-sm font-bold leading-[140%] tracking-[-0.025em] text-white transition-all duration-300 hover:scale-105 hover:bg-[#096d76] md:flex"
+      >
+        Learn More
+      </a>
+    </div>
+
+    <!-- IMAGE -->
+    <div
+      class="w-full lg:w-[590px]"
+    >
+      <div
+        class="relative h-[711px] overflow-hidden rounded-[30px]"
+      >
+        <img
+          src={martinaImg.src}
+          alt="Martina Murphy"
+          class="h-full w-full object-cover"
+        />
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/5"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- LET'S DISCUSS SECTION -->
+<section class="w-full px-4 md:px-6 lg:px-8 py-[80px] md:py-[100px] lg:py-[120px] overflow-hidden">
+  <div class="max-w-[1200px] mx-auto flex flex-col gap-20">
+
+    <!-- TOP HEADER -->
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-10 md:gap-20">
+      
+      <!-- TITLE -->
+      <h2
+        class="font-['Crimson_Text'] text-[50px] md:text-[54px] lg:text-[60px] leading-[95%] lg:leading-[90%] tracking-[-0.03em] text-black"
+      >
+        Let’s Discuss
+      </h2>
+
+      <!-- BUTTON -->
+      <a
+  href="/contact"
+  class="inline-flex items-center gap-2 bg-[#0B838E] text-white px-5 py-3 rounded-full"
+>
+  Book Appointment
+  <span>→</span>
+</a>
+    </div>
+
+    <!-- 3 CARDS -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-5"
+    >
+      
+      <!-- CARD 1 -->
+      <div
+        class="flex flex-col gap-[60px] border-t border-black/10 pt-[60px] pr-0 md:pr-[30px] pb-5"
+      >
+        <!-- NUMBER -->
+        <span
+          class="font-['DM_Sans'] text-[64px] md:text-[80px] leading-[100%] tracking-[-0.04em] text-[#0B838E]"
+        >
+          01
+        </span>
+
+        <!-- CONTENT -->
+        <div class="flex flex-col gap-5">
+          <h3
+            class="font-['DM_Sans'] text-[21px] leading-[140%] tracking-[-0.005em] text-black"
+          >
+            Free Consultation
+          </h3>
+
+          <p
+            class="font-['DM_Sans'] text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
+          >
+            Schedule a complimentary consultation to discuss your legal
+            needs. During this session, our experienced attorneys will
+            assess your situation, provide initial guidance, and outline
+            potential strategies.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div
+        class="flex flex-col gap-[60px] border-t border-black/10 pt-[60px] pr-0 md:pr-[30px] pb-5"
+      >
+        <!-- NUMBER -->
+        <span
+          class="font-['DM_Sans'] text-[64px] md:text-[80px] leading-[100%] tracking-[-0.04em] text-[#0B838E]"
+        >
+          02
+        </span>
+
+        <!-- CONTENT -->
+        <div class="flex flex-col gap-5">
+          <h3
+            class="font-['DM_Sans'] text-[21px] leading-[140%] tracking-[-0.005em] text-black"
+          >
+            Personalized Case Evaluation
+          </h3>
+
+          <p
+            class="font-['DM_Sans'] text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
+          >
+            If you choose to move forward, we conduct a detailed review of
+            your case. This includes gathering key documents, outlining
+            your legal options, and developing a tailored plan designed to
+            achieve the best possible outcome.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div
+        class="flex flex-col gap-[60px] border-t border-black/10 pt-[60px] pr-0 md:pr-[30px] pb-5"
+      >
+        <!-- NUMBER -->
+        <span
+          class="font-['DM_Sans'] text-[64px] md:text-[80px] leading-[100%] tracking-[-0.04em] text-[#0B838E]"
+        >
+          03
+        </span>
+
+        <!-- CONTENT -->
+        <div class="flex flex-col gap-5">
+          <h3
+            class="font-['DM_Sans'] text-[21px] leading-[140%] tracking-[-0.005em] text-black"
+          >
+            Formal Engagement & Representation
+          </h3>
+
+          <p
+            class="font-['DM_Sans'] text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
+          >
+            Once you decide to proceed, we finalize the paperwork and
+            begin representing you. Our team will keep you informed at
+            every stage, ensuring you feel confident and supported
+            throughout the process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+</MainLayout>

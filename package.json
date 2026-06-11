@@ -8,10 +8,22 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^6.3.7"
+    "@astrojs/react": "^5.0.5",
+    "@iconify-json/lucide": "^1.2.110",
+    "astro": "^6.3.7",
+    "astro-icon": "^1.1.5",
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.4",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0"
   }
 }

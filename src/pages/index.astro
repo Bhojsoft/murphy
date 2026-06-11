@@ -1,17 +1,1103 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
 
+import martina from "@/assets/martina.png";
+import martina2 from "../assets/martina-2.png";
+
+import serviceImage from "../assets/HService.png";
+import heroImage from "../assets/HService2.png";
+
+import testimonialImage from "../assets/H5.png";
+import finalHeroImage from "../assets/H6.png";
+
+// const services = [
+//   {
+//     title: "BUYING & SELLING",
+//     description:
+//       "Conveyancing is the legal process of transferring property. This could be buying or selling a house or commercial unit.",
+//   },
+//   {
+//     title: "FAMILY LAW",
+//     description:
+//       "Professional legal guidance for separation, custody matters, mediation, and family-related legal support.",
+//   },
+//   {
+//     title: "WILLS & PROBATE",
+//     description:
+//       "Helping families protect their future with wills, estate planning, probate, and succession services.",
+//   },
+//   {
+//     title: "EMPLOYMENT LAW",
+//     description:
+//       "Support for workplace disputes, contracts, employee rights, and employer legal responsibilities.",
+//   },
+// ];
+
+const contactSteps = [
+  {
+    number: "01",
+    title: "Free Consultation",
+    description:
+      "Schedule a complimentary consultation to discuss your legal needs. During this session, our experienced attorneys will assess your situation, provide initial guidance, and outline potential strategies.",
+  },
+  {
+    number: "02",
+    title: "Personalized Case Evaluation",
+    description:
+      "If you choose to move forward, we conduct a detailed review of your case. This includes gathering key documents, outlining your legal options, and developing a tailored plan designed to achieve the best possible outcome.",
+  },
+  {
+    number: "03",
+    title: "Formal Engagement & Representation",
+    description:
+      "Once you decide to proceed, we finalize the paperwork and begin representing you. Our team will keep you informed at every stage, ensuring you feel confident and supported throughout the process.",
+  },
+];
+
+const services = [
+  {
+    title: "FAMILY LAW",
+    description:
+      "With over 100 years of combined experience, we have built our reputation on achieving successful outcomes for our clients in a professional, transparent and kind manner.",
+  },
+  {
+    title: "PERSONAL INJURY",
+    description:
+      "Our experienced legal team provides clear guidance and strong representation to help you achieve the best possible outcome.",
+  },
+  {
+    title: "EMPLOYMENT LAW",
+    description:
+      "We support both employees and employers with practical advice, negotiation and dispute resolution services.",
+  },
+  {
+    title: "PROPERTY LAW",
+    description:
+      "Whether buying, selling or leasing property, we ensure a smooth and stress-free legal process.",
+  },
+  {
+    title: "LITIGATION",
+    description:
+      "Our solicitors have extensive experience handling complex disputes across a wide range of legal matters.",
+  },
+  {
+    title: "WILLS & PROBATE",
+    description:
+      "We help families plan ahead with compassionate and professional legal support for wills and probate matters.",
+  },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <section class="w-full min-h-screen">
+
+    <!-- HERO -->
+    <!-- <div class="w-full flex flex-col gap-[120px] sm:gap-[140px] lg:gap-[240px]">
+
+      <div class="w-full px-8 sm:px-16 lg:px-28 pt-[120px]">
+        <h1
+          class="
+            font-crimson
+            font-normal
+            text-[72px]
+            sm:text-[120px]
+            lg:text-[160px]
+            leading-[85%]
+            tracking-[-0.05em]
+            text-black
+          "
+        >
+          Martina Murphy Solicitors
+        </h1>
+      </div>
+
+      <div class="relative w-full">
+        <div class="w-full h-[250px] sm:h-[300px] lg:h-[362px] bg-[#0B838E] relative">
+
+          <img
+            src={martina.src}
+            alt="Martina"
+            class="
+              absolute
+              w-[220px]
+              sm:w-[420px]
+              lg:w-[520px]
+              right-4
+              sm:right-16
+              lg:right-[111px]
+              top-[-110px]
+              sm:top-[-180px]
+              lg:top-[-323px]
+              object-contain
+            "
+          />
+
+        </div>
+      </div>
+
+    </div> -->
+    
+
+<!-- HERO SECTION -->
+<section
+  class="w-full px-4 md:px-6 lg:px-8 pt-[80px] md:pt-[140px] lg:pt-[100px] pb-20 overflow-hidden"
+>
+  <div class="mb-20 md:mb-60">
+    <h2
+      class="
+        font-['Crimson_Text']
+        font-normal
+        text-black
+        tracking-[-0.05em]
+        leading-[90%]
+
+        text-[44px]
+        text-center
+
+        sm:text-[64px]
+        md:text-[120px]
+        md:leading-[80%]
+        md:text-left
+
+        xl:text-[200px]
+        xl:leading-[85%]
+      "
+    >
+      Martina Murphy Solicitors
+    </h2>
+  </div>
+
+  <div class="w-full flex flex-col gap-16 md:gap-24 lg:gap-32">
+
+    <!-- HERO CARD -->
+    <div
+      class="
+        relative
+        w-full
+
+        min-h-[220px]
+        md:min-h-[320px]
+        lg:min-h-[380px]
+
+        bg-[#0B838E]
+        rounded-[30px]
+      "
+    >
+      <!-- MARTINA IMAGE -->
+      <img
+        src={martina.src}
+        alt="Martina Murphy"
+        class="
+          absolute
+
+          w-[180px]
+          sm:w-[240px]
+          md:w-[400px]
+          lg:w-[520px]
+
+          left-1/2
+          -translate-x-1/2
+
+          md:left-auto
+          md:translate-x-0
+          md:right-8
+
+          lg:right-16
+
+          bottom-0
+          object-cover
+        "
+      />
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- SERVICES -->
+    <section class="w-full px-4 md:px-6 lg:px-8 py-20 lg:py-28">
+
+  <div class="w-full max-w-[1200px] mx-auto flex flex-col gap-24">
+
+    <!-- INTRO -->
+    <div
+      class="
+        grid
+        grid-cols-1
+        lg:grid-cols-[520px_1fr]
+        gap-10
+        lg:gap-20
+        items-center
+      "
+    >
+
+      <!-- IMAGE -->
+     <div class="relative w-full h-[240px] sm:h-[420px] lg:h-[591px] rounded-[30px] overflow-hidden">
+  <img
+    src={serviceImage.src}
+    alt="Services"
+    class="w-full h-full object-cover"
+  />
+  <div class="absolute inset-0 bg-black/20"></div>
+</div>
+
+      <!-- CONTENT -->
+      <div class="flex flex-col items-start gap-8 lg:gap-10">
+
+        <h2
+          class="
+            font-crimson
+            font-normal
+            text-[48px]
+            sm:text-[60px]
+            lg:text-[72px]
+            leading-[90%]
+            tracking-[-0.04em]
+            text-black
+          "
+        >
+          Legal services with a personal touch
+        </h2>
+
+        <p
+          class="
+            font-dm
+            text-[18px]
+            sm:text-[20px]
+            lg:text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]
+            text-[#6F6F6F]
+            max-w-[520px]
+          "
+        >
+          With over 100 years of combined experience, we have built our
+          reputation on achieving successful outcomes for our clients in a
+          professional, transparent and kind manner.
+        </p>
+
+        <button
+          class="
+            bg-[#0B838E]
+            text-white
+            rounded-full
+            px-7
+            py-4
+            font-bold
+            text-sm
+            tracking-[-0.025em]
+            hover:bg-[#086c74]
+            transition-all
+            duration-300
+          "
+        >
+         Schedule a Consult
+        </button>
+
+      </div>
+
+      
+
+    </div>
+
+    <div class="block lg:hidden">
+  <section
+    class="w-full mx-auto pb-[80px] flex flex-col gap-[55px] sm:gap-[60px]"
+  >
+    <div class="max-w-[800px]">
+      <h2
+        class="font-crimson font-normal text-black text-[50px] sm:text-[54px] leading-[95%] tracking-[-0.03em]"
+      >
+        What can we help you with?
+      </h2>
+    </div>
+
+    <div class="flex flex-col gap-5 w-full">
+      {
+        services.map((service) => (
+          <details
+            class="group w-full bg-[#0B838E] rounded-[20px] overflow-hidden transition-all duration-300"
+          >
+            <summary
+              class="list-none cursor-pointer flex items-start justify-between gap-5 px-[24px] sm:px-[40px] py-[28px] sm:py-[40px]"
+            >
+              <h3
+                class="font-dm font-medium text-white text-[30px] sm:text-[35px] leading-[100%] tracking-[-0.04em] flex-1"
+              >
+                {service.title}
+              </h3>
+
+              <div
+                class="w-[48px] h-[48px] rounded-full bg-[#F3F5F6] flex items-center justify-center shrink-0 transition-transform duration-300 group-open:rotate-45"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
+                  <path
+                    d="M6 0H8V6H14V8H8V14H6V8H0V6H6V0Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </summary>
+
+            <div
+              class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300"
+            >
+              <div class="overflow-hidden">
+                <p
+                  class="px-[24px] sm:px-[40px] pb-[28px] sm:pb-[40px] font-dm text-[19px] sm:text-[21px] leading-[140%] tracking-[-0.005em] text-white/90"
+                >
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          </details>
+        ))
+      }
+    </div>
+  </section>
+</div>
+
+
+    <!-- SERVICES -->
+    <div
+  class="
+    hidden
+    lg:flex
+    w-full
+    flex
+    flex-col
+    items-center
+    px-[15px]
+    pt-[50px]
+    pb-[80px]
+
+    md:pt-[60px]
+    md:pb-[80px]
+    
+    gap-[30px]
+  "
+>
+  <!-- Divider -->
+  <div class="w-full border-t border-black"></div>
+
+  <!-- Content -->
+  <div
+    class="
+      w-full
+      flex
+      flex-col
+
+      md:flex-row
+      md:items-start
+
+      gap-10
+      md:gap-0
+    "
+  >
+    <!-- LEFT TITLE -->
+    <div class="w-full md:w-1/2">
+      <h2
+        class="
+          font-['Crimson_Text']
+          font-normal
+          text-black
+
+          text-[50px]
+          leading-[95%]
+          tracking-[-0.03em]
+
+          md:text-[54px]
+          md:leading-[90%]
+
+          lg:text-[60px]
+        "
+      >
+        Our Services
+      </h2>
+    </div>
+
+    <!-- RIGHT GRID -->
+    <div
+      class="
+        w-full
+        md:w-1/2
+
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+
+        gap-y-10
+        gap-x-8
+      "
+    >
+      {services.map((service) => (
+        <div
+          class="
+            reveal
+            flex
+            flex-col
+            items-start
+
+            gap-5
+            pr-0
+            sm:pr-5
+
+            max-w-[300px]
+          "
+        >
+          <h3
+            class="
+              font-dm
+              font-normal
+              text-[#767676]
+
+              text-[21px]
+              leading-[140%]
+              tracking-[-0.005em]
+            "
+          >
+            {service.title}
+          </h3>
+
+          <p
+            class="
+              font-dm
+              font-normal
+              text-black
+
+              text-[18px]
+              leading-[135%]
+              tracking-[-0.02em]
+            "
+          >
+            {service.description}
+          </p>
+        </div>
+      ))}
+
+      <!-- LINK -->
+      <div class="flex items-center gap-[3px] mt-2 mb-1">
+        <a
+          href="/services"
+          class="
+            font-dm
+            font-normal
+            text-[#767676]
+
+            text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]
+
+            hover:text-black
+            transition-colors
+          "
+        >
+          More Services
+        </a>
+
+        <span
+          class="
+            text-[#767676]
+            text-[15px]
+            leading-[110%]
+          "
+        >
+          →
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- FULL WIDTH HERO IMAGE -->
+   <div
+  class="
+    relative
+    w-full
+
+    h-[320px]
+    sm:h-[450px]
+    lg:h-[620px]
+
+    rounded-[30px]
+    overflow-hidden
+  "
+>
+  <img
+    src={heroImage.src}
+    alt="Family Law"
+    class="w-full h-full object-cover object-[center_10%]"
+  />
+
+  <div class="absolute inset-0 bg-black/20"></div>
+</div>
+
+  </div>
+
+</section> 
+
+    <!-- ABOUT -->
+   <section class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-[80px]">
+
+  <div
+    class="
+      w-full
+      flex
+      flex-col
+      lg:flex-row
+      items-start
+      gap-10
+      lg:gap-5
+    "
+  >
+
+    <!-- LEFT CONTENT -->
+    <div
+      class="
+        flex-1
+        flex
+        flex-col
+        items-start
+        pt-6
+        lg:pt-[60px]
+        pb-10
+        lg:pb-[80px]
+        gap-8
+        lg:gap-10
+      "
+    >
+
+      <div class="flex flex-col items-start gap-6 lg:gap-10 lg:pr-20">
+
+        <h2
+          class="
+            font-crimson
+            font-normal
+            text-[34px]
+            sm:text-[44px]
+            lg:text-[60px]
+            leading-[90%]
+            tracking-[-0.03em]
+            text-black
+          "
+        >
+          Hello, I’m Martina
+        </h2>
+
+        <p
+          class="
+            font-dm
+            font-normal
+            text-[16px]
+            sm:text-[18px]
+            lg:text-[21px]
+            leading-[150%]
+            tracking-[-0.005em]
+            text-[#6F6F6F]
+          "
+        >
+          And I own Martina Murphy Solicitors, I’m here along with my
+          partners to fully support you in whatever it is that you need.
+          I guarantee that you will feel comfortable, welcome and respected.
+
+          We are one of the few practices in the Mid-West to have been
+          awarded the LQ Standard of Excellence – an independent verification
+          of the standard of care we give to all our clients.
+
+          Our clients return time and time again when they need legal advice
+          and most importantly, they are happy to refer family and friends
+          to the office.
+        </p>
+
+      </div>
+
+      <button
+        class="
+          bg-[#0B838E]
+          text-white
+          rounded-full
+          px-[22px]
+          py-[14px]
+          font-bold
+          text-[14px]
+          leading-[140%]
+          tracking-[-0.025em]
+          hover:bg-[#086c74]
+          transition-all
+          duration-300
+        "
+      >
+        Meet the Team
+      </button>
+
+    </div>
+
+    <!-- IMAGE -->
+    <div
+      class="
+        relative
+        w-full
+        lg:w-[590px]
+        h-[320px]
+        sm:h-[520px]
+        lg:h-[711px]
+        rounded-[30px]
+        overflow-hidden
+        shrink-0
+      "
+    >
+
+      <img
+        src={martina2.src}
+        alt="Martina Murphy"
+        class="w-full h-full object-cover object-top"
+      />
+
+      <div class="absolute inset-0 bg-black/10"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- LATEST UPDATES -->
+    <section class="w-full px-4 sm:px-6 lg:px-10 pb-20 lg:pb-28">
+
+      <div class="max-w-[1200px] mx-auto">
+
+        <div
+          class="
+            w-full
+            bg-[#0B838E]
+            border-t
+            border-[#929292]
+            rounded-[20px]
+            flex
+            flex-col
+            items-center
+            px-4
+            sm:px-20
+            lg:px-[240px]
+            py-20
+          "
+        >
+
+          <div
+            class="
+              w-full
+              max-w-[720px]
+              flex
+              flex-col
+              items-center
+              gap-[30px]
+              sm:gap-10
+              text-center
+            "
+          >
+
+            <h2
+              class="
+                font-crimson
+                font-normal
+                text-white
+                text-[50px]
+                sm:text-[54px]
+                lg:text-[60px]
+                leading-[90%]
+                tracking-[-0.03em]
+              "
+            >
+              Our Latest Updates
+            </h2>
+
+            <p
+              class="
+                font-dm
+                font-normal
+                text-white
+                text-[20px]
+                lg:text-[21px]
+                leading-[140%]
+                tracking-[-0.005em]
+              "
+            >
+              This article gives some brief pointers on practical steps you can
+              take if you are in an accident. What to do if you have been in a road traffic accident Check that everyone involved in the accident is ok Call the guards Call an ambulance, if required Exchange...
+            </p>
+
+            <button
+              class="
+                border-2
+                border-white
+                text-white
+                rounded-full
+                px-[22px]
+                py-[14px]
+                text-[14px]
+                font-bold
+                leading-[140%]
+                tracking-[-0.025em]
+                hover:bg-white
+                hover:text-[#0B838E]
+                transition-all
+                duration-300
+              "
+            >
+              Discover More
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="reveal w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+
+  <div
+    class="
+      w-full
+      flex
+      flex-col
+      lg:flex-row
+      items-start
+      gap-10
+      lg:gap-5
+    "
+  >
+
+    <!-- IMAGE -->
+    <div
+      class="
+        w-full
+        lg:w-1/2
+        h-[240px]
+        sm:h-[520px]
+        lg:h-[669px]
+        rounded-[30px]
+        overflow-hidden
+      "
+    >
+      <img
+        src={testimonialImage.src}
+        alt="Testimonial"
+        class="w-full h-full object-cover object-top"
+      />
+    </div>
+
+    <!-- CONTENT -->
+    <div
+      class="
+        flex-1
+        flex
+        flex-col
+        justify-center
+        gap-8
+        sm:gap-[50px]
+
+        px-0
+        lg:pl-[50px]
+
+        pt-8
+        lg:pt-0
+      "
+    >
+
+      <h2
+        class="
+          font-crimson
+          font-normal
+          text-[20px]
+          sm:text-[28px]
+          lg:text-[40px]
+          leading-[120%]
+          sm:leading-[110%]
+          tracking-[-0.04em]
+          text-black
+        "
+      >
+        “Martina Murphy Solicitors handled my estate planning with such care
+        and professionalism. They listened to my concerns and made the
+        process clear and straightforward. I now have complete peace of mind knowing my family's future is secure.”
+      </h2>
+
+      <div class="flex flex-col gap-1 sm:gap-2">
+
+        <p
+          class="
+            font-dm
+            text-[16px]
+            sm:text-[18px]
+            lg:text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]
+            text-black
+          "
+        >
+          Dave Luca
+        </p>
+
+        <span
+          class="
+            font-dm
+            text-[10px]
+            sm:text-[11px]
+            tracking-[-0.01em]
+            text-[#8E9C78]
+          "
+        >
+          Business Owner
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+    <!-- CONTACT STEPS -->
+    <section class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-24">
+
+  <div class="reveal w-full flex flex-col gap-14 lg:gap-20">
+
+    <!-- TOP -->
+    <div
+      class="
+        flex
+        flex-col
+        sm:flex-row
+        sm:items-center
+        justify-between
+        gap-8
+        sm:gap-10
+      "
+    >
+
+      <h2
+        class="
+          font-crimson
+          font-normal
+          text-[34px]
+          sm:text-[44px]
+          lg:text-[60px]
+          leading-[95%]
+          tracking-[-0.03em]
+          text-black
+        "
+      >
+        Let’s Discuss
+      </h2>
+
+      <button
+        class="
+          bg-[#0B838E]
+          text-white
+          rounded-full
+          px-[22px]
+          py-[14px]
+          text-[14px]
+          font-bold
+          tracking-[-0.025em]
+          hover:bg-[#086c74]
+          transition-all
+          duration-300
+          w-fit
+        "
+      >
+        Schedule a Consult
+      </button>
+
+    </div>
+
+    <!-- CARDS -->
+    <div
+      class="
+        grid
+        grid-cols-1
+        md:grid-cols-3
+        lg:grid-cols-3
+        gap-8
+        lg:gap-8
+      "
+    >
+
+      {contactSteps.map((step) => (
+        <div
+          class="
+            flex
+            flex-col
+            gap-10
+            sm:gap-[60px]
+            border-t
+            border-black
+            pt-10
+            sm:pt-[60px]
+            pr-4
+          "
+        >
+
+          <span
+            class="
+              font-dm
+              text-[44px]
+              sm:text-[56px]
+              lg:text-[80px]
+              leading-none
+              tracking-[-0.04em]
+              text-[#0B838E]
+            "
+          >
+            {step.number}
+          </span>
+
+          <div class="flex flex-col gap-4 sm:gap-5">
+
+            <h3
+              class="
+                font-dm
+                text-[18px]
+                sm:text-[20px]
+                lg:text-[21px]
+                leading-[140%]
+                tracking-[-0.005em]
+                text-black
+              "
+            >
+              {step.title}
+            </h3>
+
+            <p
+              class="
+                font-dm
+                text-[16px]
+                sm:text-[18px]
+                lg:text-[20px]
+                leading-[140%]
+                tracking-[-0.005em]
+                text-[#6F6F6F]
+              "
+            >
+              {step.description}
+            </p>
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- FINAL HERO -->
+   <section class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10 pb-10">
+
+  <div
+    class="
+      w-full
+      h-[260px]
+      sm:h-[420px]
+      lg:h-[664px]
+      rounded-[30px]
+      overflow-hidden
+    "
+  >
+
+    <img
+      src={finalHeroImage.src}
+      alt="Senior Couple"
+      class="w-full h-full object-cover"
+    />
+
+  </div>
+
+</section>
+
+    <!-- FINAL CTA -->
+    <section class="w-full px-4 sm:px-6 lg:px-10 py-20 lg:py-[120px]">
+
+      <div
+        class="
+          max-w-[1200px]
+          mx-auto
+          flex
+          flex-col
+          items-center
+          text-center
+          gap-10
+        "
+      >
+
+        <h2
+          class="
+            font-crimson
+            font-normal
+            text-[50px]
+            sm:text-[54px]
+            lg:text-[60px]
+            leading-[90%]
+            tracking-[-0.03em]
+            text-black
+            max-w-[600px]
+          "
+        >
+          Discover how we can help
+        </h2>
+
+        <p
+          class="
+            font-dm
+            text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]
+            text-[#6F6F6F]
+            max-w-[600px]
+          "
+        >
+          Contacting us couldn’t be easier
+        </p>
+
+        <button
+          class="
+            w-full
+            max-w-[600px]
+            bg-[#0B838E]
+            text-white
+            rounded-full
+            px-[22px]
+            py-[14px]
+            flex
+            items-center
+            justify-center
+            gap-2
+            text-[14px]
+            font-bold
+            tracking-[-0.025em]
+            hover:bg-[#086c74]
+            transition-all
+            duration-300
+          "
+        >
+          Contact Us 
+          
+        </button>
+
+      </div>
+
+    </section>
+
+  </section>
+</MainLayout>

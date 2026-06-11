@@ -1,0 +1,39 @@
+---
+const { title, author, date,image } = Astro.props;
+
+
+const formattedDate = new Date(date).toLocaleDateString("en-IE", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+---
+
+<section class="w-full flex justify-center px-4 md:px-6">
+  <div class="w-full max-w-[1500px] flex flex-col items-center justify-center pt-12 pb-8 xl:px-[240px] xl:py-[80px] gap-8">
+
+    <p class="font-dm-sans text-[21px] text-black/45">
+      {formattedDate}
+    </p>
+
+    <div class="flex flex-col items-center gap-6 w-full max-w-[800px]">
+
+      <h1 class="font-dm-sans text-center text-black tracking-[-0.04em] leading-[100%] text-[50px] md:text-[80px]">
+        {title}
+      </h1>
+
+      <p class="font-dm-sans text-[21px] text-black/45">
+        {author}
+      </p>
+
+    </div>
+   {image && (
+  <img
+    src={image.startsWith("/") ? image : `/${image}`}
+    alt={title}
+    class="w-full max-w-[900px] rounded-2xl object-cover mt-6 shadow-lg"
+  />
+)}
+
+  </div>
+</section>

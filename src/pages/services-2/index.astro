@@ -1,0 +1,387 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+import serviceImg1 from "@/assets/Service1.png";
+import martinaImg from "@/assets/martina-2.png";
+import serviceImg2 from "@/assets/Service2.png";
+
+const services = [
+  {
+    title: "Family Law",
+    description:
+      "With over 100 years of combined experience, we have built our reputation on achieving successful outcomes for our clients in a professional, transparent and kind manner.",
+  },
+  {
+    title: "Personal Injury",
+    description:
+      "Our experienced legal team provides clear guidance and strong representation to help you achieve the best possible outcome.",
+  },
+  {
+    title: "Employment Law",
+    description:
+      "We support both employees and employers with practical advice, negotiation and dispute resolution services.",
+  },
+  {
+    title: "Property Law",
+    description:
+      "Whether buying, selling or leasing property, we ensure a smooth and stress-free legal process.",
+  },
+  {
+    title: "Litigation",
+    description:
+      "Our solicitors have extensive experience handling complex disputes across a wide range of legal matters.",
+  },
+  {
+    title: "Wills & Probate",
+    description:
+      "We help families plan ahead with compassionate and professional legal support for wills and probate matters.",
+  },
+];
+
+const discussSteps = [
+  {
+    number: "01",
+    title: "Free Consultation",
+    description:
+      "Schedule a complimentary consultation to discuss your legal needs. During this session, our experienced attorneys will assess your situation, provide initial guidance, and outline potential strategies.",
+  },
+  {
+    number: "02",
+    title: "Personalized Case Evaluation",
+    description:
+      "If you choose to move forward, we conduct a detailed review of your case. This includes gathering key documents, outlining your legal options, and developing a tailored plan designed to achieve the best possible outcome.",
+  },
+  {
+    number: "03",
+    title: "Formal Engagement & Representation",
+    description:
+      "Once you decide to proceed, we finalize the paperwork and begin representing you. Our team will keep you informed at every stage, ensuring you feel confident and supported throughout the process.",
+  },
+];
+---
+
+<MainLayout title="Services 2">
+  <main class="w-full max-w-[1250px] mx-auto min-h-screen bg-white">
+
+    <!-- PAGE WRAPPER -->
+    <div class="w-full px-4 sm:px-6 lg:px-10 py-4 sm:py-6">
+
+      <!-- HERO SECTION -->
+      <section
+  class="relative w-full mx-auto
+         h-[400px] sm:h-[550px] lg:h-[750px]
+         rounded-[20px] sm:rounded-[30px]
+         overflow-hidden
+         flex flex-col justify-end items-start
+         px-5 sm:px-[50px]
+         pb-8 sm:pb-[70px]"
+>
+  <img
+    src={serviceImg1.src}
+    alt="Services"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div class="absolute inset-0 bg-black/30"></div>
+
+  <div class="relative z-10 flex flex-col gap-3 w-full">
+    <h1
+      class="font-dm font-normal text-white
+             text-[40px] sm:text-[64px] lg:text-[80px]
+             leading-[100%] tracking-[-0.04em]"
+    >
+      Services
+    </h1>
+
+    <p
+      class="font-crimson font-normal text-white
+             text-[18px] sm:text-[28px] lg:text-[40px]
+             leading-[110%] tracking-[-0.04em]
+             max-w-[1100px]"
+    >
+      At Martina Murphy Solicitors, we are committed to exceptional
+      service and successful outcomes with:
+    </p>
+  </div>
+</section>
+
+      <!-- STATS SECTION -->
+      <section class="w-full  mx-auto flex flex-col md:flex-row gap-6 py-[80px]">
+
+        <!-- STAT 1 -->
+        <div class="flex flex-col gap-10 md:border-r border-black pr-4 flex-1">
+          <h2 class="font-crimson text-[#0B838E] text-[64px] sm:text-[120px] leading-[95%]">
+            100+
+          </h2>
+
+          <p class="font-dm text-black text-[18px] sm:text-[21px] leading-[140%]">
+            years of combined experience. Our partners have successfully
+            negotiated and resolved complex disputes across all areas of Irish
+            law.
+          </p>
+        </div>
+
+        <!-- STAT 2 -->
+        <div class="flex flex-col gap-10 md:border-r border-black pr-4 flex-1">
+          <h2 class="font-crimson text-[#0B838E] text-[64px] sm:text-[120px] leading-[95%]">
+            LQ
+          </h2>
+
+          <p class="font-dm text-black text-[18px] sm:text-[21px] leading-[140%]">
+            We are proud to hold the LQ Standard of Excellence - an independent
+            verification that we treat every single client with respect,
+            transparency, and genuine care.
+          </p>
+        </div>
+
+        <!-- STAT 3 -->
+        <div class="flex flex-col gap-10 flex-1">
+          <h2 class="font-crimson text-[#0B838E] text-[64px] sm:text-[120px] leading-[95%]">
+            200+
+          </h2>
+
+          <p class="font-dm text-black text-[18px] sm:text-[21px] leading-[140%]">
+            different clients have sought our expertise. We will give you a
+            candid, realistic assessment of your case from day one.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section
+        class="w-full  mx-auto py-[50px] sm:py-[80px]"
+      >
+        <div
+          class="flex flex-col-reverse lg:flex-row gap-[40px] lg:gap-[20px] items-start"
+        >
+
+          <!-- IMAGE -->
+          <div class="w-full lg:w-1/2">
+            <div
+              class="relative w-full h-[385px] sm:h-[560px] lg:h-[559px] rounded-[30px] overflow-hidden"
+            >
+              <img
+                src={martinaImg.src}
+                alt="Martina Murphy"
+                class="w-full h-full object-cover"
+              />
+
+              <div class="absolute inset-0 bg-black/5"></div>
+            </div>
+          </div>
+
+          <!-- CONTENT -->
+          <div
+            class="w-full lg:w-1/2 flex flex-col justify-center px-0 lg:pl-[20px]"
+          >
+
+            <div class="flex flex-col gap-[40px] max-w-[530px]">
+
+              <h2
+                class="font-crimson font-normal text-black text-[50px] sm:text-[54px] lg:text-[60px] leading-[90%] tracking-[-0.03em]"
+              >
+                Hello, I’m Martina
+              </h2>
+
+              <p
+                class="font-dm font-normal text-[#6F6F6F] text-[21px] leading-[140%] tracking-[-0.005em]"
+              >
+                And I own Martina Murphy Solicitors, I’m here along with my
+                partners to fully support you in whatever it is that you need.
+                I guarantee that you will feel comfortable, welcome and
+                respected.
+              </p>
+
+              <p
+                class="font-dm font-normal text-[#6F6F6F] text-[21px] leading-[140%] tracking-[-0.005em]"
+              >
+                We are one of the few practices in the Mid-West to have been
+                awarded the LQ Standard of Excellence – an independent
+                verification of the standard of care we give to all our clients.
+              </p>
+
+              <p
+                class="font-dm font-normal text-[#6F6F6F] text-[21px] leading-[140%] tracking-[-0.005em]"
+              >
+                Our clients return time and time again when they need legal
+                advice and most importantly, they are happy to refer family and
+                friends to the office.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SERVICES ACCORDION SECTION -->
+      <section
+        class="w-full  mx-auto pb-[80px] flex flex-col gap-[55px] sm:gap-[60px]"
+      >
+
+        <!-- TITLE -->
+        <div class="max-w-[800px]">
+          <h2
+            class="font-crimson font-normal text-black text-[50px] sm:text-[54px] lg:text-[60px] leading-[95%] lg:leading-[90%] tracking-[-0.03em]"
+          >
+            What can we help you with?
+          </h2>
+        </div>
+
+        <!-- ACCORDION WRAPPER -->
+        <div class="flex flex-col gap-5 w-full">
+
+          {
+            services.map((service) => (
+              <details
+                class="group w-full bg-[#0B838E] rounded-[20px] overflow-hidden transition-all duration-300"
+              >
+
+                <!-- SUMMARY -->
+                <summary
+                  class="list-none cursor-pointer flex items-start justify-between gap-5 px-[24px] sm:px-[40px] py-[28px] sm:py-[40px]"
+                >
+
+                  <!-- TITLE -->
+                  <h3
+                    class="font-dm font-medium text-white text-[30px] sm:text-[35px] leading-[100%] tracking-[-0.04em] flex-1 max-w-[90%]"
+                  >
+                    {service.title}
+                  </h3>
+
+                  <!-- ICON -->
+                  <div
+                    class="min-w-[48px] w-[48px] h-[48px] rounded-full bg-[#F3F5F6] flex items-center justify-center transition-transform duration-300 group-open:rotate-45"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M6 0H8V6H14V8H8V14H6V8H0V6H6V0Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+
+                </summary>
+
+                <!-- CONTENT -->
+                <div
+                  class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="px-[24px] sm:px-[40px] pb-[28px] sm:pb-[40px] max-w-[865px] font-dm font-normal text-white/90 text-[19px] sm:text-[21px] leading-[140%] tracking-[-0.005em]"
+                    >
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+
+              </details>
+            ))
+          }
+
+        </div>
+
+      </section>
+
+      <!-- LET'S DISCUSS SECTION -->
+      <section
+        class="w-full  mx-auto py-[40px] sm:py-[80px] flex flex-col gap-[60px] sm:gap-[80px]"
+      >
+
+        <!-- TOP -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-10 sm:gap-[80px]"
+        >
+
+          <h2
+            class="font-crimson font-normal text-black text-[50px] sm:text-[54px] lg:text-[60px] leading-[95%] lg:leading-[90%] tracking-[-0.03em]"
+          >
+            Let’s Discuss
+          </h2>
+
+          <a
+            href="#"
+            class="w-fit inline-flex items-center justify-center px-[22px] py-[14px] rounded-full bg-[#0B838E] font-dm font-bold text-white text-[14px] leading-[140%] tracking-[-0.025em] transition-all duration-300 hover:bg-[#096d75]"
+          >
+            Learn More
+          </a>
+
+        </div>
+
+        <!-- CARDS -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-5"
+        >
+
+          {
+            discussSteps.map((step) => (
+              <div
+                class="border-t border-black pt-[40px] sm:pt-[60px] pr-0 sm:pr-[30px] pb-[20px] flex flex-col gap-[50px] sm:gap-[60px]"
+              >
+
+                <!-- NUMBER -->
+                <span
+                  class="font-dm font-normal text-[#0B838E] text-[64px] sm:text-[80px] leading-[100%] tracking-[-0.04em]"
+                >
+                  {step.number}
+                </span>
+
+                <!-- CONTENT -->
+                <div class="flex flex-col gap-5">
+
+                  <h3
+                    class="font-dm font-normal text-black text-[24px] sm:text-[21px] leading-[140%] tracking-[-0.005em]"
+                  >
+                    {step.title}
+                  </h3>
+
+                  <p
+                    class="font-dm font-normal text-[#6F6F6F] text-[18px] sm:text-[21px] leading-[140%] tracking-[-0.005em]"
+                  >
+                    {step.description}
+                  </p>
+
+                </div>
+
+              </div>
+            ))
+          }
+
+        </div>
+
+      </section>
+
+      <!-- IMAGE DIVIDER SECTION -->
+      <section
+        class="w-full  mx-auto pb-[40px] sm:pb-[80px]"
+      >
+
+        <div
+          class="relative w-full h-[280px] sm:h-[480px] lg:h-[625px] overflow-hidden rounded-[20px]"
+        >
+
+          <img
+            src={serviceImg2.src}
+            alt="Office Interior"
+            class="w-full h-full object-cover"
+          />
+
+          <div class="absolute inset-0 bg-black/10"></div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+</MainLayout>

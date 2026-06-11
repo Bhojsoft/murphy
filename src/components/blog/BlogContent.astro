@@ -1,0 +1,77 @@
+---
+const { content } = Astro.props;
+---
+
+<section class="w-full flex justify-center px-4 md:px-6">
+  <div
+    class="blog-body
+           w-full
+           max-w-[1060px]
+           mx-auto
+           py-20"
+    set:html={content}
+  />
+</section>
+
+<style is:global>
+.blog-body h1 {
+  font-family: "Crimson Text", serif;
+  font-size: 60px;
+  line-height: 90%;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.blog-body h2 {
+  font-family: "Crimson Text", serif;
+  font-size: 48px;
+  line-height: 100%;
+  margin-top: 70px;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.blog-body h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.blog-body p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 21px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.blog-body ul {
+  padding-left: 30px;
+  margin-bottom: 24px;
+}
+
+.blog-body li {
+  font-family: "DM Sans", sans-serif;
+  font-size: 21px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.blog-body strong {
+  font-weight: 700;
+}
+
+.blog-body blockquote {
+  border-left: 4px solid #0B838E;
+  padding-left: 20px;
+  margin: 30px 0;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.blog-body hr {
+  margin: 50px 0;
+}
+</style>

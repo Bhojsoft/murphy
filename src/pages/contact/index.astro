@@ -1,0 +1,530 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+import contactImg from "@/assets/contact.png";
+
+import { Icon } from "astro-icon/components";
+---
+
+<MainLayout title="Contact">
+
+  <section class="w-full min-h-screen bg-white">
+
+    <div
+      class="
+      max-w-[1250px]
+      max-w-[1250px] mx-auto px-4 
+        w-full
+        flex
+        flex-col
+        gap-20
+        lg:gap-24
+        px-4
+        sm:px-6
+        lg:px-10
+        py-20
+      "
+    >
+
+      <!-- HERO -->
+      <section
+  class="
+    relative
+    w-full
+    mt-6
+
+    h-[420px] sm:h-[600px] lg:h-[750px]
+
+    rounded-[30px]
+    overflow-hidden
+
+    flex
+    flex-col
+    justify-end
+    items-start
+
+    px-[20px] sm:px-[50px]
+
+    pb-[50px] sm:pb-[70px]
+  "
+>
+  <!-- BACKGROUND IMAGE -->
+  <img
+    src={contactImg.src}
+    alt="Contact"
+    class="
+      absolute
+      inset-0
+      w-full
+      h-full
+      object-cover
+      object-center
+    "
+  />
+
+  <!-- HEADING -->
+  <h1
+    class="
+      relative
+      z-10
+
+      font-dm
+      font-normal
+      text-white
+
+      text-[34px] sm:text-[60px] lg:text-[80px]
+      leading-[100%]
+      tracking-[-0.04em]
+
+      max-w-[90%] sm:max-w-[620px] lg:max-w-[1100px]
+    "
+  >
+    Let us help you
+  </h1>
+</section>
+
+      <!-- CONTACT OPTIONS -->
+      <section
+        class="
+          
+          mx-auto
+          w-full
+          flex
+          flex-col
+          gap-10
+          border-b
+          border-black
+          pb-20
+        "
+      >
+
+        <div class="flex items-center lg:pl-[52px]">
+
+          <h2
+            class="
+              font-geist
+              font-normal
+              text-[22px]
+              sm:text-[32px]
+              leading-[109%]
+              tracking-[-0.05em]
+              text-black
+            "
+          >
+            Contacting us could not be easier
+          </h2>
+
+        </div>
+
+        <div
+          class="
+            grid
+            grid-cols-1
+            md:grid-cols-3
+            border-y
+            border-black
+            py-[50px]
+          "
+        >
+
+          <!-- EMAIL -->
+          <div
+            class="
+              flex
+              flex-col
+              items-center
+              justify-center
+              gap-14
+              px-6
+              py-10
+              text-center
+            "
+          >
+
+            <div
+              class="
+                w-[105px]
+                h-[105px]
+                rounded-full
+                border-[7px]
+                border-[#0B838E]
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <Icon
+                name="lucide:mail"
+                class="w-12 h-12 text-[#0B838E]"
+              />
+            </div>
+
+            <a
+              href="mailto:info@martinamurphy.ie"
+              class="
+               border-[3px]
+                border-[#0B838E]
+                text-[#0B838E]
+                rounded-full
+                px-8
+                py-[18px]
+                text-[18px]
+                leading-[120%]
+                tracking-[-0.02em]
+                font-geist
+                hover:bg-[#0B838E]
+                hover:text-white
+                transition-all
+                duration-300
+              "
+            >
+              Email Us
+            </a>
+
+          </div>
+
+          <!-- CALL -->
+          <div
+            class="
+              flex
+              flex-col
+              items-center
+              justify-center
+              gap-14
+              px-6
+              py-10
+              text-center
+            "
+          >
+
+            <div
+              class="
+                w-[105px]
+                h-[105px]
+                rounded-full
+                border-[7px]
+                border-[#0B838E]
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <Icon
+                name="lucide:phone"
+                class="w-12 h-12 text-[#0B838E]"
+              />
+            </div>
+
+            <a
+              href="tel:+35361303311"
+              class="
+                border-[3px]
+                border-[#0B838E]
+                text-[#0B838E]
+                rounded-full
+                px-8
+                py-[18px]
+                text-[18px]
+                leading-[120%]
+                tracking-[-0.02em]
+                font-geist
+                hover:bg-[#0B838E]
+                hover:text-white
+                transition-all
+                duration-300
+              "
+            >
+              Call Us
+            </a>
+
+          </div>
+
+          <!-- CHAT -->
+          <div
+            class="
+              flex
+              flex-col
+              items-center
+              justify-center
+              gap-14
+              px-6
+              py-10
+              text-center
+            "
+          >
+
+            <div
+              class="
+                w-[105px]
+                h-[105px]
+                rounded-full
+                border-[7px]
+                border-[#0B838E]
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <Icon
+                name="lucide:message-circle"
+                class="w-12 h-12 text-[#0B838E]"
+              />
+            </div>
+
+            <button
+              class="
+                border-[3px]
+                border-[#0B838E]
+                text-[#0B838E]
+                rounded-full
+                px-8
+                py-[18px]
+                text-[18px]
+                leading-[120%]
+                tracking-[-0.02em]
+                font-geist
+                hover:bg-[#0B838E]
+                hover:text-white
+                transition-all
+                duration-300
+              "
+            >
+              Start Chat
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- OFFICES -->
+      <!-- OFFICES -->
+<section
+  class="
+    
+    mx-auto
+    w-full
+    bg-[#0B838E]
+    rounded-[20px]
+
+    h-auto
+    lg:h-[486px]
+    md:h-[285px]
+
+    px-[28px]
+    md:px-[64px]
+    lg:px-[160px]
+
+    py-[48px]
+    md:pt-[51px]
+    md:pb-0
+    lg:pt-[96px]
+    lg:pb-0
+  "
+>
+
+  <div
+    class="
+      w-full
+      h-full
+
+      flex
+      flex-col
+      md:flex-row
+
+      justify-center
+      items-center
+
+      gap-[64px]
+      md:gap-[120px]
+      lg:gap-[300px]
+    "
+  >
+
+    <!-- DUBLIN -->
+    <div
+      class="
+        flex
+        flex-col
+        items-center
+
+        gap-[24px]
+        md:gap-[28px]
+        lg:gap-[56px]
+
+        text-center
+      "
+    >
+
+      <h2
+        class="
+        reveal
+          font-dm
+          font-normal
+          text-white
+
+          text-[64px]
+          md:text-[80px]
+
+          leading-[100%]
+          tracking-[-0.04em]
+        "
+      >
+        Map
+      </h2>
+
+      <!-- <p
+        class="
+          font-geist
+          text-white
+
+          text-[18px]
+          leading-[140%]
+
+          max-w-[161px]
+          md:max-w-[213px]
+        "
+      >
+        24 Fitzwilliam Square,
+        Dublin, Ireland
+      </p> -->
+
+    </div>
+
+    <!-- LIMERICK -->
+    <div
+      class="
+        flex
+        flex-col
+        items-center
+
+        gap-[24px]
+        md:gap-[28px]
+        lg:gap-[56px]
+
+        text-center
+      "
+    >
+
+      <h2
+        class="
+        reveal
+          font-dm
+          font-normal
+          text-white
+
+          text-[64px]
+          md:text-[80px]
+
+          leading-[100%]
+          tracking-[-0.04em]
+        "
+      >
+        Map
+      </h2>
+
+      <!-- <p
+        class="
+          font-geist
+          text-white
+
+          text-[18px]
+          leading-[140%]
+
+          max-w-[178px]
+          md:max-w-[254px]
+        "
+      >
+        Unit 7 Crescent Court,
+        Dooradoyle, Limerick
+      </p> -->
+
+    </div>
+
+  </div>
+
+</section>
+
+      <!-- FINAL CTA -->
+      <section
+        class="
+          
+          mx-auto
+          w-full
+          flex
+          flex-col
+          items-center
+          text-center
+          gap-10
+          py-20
+          lg:py-[120px]
+        "
+      >
+
+        <h2
+          class="
+            font-crimson
+            font-normal
+            text-[50px]
+            sm:text-[60px]
+            leading-[90%]
+            tracking-[-0.03em]
+            text-black
+            max-w-[600px]
+          "
+        >
+          Discover how we can help
+        </h2>
+
+        <p
+          class="
+            font-dm
+            text-[21px]
+            leading-[140%]
+            tracking-[-0.005em]
+            text-[#6F6F6F]
+            max-w-[600px]
+          "
+        >
+          Contacting us couldn’t be easier
+        </p>
+
+        <a
+          href="/contact"
+          class="
+            w-full
+            max-w-[600px]
+            bg-[#0B838E]
+            text-white
+            rounded-full
+            px-[22px]
+            py-[14px]
+            flex
+            items-center
+            justify-center
+            gap-2
+            text-[14px]
+            font-bold
+            tracking-[-0.025em]
+            hover:bg-[#086c74]
+            transition-all
+            duration-300
+          "
+        >
+          Get in Touch
+
+          <Icon
+            name="lucide:arrow-up-right"
+            class="w-4 h-4"
+          />
+
+        </a>
+
+      </section>
+
+    </div>
+
+  </section>
+
+</MainLayout>
