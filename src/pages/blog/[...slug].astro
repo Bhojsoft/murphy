@@ -1,49 +1,47 @@
 ---
-import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import BlogPostLayout from "@/layouts/BlogPostLayout.astro";
 
-// GET ALL SLUGS (SAFE VERSION)
 export function getStaticPaths() {
-  const postsDir = path.join(
-    process.cwd(),
-    "hugo-blog",
-    "content",
-    "posts"
+  const postFiles = import.meta.glob(
+    "/hugo-blog/content/posts/*.md",
+    {
+      query: "?raw",
+      import: "default",
+      eager: true,
+    }
   );
 
-  const files = fs.readdirSync(postsDir);
-
-  return files.map((file) => ({
+  return Object.keys(postFiles).map((filePath) => ({
     params: {
-      slug: file.replace(".md", "")
-    }
+      slug: filePath.split("/").pop()?.replace(".md", ""),
+    },
   }));
 }
 
-// slug
-const slug = Array.isArray(Astro.params.slug)
-  ? Astro.params.slug.join("/")
-  : Astro.params.slug;
-
-// SAME PATH (SAFE: REDEFINED HERE TOO)
-const postsDir = path.join(
-  process.cwd(),
-  "hugo-blog",
-  "content",
-  "posts"
+const postFiles = import.meta.glob(
+  "/hugo-blog/content/posts/*.md",
+  {
+    query: "?raw",
+    import: "default",
+    eager: true,
+  }
 );
 
-const markdownPath = path.join(postsDir, `${slug}.md`);
+const slug = Astro.params.slug;
 
-if (!fs.existsSync(markdownPath)) {
-  throw new Error(`Markdown not found: ${markdownPath}`);
+const filePath = Object.keys(postFiles).find(
+  (p) => p.endsWith(`/${slug}.md`)
+);
+
+if (!filePath) {
+  throw new Error(`Post not found: ${slug}`);
 }
 
-const fileContent = fs.readFileSync(markdownPath, "utf8");
-const { data, content } = matter(fileContent);
+const rawMarkdown = postFiles[filePath] as string;
+
+const { data, content } = matter(rawMarkdown);
 
 const post = {
   title: data.title || "",
@@ -51,7 +49,7 @@ const post = {
   date: data.date || "",
   author: data.author || "",
   image: data.image || "",
-  content: marked(content)
+  content: marked(content),
 };
 ---
 
