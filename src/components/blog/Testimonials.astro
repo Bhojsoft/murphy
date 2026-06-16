@@ -1,0 +1,151 @@
+---
+const testimonials = [
+  {
+    title: "Extremely happy",
+    text: "Antoinette and Martina handled a very complex employment case for me. I was extremely happy with the results and the way my case was handled. The girls in reception were also brilliant."
+  },
+  {
+    title: "Highly Recommended",
+    text: "The team provided exceptional support throughout the entire process. Communication was excellent and the outcome exceeded my expectations."
+  }
+];
+---
+
+<section class="testimonial-section">
+  <div class="container">
+    <h2>Testimonials</h2>
+
+    <div class="slider">
+      <button class="nav prev">&#10094;</button>
+
+      <div class="testimonial-content">
+        {testimonials.map((item, index) => (
+          <div
+            class={`testimonial ${index === 0 ? "active" : ""}`}
+            data-index={index}
+          >
+            <h3>"{item.title}"</h3>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </div>
+
+      <button class="nav next">&#10095;</button>
+    </div>
+
+    <div class="dots">
+      {testimonials.map((_, index) => (
+        <span
+          class={`dot ${index === 0 ? "active" : ""}`}
+          data-index={index}
+        ></span>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  let current = 0;
+
+  const testimonials = document.querySelectorAll(".testimonial");
+  const dots = document.querySelectorAll(".dot");
+
+  function showSlide(index) {
+    testimonials.forEach((item) => item.classList.remove("active"));
+    dots.forEach((item) => item.classList.remove("active"));
+
+    testimonials[index].classList.add("active");
+    dots[index].classList.add("active");
+
+    current = index;
+  }
+
+  document.querySelector(".next")?.addEventListener("click", () => {
+    showSlide((current + 1) % testimonials.length);
+  });
+
+  document.querySelector(".prev")?.addEventListener("click", () => {
+    showSlide((current - 1 + testimonials.length) % testimonials.length);
+  });
+
+  setInterval(() => {
+    showSlide((current + 1) % testimonials.length);
+  }, 4500);
+</script>
+
+<style>
+  .testimonial-section {
+    padding: 80px 20px;
+    background: #f4f4f4;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .testimonial-content {
+    flex: 1;
+    min-height: 180px;
+    position: relative;
+  }
+
+  .testimonial {
+    display: none;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .testimonial.active {
+    display: block;
+  }
+
+  .testimonial h3 {
+    color: #0d4a6a;
+    margin-bottom: 20px;
+  }
+
+  .testimonial p {
+    color: #0d4a6a;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .nav {
+    border: none;
+    background: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: #0d4a6a;
+    padding: 20px;
+  }
+
+  .dots {
+    margin-top: 40px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #b0b0b0;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .dot.active {
+    background: #0d4a6a;
+  }
+</style>

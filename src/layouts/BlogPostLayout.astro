@@ -4,10 +4,11 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import BlogHeader from "@/components/blog/BlogHeader.astro";
 import BlogHero from "@/components/blog/BlogHero.astro";
 import BlogContent from "@/components/blog/BlogContent.astro";
-import BlogStats from "@/components/blog/BlogStats.astro";
-import RelatedBlogs from "@/components/blog/RelatedBlogs.astro";
-import MartinaSection from "@/components/blog/MartinaSection.astro";
-import LetsDiscuss from "@/components/blog/LetsDiscuss.astro";
+// import BlogStats from "@/components/blog/BlogStats.astro";
+// import RelatedBlogs from "@/components/blog/RelatedBlogs.astro";
+// import MartinaSection from "@/components/blog/MartinaSection.astro";
+// import LetsDiscuss from "@/components/blog/LetsDiscuss.astro";
+
 
 interface RelatedPost {
   title: string;
@@ -42,6 +43,6 @@ const {
 
   <BlogContent content={content} />
   
-
+  <slot />
   
 </MainLayout>

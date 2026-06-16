@@ -7,13 +7,10 @@ import { Icon } from "astro-icon/components";
 ---
 
 <MainLayout title="Contact">
-
   <section class="w-full min-h-screen bg-white">
-
     <div
-      class="
-      max-w-[1250px]
-      max-w-[1250px] mx-auto px-4 
+      class="max-w-[1250px]
+      max-w-[1250px] mx-auto px-4
         w-full
         flex
         flex-col
@@ -22,147 +19,111 @@ import { Icon } from "astro-icon/components";
         px-4
         sm:px-6
         lg:px-10
-        py-20
-      "
+        py-20"
     >
-
       <!-- HERO -->
       <section
-  class="
-    relative
+        class="relative
     w-full
     mt-6
-
     h-[420px] sm:h-[600px] lg:h-[750px]
-
     rounded-[30px]
     overflow-hidden
-
     flex
     flex-col
     justify-end
     items-start
-
     px-[20px] sm:px-[50px]
-
-    pb-[50px] sm:pb-[70px]
-  "
->
-  <!-- BACKGROUND IMAGE -->
-  <img
-    src={contactImg.src}
-    alt="Contact"
-    class="
-      absolute
+    pb-[50px] sm:pb-[70px]"
+      >
+        <!-- BACKGROUND IMAGE -->
+        <img
+          src={contactImg.src}
+          alt="Contact"
+          class="absolute
       inset-0
       w-full
       h-full
       object-cover
-      object-center
-    "
-  />
+      object-center"
+        />
 
-  <!-- HEADING -->
-  <h1
-    class="
-      relative
+        <!-- HEADING -->
+        <h1
+          class="relative
       z-10
-
       font-dm
       font-normal
       text-white
-
       text-[34px] sm:text-[60px] lg:text-[80px]
       leading-[100%]
       tracking-[-0.04em]
-
-      max-w-[90%] sm:max-w-[620px] lg:max-w-[1100px]
-    "
-  >
-    Let us help you
-  </h1>
-</section>
+      max-w-[90%] sm:max-w-[620px] lg:max-w-[1100px]"
+        >
+          Let us help you
+        </h1>
+      </section>
 
       <!-- CONTACT OPTIONS -->
       <section
-        class="
-          
-          mx-auto
+        class="mx-auto
           w-full
           flex
           flex-col
           gap-10
           border-b
           border-black
-          pb-20
-        "
+          pb-20"
       >
-
         <div class="flex items-center lg:pl-[52px]">
-
           <h2
-            class="
-              font-geist
+            class="font-geist
               font-normal
               text-[22px]
               sm:text-[32px]
               leading-[109%]
               tracking-[-0.05em]
-              text-black
-            "
+              text-black"
           >
             Contacting us could not be easier
           </h2>
-
         </div>
 
         <div
-          class="
-            grid
+          class="grid
             grid-cols-1
             md:grid-cols-3
             border-y
             border-black
-            py-[50px]
-          "
+            py-[50px]"
         >
-
           <!-- EMAIL -->
           <div
-            class="
-              flex
+            class="flex
               flex-col
               items-center
               justify-center
               gap-14
               px-6
               py-10
-              text-center
-            "
+              text-center"
           >
-
             <div
-              class="
-                w-[105px]
+              class="w-[105px]
                 h-[105px]
                 rounded-full
                 border-[7px]
                 border-[#0B838E]
                 flex
                 items-center
-                justify-center
-              "
+                justify-center"
             >
-              <Icon
-                name="lucide:mail"
-                class="w-12 h-12 text-[#0B838E]"
-              />
+              <Icon name="lucide:mail" class="w-12 h-12 text-[#0B838E]" />
             </div>
 
             <a
               href="mailto:info@martinamurphy.ie"
-              class="
-               border-[3px]
+              class="border-[3px]
                 border-[#0B838E]
                 text-[#0B838E]
                 rounded-full
@@ -175,50 +136,39 @@ import { Icon } from "astro-icon/components";
                 hover:bg-[#0B838E]
                 hover:text-white
                 transition-all
-                duration-300
-              "
+                duration-300"
             >
               Email Us
             </a>
-
           </div>
 
           <!-- CALL -->
           <div
-            class="
-              flex
+            class="flex
               flex-col
               items-center
               justify-center
               gap-14
               px-6
               py-10
-              text-center
-            "
+              text-center"
           >
-
             <div
-              class="
-                w-[105px]
+              class="w-[105px]
                 h-[105px]
                 rounded-full
                 border-[7px]
                 border-[#0B838E]
                 flex
                 items-center
-                justify-center
-              "
+                justify-center"
             >
-              <Icon
-                name="lucide:phone"
-                class="w-12 h-12 text-[#0B838E]"
-              />
+              <Icon name="lucide:phone" class="w-12 h-12 text-[#0B838E]" />
             </div>
 
             <a
               href="tel:+35361303311"
-              class="
-                border-[3px]
+              class="border-[3px]
                 border-[#0B838E]
                 text-[#0B838E]
                 rounded-full
@@ -231,39 +181,32 @@ import { Icon } from "astro-icon/components";
                 hover:bg-[#0B838E]
                 hover:text-white
                 transition-all
-                duration-300
-              "
+                duration-300"
             >
               Call Us
             </a>
-
           </div>
 
           <!-- CHAT -->
           <div
-            class="
-              flex
+            class="flex
               flex-col
               items-center
               justify-center
               gap-14
               px-6
               py-10
-              text-center
-            "
+              text-center"
           >
-
             <div
-              class="
-                w-[105px]
+              class="w-[105px]
                 h-[105px]
                 rounded-full
                 border-[7px]
                 border-[#0B838E]
                 flex
                 items-center
-                justify-center
-              "
+                justify-center"
             >
               <Icon
                 name="lucide:message-circle"
@@ -272,8 +215,7 @@ import { Icon } from "astro-icon/components";
             </div>
 
             <button
-              class="
-                border-[3px]
+              class="border-[3px]
                 border-[#0B838E]
                 text-[#0B838E]
                 rounded-full
@@ -286,171 +228,72 @@ import { Icon } from "astro-icon/components";
                 hover:bg-[#0B838E]
                 hover:text-white
                 transition-all
-                duration-300
-              "
+                duration-300"
             >
               Start Chat
             </button>
-
           </div>
-
         </div>
-
       </section>
 
       <!-- OFFICES -->
       <!-- OFFICES -->
-<section
-  class="
-    
-    mx-auto
-    w-full
-    bg-[#0B838E]
-    rounded-[20px]
-
-    h-auto
-    lg:h-[486px]
-    md:h-[285px]
-
-    px-[28px]
-    md:px-[64px]
-    lg:px-[160px]
-
-    py-[48px]
-    md:pt-[51px]
-    md:pb-0
-    lg:pt-[96px]
-    lg:pb-0
-  "
+      <section
+  class="mx-auto
+  w-full
+  bg-[#0B838E]
+  rounded-[20px]
+  px-[28px]
+  md:px-[64px]
+  lg:px-[160px]
+  py-[48px]
+  md:py-[60px]
+  lg:py-[80px]"
 >
-
   <div
-    class="
-      w-full
-      h-full
-
-      flex
-      flex-col
-      md:flex-row
-
-      justify-center
-      items-center
-
-      gap-[64px]
-      md:gap-[120px]
-      lg:gap-[300px]
-    "
+    class="flex flex-col md:flex-row gap-8 lg:gap-12 items-center justify-center"
   >
-
-    <!-- DUBLIN -->
-    <div
-      class="
-        flex
-        flex-col
-        items-center
-
-        gap-[24px]
-        md:gap-[28px]
-        lg:gap-[56px]
-
-        text-center
-      "
-    >
-
+    <!-- Dublin Office -->
+    <div class="w-full md:w-1/2">
       <h2
-        class="
-        reveal
-          font-dm
-          font-normal
-          text-white
-
-          text-[64px]
-          md:text-[80px]
-
-          leading-[100%]
-          tracking-[-0.04em]
-        "
+        class="font-dm font-normal text-white text-[32px] md:text-[40px] lg:text-[48px] text-center mb-6"
       >
-        Map
+         Castletroy  Office
       </h2>
 
-      <!-- <p
-        class="
-          font-geist
-          text-white
-
-          text-[18px]
-          leading-[140%]
-
-          max-w-[161px]
-          md:max-w-[213px]
-        "
-      >
-        24 Fitzwilliam Square,
-        Dublin, Ireland
-      </p> -->
-
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.6129720125678!2d-8.575540700000001!3d52.666967899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5fa1488e74cb%3A0x1408973b8e557d6b!2sMartina%20Murphy%20Solicitors!5e0!3m2!1sen!2sin!4v1781533448964!5m2!1sen!2sin"
+        class="w-full h-[300px] md:h-[350px] rounded-[16px]"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
 
-    <!-- LIMERICK -->
-    <div
-      class="
-        flex
-        flex-col
-        items-center
-
-        gap-[24px]
-        md:gap-[28px]
-        lg:gap-[56px]
-
-        text-center
-      "
-    >
-
+    <!-- Limerick Office -->
+    <div class="w-full md:w-1/2">
       <h2
-        class="
-        reveal
-          font-dm
-          font-normal
-          text-white
-
-          text-[64px]
-          md:text-[80px]
-
-          leading-[100%]
-          tracking-[-0.04em]
-        "
+        class="font-dm font-normal text-white text-[32px] md:text-[40px] lg:text-[48px] text-center mb-6"
       >
-        Map
+        Dooradoyle Office
       </h2>
 
-      <!-- <p
-        class="
-          font-geist
-          text-white
-
-          text-[18px]
-          leading-[140%]
-
-          max-w-[178px]
-          md:max-w-[254px]
-        "
-      >
-        Unit 7 Crescent Court,
-        Dooradoyle, Limerick
-      </p> -->
-
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.0716681339763!2d-8.650066100000002!3d52.6406182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5b63c179b2d3%3A0x569b8c29eae58498!2sMartina%20Murphy%20Solicitors!5e0!3m2!1sen!2sin!4v1781533467187!5m2!1sen!2sin"
+        class="w-full h-[300px] md:h-[350px] rounded-[16px]"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-
   </div>
-
 </section>
 
       <!-- FINAL CTA -->
       <section
-        class="
-          
-          mx-auto
+        class="mx-auto
           w-full
           flex
           flex-col
@@ -458,42 +301,35 @@ import { Icon } from "astro-icon/components";
           text-center
           gap-10
           py-20
-          lg:py-[120px]
-        "
+          lg:py-[120px]"
       >
-
         <h2
-          class="
-            font-crimson
+          class="font-crimson
             font-normal
             text-[50px]
             sm:text-[60px]
             leading-[90%]
             tracking-[-0.03em]
             text-black
-            max-w-[600px]
-          "
+            max-w-[600px]"
         >
           Discover how we can help
         </h2>
 
         <p
-          class="
-            font-dm
+          class="font-dm
             text-[21px]
             leading-[140%]
             tracking-[-0.005em]
             text-[#6F6F6F]
-            max-w-[600px]
-          "
+            max-w-[600px]"
         >
           Contacting us couldn’t be easier
         </p>
 
         <a
           href="/contact"
-          class="
-            w-full
+          class="w-full
             max-w-[600px]
             bg-[#0B838E]
             text-white
@@ -509,22 +345,13 @@ import { Icon } from "astro-icon/components";
             tracking-[-0.025em]
             hover:bg-[#086c74]
             transition-all
-            duration-300
-          "
+            duration-300"
         >
           Get in Touch
 
-          <Icon
-            name="lucide:arrow-up-right"
-            class="w-4 h-4"
-          />
-
+          <Icon name="lucide:arrow-up-right" class="w-4 h-4" />
         </a>
-
       </section>
-
     </div>
-
   </section>
-
 </MainLayout>

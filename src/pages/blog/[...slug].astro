@@ -2,6 +2,8 @@
 import matter from "gray-matter";
 import { marked } from "marked";
 import BlogPostLayout from "@/layouts/BlogPostLayout.astro";
+import LetsDiscuss from "@/components/blog/LetsDiscuss-1.astro";
+import Testimonial from "@/components/blog/Testimonials.astro";
 
 export function getStaticPaths() {
   const postFiles = import.meta.glob(
@@ -60,4 +62,5 @@ const post = {
   image={post.image}
   content={post.content}
   relatedPosts={[]}
-/>
+  >
+  <Testimonial/><LetsDiscuss /> </BlogPostLayout>

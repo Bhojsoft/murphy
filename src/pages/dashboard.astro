@@ -1,0 +1,86 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const blogs = [
+  ["Accidents at Work", "/blog/accidents-at-work/"],
+  ["Buying a Property", "/blog/buying-a-property/"],
+  ["Car Injury Solicitors", "/blog/car-injury-solicitors/"],
+  ["Child Custody Solicitors", "/blog/child-custody-solicitors/"],
+  ["Commissioner for Oaths", "/blog/commissioner-for-oaths/"],
+  ["Conveyancing", "/blog/conveyancing/"],
+  ["Divorce and Assets", "/blog/divorce-and-assets/"],
+  ["Drafting Wills", "/blog/drafting-wills/"],
+  ["Elder Law Solicitors", "/blog/elder-law-solicitors/"],
+  ["Enduring Power of Attorney", "/blog/enduring-power-of-attorney/"],
+  ["Estate Planning", "/blog/estate-planning/"],
+  ["Expert Divorce Solicitors", "/blog/expert-divorce-solicitors/"],
+  ["Fair Deal Scheme Solicitors", "/blog/fair-deal-scheme-solicitors/"],
+  ["Family Home Property Divorce", "/blog/family-home-property-divorce/"],
+  ["Family Law Solicitors", "/blog/family-law-solicitors/"],
+  ["Financial Power of Attorney", "/blog/financial-power-of-attorney/"],
+  ["First Post", "/blog/first-post/"],
+  ["General Power of Attorney Solicitors", "/blog/general-power-of-attorney-solicitors/"],
+  ["House Purchase Solicitor Fees", "/blog/house-purchase-solicitor-fees/"],
+  ["Inheritance and Succession Solicitors", "/blog/inheritance-and-succession-solicitors/"],
+  ["Judicial Separation Solicitors", "/blog/judicial-separation-solicitors/"],
+  ["Legal Guardianship", "/blog/legal-guardianship/"],
+  ["Medical Power of Attorney Solicitors", "/blog/medical-power-of-attorney-solicitors/"],
+  ["Personal Injury at Work Solicitors", "/blog/personal-injury-at-work-solicitors/"],
+  ["Personal Injury Solicitors", "/blog/personal-injury-solicitors/"],
+  ["Power of Attorney Solicitors", "/blog/power-of-attorney-solicitors/"],
+  ["Probate Disputes Solicitors", "/blog/probate-disputes-solicitors/"],
+  ["Road Traffic Accidents Solicitors", "/blog/road-traffic-accidents-solicitors/"],
+  ["Selling a Property Solicitors", "/blog/selling-a-property-solicitors/"],
+  ["Wills and Probate", "/blog/wills-and-probate/"],
+  ["Blog Archive", "/blog-2/"]
+];
+---
+
+<MainLayout>
+  <section class="bg-[#0B838E] min-h-screen py-24 mt-25 mb-25">
+    <div class="max-w-7xl mx-auto px-6 ">
+
+      <h1 class="text-center text-white text-[80px] md:text-[120px] lg:text-[120px] font-bold leading-none mb-8">
+  Our Blogs
+</h1>
+
+<p class="text-center text-white/80 max-w-2xl mx-auto mb-20 text-lg">
+  Explore legal insights, guides, and practical advice from our experienced solicitors.
+</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {blogs.map(([title, href]) => (
+          <a
+            href={href}
+            class="
+              bg-white
+              p-8
+              rounded-lg
+              shadow-sm
+              hover:shadow-xl
+              transition-all
+              duration-300
+              hover:-translate-y-1
+              block
+            "
+          >
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+              {title}
+            </h2>
+
+            <p class="text-gray-600 mb-6">
+              Read our detailed guide and legal insights on {title.toLowerCase()}.
+            </p>
+
+            <span class="text-[#0B838E] font-semibold">
+              Read More →
+            </span>
+          </a>
+        ))}
+
+      </div>
+
+    </div>
+  </section>
+</MainLayout>
