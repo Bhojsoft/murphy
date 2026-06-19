@@ -66,171 +66,108 @@ import { Icon } from "astro-icon/components";
 
       <!-- CONTACT OPTIONS -->
       <section
-        class="mx-auto
-          w-full
-          flex
-          flex-col
-          gap-10
-          border-b
-          border-black
-          pb-20"
+        class="mx-auto w-full flex flex-col gap-10 border-b border-black pb-20"
       >
         <div class="flex items-center lg:pl-[52px]">
           <h2
-            class="font-geist
-              font-normal
-              text-[22px]
-              sm:text-[32px]
-              leading-[109%]
-              tracking-[-0.05em]
-              text-black"
+            class="font-geist font-normal text-[22px] sm:text-[32px] leading-[109%] tracking-[-0.05em] text-black"
           >
             Contacting us could not be easier
           </h2>
         </div>
 
         <div
-          class="grid
-            grid-cols-1
-            md:grid-cols-3
-            border-y
-            border-black
-            py-[50px]"
+          class="grid grid-cols-1 md:grid-cols-3 border-y border-black py-[50px]"
         >
           <!-- EMAIL -->
           <div
-            class="flex
-              flex-col
-              items-center
-              justify-center
-              gap-14
-              px-6
-              py-10
-              text-center"
+            class="flex flex-col items-center justify-center gap-14 mx-auto
+             w-[393.33px] md:w-[240px] sm:w-[375px]
+             h-[219px] sm:h-[252px]"
           >
-            <div
-              class="w-[105px]
-                h-[105px]
-                rounded-full
-                border-[7px]
-                border-[#0B838E]
-                flex
-                items-center
-                justify-center"
-            >
-              <Icon name="lucide:mail" class="w-12 h-12 text-[#0B838E]" />
+            <div class="relative w-[112.5px] h-[84.38px]">
+              <div
+                class="absolute inset-0 border-[7px] border-[#0B838E] rounded-sm"
+              >
+              </div>
+
+              <svg
+                class="absolute inset-0 w-full h-full"
+                viewBox="0 0 112.5 84.38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M 7 7 L 56.25 45 L 105.5 7"
+                  stroke="#0B838E"
+                  stroke-width="7"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"></path>
+              </svg>
             </div>
 
             <a
               href="mailto:info@martinamurphy.ie"
-              class="border-[3px]
-                border-[#0B838E]
-                text-[#0B838E]
-                rounded-full
-                px-8
-                py-[18px]
-                text-[18px]
-                leading-[120%]
-                tracking-[-0.02em]
-                font-geist
-                hover:bg-[#0B838E]
-                hover:text-white
-                transition-all
-                duration-300"
+              class="flex justify-center items-center px-6 py-[18px]
+           w-[183px] h-[58px]
+           bg-[#ffffff] hover:bg-[#0B838E]
+           border border-[#0B838E]
+           rounded-[500px] text-[#0B838E] hover:text-[#ffffff] transition-all duration-200"
             >
-              Email Us
+              <span class="font-geist text-[18px]"> Email Us </span>
             </a>
           </div>
 
           <!-- CALL -->
           <div
-            class="flex
-              flex-col
-              items-center
-              justify-center
-              gap-14
-              px-6
-              py-10
-              text-center"
+            class="flex flex-col items-center justify-center gap-14 mx-auto
+         w-[393.33px] md:w-[240px] sm:w-[375px]
+         h-[219px] sm:h-[252px]"
           >
             <div
-              class="w-[105px]
-                h-[105px]
-                rounded-full
-                border-[7px]
-                border-[#0B838E]
-                flex
-                items-center
-                justify-center"
+              class="w-[112.5px] h-[84.38px] flex items-center justify-center"
             >
-              <Icon name="lucide:phone" class="w-12 h-12 text-[#0B838E]" />
+              <Icon
+                name="lucide:phone"
+                class="w-[80px] h-[80px] text-[#0B838E]"
+              />
             </div>
 
             <a
               href="tel:+35361303311"
-              class="border-[3px]
-                border-[#0B838E]
-                text-[#0B838E]
-                rounded-full
-                px-8
-                py-[18px]
-                text-[18px]
-                leading-[120%]
-                tracking-[-0.02em]
-                font-geist
-                hover:bg-[#0B838E]
-                hover:text-white
-                transition-all
-                duration-300"
+              class="flex justify-center items-center px-6 py-[18px]
+           w-[183px] h-[58px]
+           border border-[#0B838E]
+           bg-[#ffffff] hover:bg-[#0B838E]
+           rounded-[500px] text-[#0B838E] hover:text-[#ffffff] transition-all duration-200"
             >
-              Call Us
+              <span class="font-geist text-[18px]"> Call Us </span>
             </a>
           </div>
 
-          <!-- CHAT -->
+          <!-- REQUEST A CALL BACK -->
           <div
-            class="flex
-              flex-col
-              items-center
-              justify-center
-              gap-14
-              px-6
-              py-10
-              text-center"
+            class="flex flex-col items-center justify-center gap-14 mx-auto
+         w-[393.33px] md:w-[240px] sm:w-[375px]
+         h-[219px] sm:h-[252px]"
           >
             <div
-              class="w-[105px]
-                h-[105px]
-                rounded-full
-                border-[7px]
-                border-[#0B838E]
-                flex
-                items-center
-                justify-center"
+              class="w-[112.5px] h-[84.38px] flex items-center justify-center"
             >
               <Icon
-                name="lucide:message-circle"
-                class="w-12 h-12 text-[#0B838E]"
+                name="lucide:headset"
+                class="w-[80px] h-[80px] text-[#0B838E]"
               />
             </div>
 
             <button
-              class="border-[3px]
-                border-[#0B838E]
-                text-[#0B838E]
-                rounded-full
-                px-8
-                py-[18px]
-                text-[18px]
-                leading-[120%]
-                tracking-[-0.02em]
-                font-geist
-                hover:bg-[#0B838E]
-                hover:text-white
-                transition-all
-                duration-300"
+              class="flex justify-center items-center px-6 py-[18px]
+           w-[230px] h-[58px]
+           bg-[#ffffff] hover:bg-[#0B838E] hover:text-[#ffffff]
+           border border-[#0B838E]
+           rounded-[500px] text-[#0B838E] transition-all duration-200"
             >
-              Start Chat
+              <span class="font-geist text-[18px]"> Request a Call Back </span>
             </button>
           </div>
         </div>
@@ -239,7 +176,7 @@ import { Icon } from "astro-icon/components";
       <!-- OFFICES -->
       <!-- OFFICES -->
       <section
-  class="mx-auto
+        class="mx-auto
   w-full
   bg-[#0B838E]
   rounded-[20px]
@@ -249,47 +186,45 @@ import { Icon } from "astro-icon/components";
   py-[48px]
   md:py-[60px]
   lg:py-[80px]"
->
-  <div
-    class="flex flex-col md:flex-row gap-8 lg:gap-12 items-center justify-center"
-  >
-    <!-- Dublin Office -->
-    <div class="w-full md:w-1/2">
-      <h2
-        class="font-dm font-normal text-white text-[32px] md:text-[40px] lg:text-[48px] text-center mb-6"
       >
-         Castletroy  Office
-      </h2>
+        <div
+          class="flex flex-col md:flex-row gap-8 lg:gap-12 items-center justify-center"
+        >
+          <!-- Dublin Office -->
+          <div class="w-full md:w-1/2">
+            <h2
+              class="font-dm font-normal text-white text-[32px] md:text-[40px] lg:text-[48px] text-center mb-6"
+            >
+              Castletroy Office
+            </h2>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.6129720125678!2d-8.575540700000001!3d52.666967899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5fa1488e74cb%3A0x1408973b8e557d6b!2sMartina%20Murphy%20Solicitors!5e0!3m2!1sen!2sin!4v1781533448964!5m2!1sen!2sin"
-        class="w-full h-[300px] md:h-[350px] rounded-[16px]"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.6129720125678!2d-8.575540700000001!3d52.666967899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5fa1488e74cb%3A0x1408973b8e557d6b!2sMartina%20Murphy%20Solicitors!5e0!3m2!1sen!2sin!4v1781533448964!5m2!1sen!2sin"
+              class="w-full h-[300px] md:h-[350px] rounded-[16px]"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
 
-    <!-- Limerick Office -->
-    <div class="w-full md:w-1/2">
-      <h2
-        class="font-dm font-normal text-white text-[32px] md:text-[40px] lg:text-[48px] text-center mb-6"
-      >
-        Dooradoyle Office
-      </h2>
+          <!-- Limerick Office -->
+          <div class="w-full md:w-1/2">
+            <h2
+              class="font-dm font-normal text-white text-[32px] md:text-[40px] lg:text-[48px] text-center mb-6"
+            >
+              Dooradoyle Office
+            </h2>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.0716681339763!2d-8.650066100000002!3d52.6406182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5b63c179b2d3%3A0x569b8c29eae58498!2sMartina%20Murphy%20Solicitors!5e0!3m2!1sen!2sin!4v1781533467187!5m2!1sen!2sin"
-        class="w-full h-[300px] md:h-[350px] rounded-[16px]"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  </div>
-</section>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.0716681339763!2d-8.650066100000002!3d52.6406182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5b63c179b2d3%3A0x569b8c29eae58498!2sMartina%20Murphy%20Solicitors!5e0!3m2!1sen!2sin!4v1781533467187!5m2!1sen!2sin"
+              class="w-full h-[300px] md:h-[350px] rounded-[16px]"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
 
       <!-- FINAL CTA -->
       <section
@@ -304,14 +239,14 @@ import { Icon } from "astro-icon/components";
           lg:py-[120px]"
       >
         <h2
-          class="font-crimson
+          class="font-[Crimson_Text]
             font-normal
             text-[50px]
             sm:text-[60px]
             leading-[90%]
             tracking-[-0.03em]
             text-black
-            max-w-[600px]"
+            max-w-[650px]"
         >
           Discover how we can help
         </h2>
@@ -347,7 +282,7 @@ import { Icon } from "astro-icon/components";
             transition-all
             duration-300"
         >
-          Get in Touch
+          Schedule a Consult
 
           <Icon name="lucide:arrow-up-right" class="w-4 h-4" />
         </a>
