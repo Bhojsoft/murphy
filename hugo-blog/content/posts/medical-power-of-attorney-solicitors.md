@@ -1,4 +1,3 @@
-
 ---
 title: "Authoritative Medical Power of Attorney Solicitors"
 subtitle: "Protect Your Dignity and Control Your Future Healthcare"
@@ -13,7 +12,7 @@ show_cta: true
 draft: false
 ---
 
-# Authoritative Medical Power of Attorney Solicitors
+
 
 ## Protect Your Dignity and Control Your Future Healthcare
 

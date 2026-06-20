@@ -33,177 +33,278 @@ import Logo from "../../assets/MM_logo.png";
         w-full"
     >
       <!-- Logo -->
-      <div class="flex items-center justify-center">
-        <img
-          src={Logo.src}
-          alt="MM Logo"
-          class="w-[119px]
-            h-[121px]
-            object-contain
-            md:w-[50px]
-            md:h-[51px]
-            xl:w-[119px]
-            xl:h-[121px]"
-        />
-      </div>
+      <div
+  class="flex
+    flex-col
+    
+    gap-4
+    w-full"
+>
+  <!-- Logo -->
+  <img
+    src={Logo.src}
+    alt="MM Logo"
+    class="w-[80px]
+      h-[80px]
+      md:w-[100px]
+      md:h-[100px]
+      xl:w-[119px]
+      xl:h-[121px]
+      object-contain"
+  />
 
-      <!-- Brand Name -->
-      <h2
-        class="text-center
-          md:text-right
-          font-[Geist]
-          text-black
-          text-[20px]
-          md:text-[26px]
-          xl:text-[34px]
-          leading-[120%]"
-      >
-        Martina Murphy Solicitors
-      </h2>
+  <!-- Company Name -->
+  <h2
+    class="font-[Geist]
+      text-black
+      text-[20px]
+      md:text-[28px]
+      xl:text-[34px]
+      leading-[120%]
+      font-medium"
+  >
+    Martina Murphy Solicitors
+  </h2>
+
+  <!-- Tagline -->
+  <p
+    class="text-black
+      font-[Geist]
+      text-[16px]
+      md:text-[18px]
+      leading-[135%]
+      tracking-[-0.02em]
+      max-w-[600px]"
+  >
+    Deep expertise, decisive courtroom presence
+  </p>
+</div>
     </div>
 
     <!-- Footer Subhead -->
-    <div class="w-full">
-      <p
-        class="text-black
-          text-center
-          font-[Geist]
-          text-[18px]
-          leading-[135%]
-          tracking-[-0.02em]"
-      >
-        Deep expertise, decisive courtroom presence
-      </p>
-    </div>
 
     <!-- Footer Contact Information -->
+    <!-- Footer Links -->
     <div
-      class="flex
-        flex-col
-        md:flex-row
-        gap-8
-        md:gap-6
-        xl:gap-[45px]"
+      class="grid
+    grid-cols-1
+    md:grid-cols-2
+    lg:grid-cols-4
+    gap-10
+    lg:gap-12"
     >
       <!-- Column 1 -->
-      <div class="flex flex-col gap-[2px] w-full md:w-[255px]">
-        <a
-          href="mailto:info@martinamurphy.ie"
-          class="text-black
-            underline
-            font-[Geist]
-            text-[14px]
-            leading-[140%]
-            hover:opacity-70
-            transition"
+      <div>
+        <h3
+          class="font-[Geist]
+    text-[16px]
+    font-semibold
+    text-black
+    mb-4"
         >
-          info@martinamurphy.ie
-        </a>
+          Contact Info
+        </h3>
 
-        <a
-          href="tel:+35361303311"
-          class="text-black
-            font-[Geist]
-            text-[14px]
-            leading-[140%]
-            hover:opacity-70
-            transition"
-        >
-          (061) 303311
-        </a>
+        <p class="text-[14px] leading-[140%] text-black mb-3">
+          Unit 7 Crescent Court,<br />
+          St Nessans Road,<br />
+          Dooradoyle, Limerick.
+        </p>
+
+        <div class="flex flex-col gap-2">
+          <a
+            href="mailto:info@martinamurphy.ie"
+            class="text-[14px] leading-[140%] text-black hover:opacity-70 transition"
+          >
+            info@martinamurphy.ie
+          </a>
+
+          <a
+            href="tel:+35361303311"
+            class="text-[14px] leading-[140%] text-black hover:opacity-70 transition"
+          >
+            (061) 303311
+          </a>
+
+          <a
+            href="https://www.instagram.com/martinamurphysolicitors/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Instagram
+          </a>
+
+          <a
+            href="https://www.facebook.com/MartinaMurphySolicitorsLimerick"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Facebook
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/martina-murphy-solicitors-limerick/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://twitter.com/martinamurphyie?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Twitter
+          </a>
+        </div>
       </div>
 
       <!-- Column 2 -->
-      <div class="w-full md:w-[255px]">
-        <p
-          class="text-black
-            font-[Geist]
-            text-[14px]
-            leading-[140%]"
+      <div>
+        <h3
+          class="font-[Geist]
+      text-[16px]
+      font-semibold
+      text-black
+      mb-4"
         >
-          Unit 7 Crescent Court,
-          <br />
-          St Nessans Road,
-          <br />
-          Dooradoyle, Limerick
-        </p>
+          Personal Legal Services
+        </h3>
+
+        <div class="flex flex-col gap-2">
+          <a
+            href="/blog/selling-a-property-solicitors/"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Buying & Selling a Property
+          </a>
+
+          <a
+            href="/blog/wills-and-probate/"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Wills and Probate
+          </a>
+
+          <a
+            href="/blog/family-law-solicitors/"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Family Law
+          </a>
+
+          <a
+            href="/blog/accidents-at-work/"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Accidents
+          </a>
+
+          <a
+            href="/blog/elder-law-solicitors/"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Elderly Law
+          </a>
+
+          <a
+            href="/blog/commissioner-for-oaths/"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Commissioner for Oaths
+          </a>
+        </div>
       </div>
 
       <!-- Column 3 -->
-      <div class="flex flex-col gap-[2px] w-full md:flex-1">
-        <a
-          href="https://www.instagram.com/martinamurphysolicitors/"
-          class="text-black
-            font-[Geist]
-            text-[14px]
-            leading-[140%]
-            hover:opacity-70
-            transition"
+      <div>
+        <h3
+          class="font-[Geist]
+      text-[16px]
+      font-semibold
+      text-black
+      mb-4"
         >
-          Instagram
-        </a>
+          Business & Employment Law
+        </h3>
 
-        <a
-          href="https://www.facebook.com/MartinaMurphySolicitorsLimerick"
-          class="text-black
-            font-[Geist]
-            text-[14px]
-            leading-[140%]
-            hover:opacity-70
-            transition"
-        >
-          Facebook
-        </a>
+        <div class="flex flex-col gap-2">
+          <a
+            href="/employment-law"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Employment Law
+          </a>
 
-        <a
-          href="https://www.linkedin.com/company/martina-murphy-solicitors-limerick/"
-          class="text-black
-            font-[Geist]
-            text-[14px]
-            leading-[140%]
-            hover:opacity-70
-            transition"
-        >
-          LinkedIn
-        </a>
+          <a
+            href="/workplace-rights"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Workplace Rights (Employees)
+          </a>
 
-        <a
-          href="https://twitter.com/martinamurphyie?lang=en"
-          class="text-black
-            font-[Geist]
-            text-[14px]
-            leading-[140%]
-            hover:opacity-70
-            transition"
-        >
-          Twitter
-        </a>
+          <a
+            href="/contracts-disputes"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Contracts & Disputes (Employers)
+          </a>
+
+          <a
+            href="/debt-collection"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Debt Collection
+          </a>
+
+          <a
+            href="/blog/charities-educational-law"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Charities & Educational Law
+          </a>
+        </div>
       </div>
 
-      <div class="flex flex-col gap-[2px] w-full md:flex-1">
-        <a
-          href="/dispute-2"
-          class="text-black
-            font-[Geist]
-            text-[14px]
-            leading-[140%]
-            hover:opacity-70
-            transition"
+      <!-- Column 4 -->
+      <div>
+        <h3
+          class="font-[Geist]
+      text-[16px]
+      font-semibold
+      text-black
+      mb-4"
         >
-          Dispute
-        </a>
+          Legal Information
+        </h3>
 
-        <a
-          href="/redundancy-2"
-          class="text-black
-            font-[Geist]
-            text-[14px]
-            leading-[140%]
-            hover:opacity-70
-            transition"
-        >
-          Redundancy
-        </a>
+        <div class="flex flex-col gap-2">
+          <a
+            href="/"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Home
+          </a>
+
+          <a
+            href="/about-us-2"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            About Us
+          </a>
+
+          <a
+            href="/privacy-policy"
+            class="text-[14px] text-black hover:opacity-70 transition"
+          >
+            Privacy Policy & Terms
+          </a>
+        </div>
       </div>
     </div>
 
@@ -211,11 +312,12 @@ import Logo from "../../assets/MM_logo.png";
     <div>
       <p
         class="text-black
-          font-[Geist]
-          text-[14px]
-          leading-[140%]"
+      font-[Geist]
+      text-[14px]
+      leading-[140%]
+      text-center"
       >
-        Jones & Brown Legal © 2025 All Rights Reserved
+        Martina Murphy Solicitors © 2025 All Rights Reserved
       </p>
     </div>
   </div>

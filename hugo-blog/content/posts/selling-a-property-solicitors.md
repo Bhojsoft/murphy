@@ -1,4 +1,3 @@
-
 ---
 title: "Proven Solicitors for Selling a Property"
 subtitle: "Maximise Your Return Without the Administrative Stress."
@@ -13,7 +12,7 @@ show_cta: true
 draft: false
 ---
 
-# Proven Solicitors for Selling a Property
+
 
 ## Maximise Your Return Without the Administrative Stress
 

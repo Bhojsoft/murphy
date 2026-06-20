@@ -1,4 +1,3 @@
-
 ---
 title: "Probate Disputes"
 subtitle: "Resolving Family Conflicts with Clarity and Gravitas"
@@ -13,7 +12,7 @@ show_cta: true
 draft: false
 ---
 
-# Probate Disputes
+
 
 ## Resolving Family Conflicts with Clarity and Gravitas
 

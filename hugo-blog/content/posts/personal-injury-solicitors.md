@@ -1,4 +1,3 @@
-
 ---
 title: "Proven Personal Injury & Accidents Solicitors"
 subtitle: "Aggressive Compensation Recovery. Total Career Protection."
@@ -13,7 +12,7 @@ show_cta: true
 draft: false
 ---
 
-# Proven Personal Injury & Accidents Solicitors
+
 
 ## Aggressive Compensation Recovery. Total Career Protection.
 
