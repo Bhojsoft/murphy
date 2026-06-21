@@ -1,0 +1,79 @@
+<header class="hidden md:block fixed top-6 left-1/2 -translate-x-1/2 z-50">
+  <nav
+    class="backdrop-blur-xl
+      bg-white/10
+      border border-white/20
+      shadow-lg
+      rounded-full
+      px-8 md:px-10
+      py-4"
+  >
+    <ul class="flex items-center gap-8 md:gap-10">
+      <li>
+        <a href="/" class="text-black/90 text-sm md:text-[15px] font-bold hover:text-black transition">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="/about-us-2" class="text-black/90 text-sm md:text-[15px] font-bold hover:text-black transition">
+          About Us
+        </a>
+      </li>
+
+      <!-- SERVICES -->
+      <li class="relative group">
+        <a href="/services-2" class="flex items-center gap-2 text-black/90 text-sm md:text-[15px] font-bold hover:text-black transition">
+          Services
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+
+        <!-- Main Dropdown -->
+        <div
+          class="absolute left-1/2 -translate-x-1/2 top-full mt-4 w-[340px]
+            bg-white rounded-2xl shadow-2xl border border-gray-100
+            opacity-0 invisible group-hover:opacity-100 group-hover:visible
+            transition-all duration-300"
+        >
+          <div class="py-3">
+            <a href="/conveyancing/buying-a-house/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB] transition">Buying &amp; Selling a Property</a>
+            <a href="/wills-and-probate/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB] transition">Wills and Probate</a>
+            <a href="/family-law/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB] transition">Family Law</a>
+            <a href="/personal-injury/accidents-at-work/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB] transition">Accidents</a>
+            <a href="/elder-law/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB] transition">Elderly Law</a>
+            <a href="/charity-education-law/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB] transition">Charities &amp; Educational Law</a>
+            <a href="/commissioner-for-oaths/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB] transition">Commissioner for Oaths</a>
+
+            <!-- Employment Law Submenu -->
+            <div class="relative group/employment">
+              <button class="w-full flex items-center justify-between px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB] transition">
+                Employment Law
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              <div
+                class="absolute left-full top-0 ml-1 w-[240px]
+                  bg-white rounded-2xl shadow-2xl border border-gray-100
+                  opacity-0 invisible group-hover/employment:opacity-100 group-hover/employment:visible
+                  transition-all duration-300"
+              >
+                <a href="/employment-law/employees/redundancies/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB]">For Employees</a>
+                <a href="/employment-law/employers/dispute-resolution/" class="block px-5 py-3 text-[14px] text-black hover:bg-[#F7F4EB]">For Employers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <a href="/blog-2" class="text-black/90 text-sm md:text-[15px] font-bold hover:text-black transition">
+          News &amp; Blogs
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

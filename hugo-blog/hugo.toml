@@ -1,5 +1,15 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Martina Murphy Blog"
+title = "Martina Murphy Solicitors"
 
-publishDir = "../astro-site/public/blog"
+# Builds into its own folder; the root build script merges this into the
+# Astro public/dist output afterwards (see package.json "build" script and
+# scripts/merge-hugo-output.mjs). Each content page sets its own `url` in
+# front matter, so pages are NOT served under /blog/posts/... or /posts/...
+# any more — only the actual blog/news index lives at /blog/.
+publishDir = "public"
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  defaultDescription = "Martina Murphy Solicitors — Limerick-based legal experts in wills & probate, family law, employment law, conveyancing, power of attorney and more."

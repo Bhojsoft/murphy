@@ -1,0 +1,75 @@
+# Redirects for the URL restructuring requested by the client's metadata/URL
+# structure sheet. Cloudflare Pages reads this file automatically.
+# Format: <source> <destination> <status>
+
+# --- Practice-area pages: moved off the generic /blog/<slug>/ catch-all
+# (and the older, stale /blog/posts/<slug>/ Hugo build) onto their final,
+# sheet-defined URLs.
+/blog/accidents-at-work-solicitors/        /personal-injury/accidents-at-work/              301
+/blog/posts/accidents-at-work/             /personal-injury/accidents-at-work/              301
+/blog/buying-a-property/                   /conveyancing/buying-a-house/                    301
+/blog/posts/buying-a-property/             /conveyancing/buying-a-house/                    301
+/blog/car-injury-solicitors/               /personal-injury/car-injury/                     301
+/blog/posts/car-injury-solicitors/         /personal-injury/car-injury/                     301
+/blog/charities-educational-law/           /charity-education-law/                          301
+/blog/child-custody-solicitors/            /family-law/child-custody/                       301
+/blog/posts/child-custody-solicitors/      /family-law/child-custody/                       301
+/blog/commercial-property-solicitors/      /conveyancing/commercial-property/               301
+/blog/commissioner-for-oaths/              /commissioner-for-oaths/                         301
+/blog/posts/commissioner-for-oaths/        /commissioner-for-oaths/                         301
+/blog/conveyancing/                        /conveyancing/                                   301
+/blog/posts/conveyancing/                  /conveyancing/                                   301
+/blog/corporate-governance-compliance-solicitors-limerick/  /charity-education-law/governance-compliance/  301
+/blog/dispute-resolution-solicitors/       /employment-law/employers/dispute-resolution/    301
+/blog/divorce-and-assets/                  /divorce-and-assets/                             301
+/blog/posts/divorce-and-assets/            /divorce-and-assets/                             301
+/blog/drafting-wills/                      /drafting-wills/                                 301
+/blog/posts/drafting-wills/                /drafting-wills/                                 301
+/blog/elder-law-solicitors/                /elder-law/                                      301
+/blog/posts/elder-law-solicitors/          /elder-law/                                      301
+/blog/enduring-power-of-attorney/          /power-of-attorney/enduring/                     301
+/blog/posts/enduring-power-of-attorney/    /power-of-attorney/enduring/                     301
+/blog/estate-planning/                     /estate-planning/                                301
+/blog/posts/estate-planning/               /estate-planning/                                301
+/blog/expert-divorce-solicitors/           /divorce-and-assets/solicitors/                  301
+/blog/fair-deal-scheme-solicitors/         /elder-law/fair-deal-scheme/                     301
+/blog/family-home-property-divorce/        /divorce-and-assets/family-home-property/        301
+/blog/family-law-solicitors/               /family-law/                                     301
+/blog/posts/family-law-solicitors/         /family-law/                                     301
+/blog/financial-power-of-attorney/         /power-of-attorney/financial/                    301
+/blog/financial-settlements-pension-division-limerick/  /divorce-and-assets/financial-settlements/  301
+/blog/general-power-of-attorney-solicitors/  /power-of-attorney/general/                    301
+/blog/posts/general-power-of-attorney-solicitors/  /power-of-attorney/general/              301
+/blog/house-purchase-solicitor-fees/        /conveyancing/fees/                              301
+/blog/posts/house-purchase-solicitor-fees/  /conveyancing/fees/                              301
+/blog/inheritance-and-succession-solicitors/  /inheritance-solicitors/                       301
+/blog/posts/inheritance-and-succession-solicitors/  /inheritance-solicitors/                 301
+/blog/judicial-separation-solicitors/      /divorce-and-assets/judicial-separation/         301
+/blog/posts/judicial-separation-solicitors/  /divorce-and-assets/judicial-separation/        301
+/blog/lasting-power-of-attorney/           /power-of-attorney/lasting/                      301
+/blog/legal-guardianship/                  /family-law/guardianship/                        301
+/blog/posts/legal-guardianship/            /family-law/guardianship/                        301
+/blog/maintenance-child-support/           /family-law/maintenance/                         301
+/blog/medical-power-of-attorney-solicitors/  /power-of-attorney/medical-healthcare/         301
+/blog/posts/medical-power-of-attorney-solicitors/  /power-of-attorney/medical-healthcare/   301
+/blog/personal-injury-at-work-solicitors/  /employment-law/employees/injury-at-work/        301
+/blog/posts/personal-injury-at-work-solicitors/  /employment-law/employees/injury-at-work/  301
+/blog/personal-injury-solicitors/          /personal-injury/                                301
+/blog/posts/personal-injury-solicitors/    /personal-injury/                                301
+/blog/power-of-attorney-solicitors/        /power-of-attorney/                              301
+/blog/posts/power-of-attorney-solicitors/  /power-of-attorney/                              301
+/blog/probate-disputes-solicitors/         /probate-dispute/                                301
+/blog/posts/probate-disputes-solicitors/   /probate-dispute/                                301
+/blog/redundancy-solicitors-for-employees-limerick/  /employment-law/employees/redundancies/  301
+/blog/road-traffic-accidents-solicitors/   /personal-injury/road-traffic/                   301
+/blog/posts/road-traffic-accidents-solicitors/  /personal-injury/road-traffic/              301
+/blog/selling-a-property-solicitors/       /conveyancing/selling-a-house/                   301
+/blog/posts/selling-a-property-solicitors/  /conveyancing/selling-a-house/                  301
+/blog/ward-of-court-solicitors/            /elder-law/ward-of-court/                        301
+/blog/posts/ward-of-court-solicitors/      /elder-law/ward-of-court/                        301
+/blog/wills-and-probate/                   /wills-and-probate/                              301
+/blog/posts/wills-and-probate/             /wills-and-probate/                              301
+
+# --- Draft-prefixed pages promoted to their real final routes
+/dispute-2          /employment-law/employers/dispute-resolution/   301
+/redundancy-2        /employment-law/employees/redundancies/        301

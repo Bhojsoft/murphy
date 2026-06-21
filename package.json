@@ -7,7 +7,9 @@
   },
   "scripts": {
     "dev": "astro dev --host",
-    "build": "astro build",
+    "build:hugo": "cd hugo-blog && npm install --no-save && npm run build-css && npx --yes hugo-extended --minify && cd ..",
+    "build:astro": "astro build",
+    "build": "npm run build:hugo && npm run build:astro && node scripts/merge-hugo-output.mjs",
     "preview": "astro preview"
   },
   "dependencies": {

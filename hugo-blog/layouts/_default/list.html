@@ -1,11 +1,26 @@
 {{ define "main" }}
-<h1>Blog Posts</h1>
+<section class="w-full flex justify-center px-4 md:px-6">
+  <div class="w-full max-w-[1200px] flex flex-col items-center gap-6 pt-16 pb-10 text-center">
+    <h1 class="font-dm-sans text-[42px] md:text-[64px] tracking-[-0.03em] text-black">{{ .Title }}</h1>
+    {{ with .Params.meta_description }}<p class="text-[18px] text-black/60 max-w-[700px]">{{ . }}</p>{{ end }}
+  </div>
+</section>
 
-<ul>
-  {{ range .Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </li>
-  {{ end }}
-</ul>
+<section class="w-full flex justify-center px-4 md:px-6 pb-20">
+  <div class="w-full max-w-[1200px]">
+    {{ if .Pages }}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{ range .Pages }}
+          <a href="{{ .RelPermalink }}" class="block rounded-[20px] border border-black/10 p-6 hover:shadow-lg transition">
+            <p class="text-black/45 text-[14px] mb-2">{{ .Date.Format "January 2, 2006" }}</p>
+            <h2 class="text-[22px] text-black mb-2">{{ .Title }}</h2>
+            {{ with .Params.subtitle }}<p class="text-black/70 text-[15px]">{{ . }}</p>{{ end }}
+          </a>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="text-center text-black/50 py-10">No news posts yet — check back soon.</p>
+    {{ end }}
+  </div>
+</section>
 {{ end }}

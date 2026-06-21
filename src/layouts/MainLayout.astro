@@ -3,6 +3,18 @@ import TopBar from "../components/common/Topbar.astro";
 import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
 import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Martina Murphy Solicitors | Limerick Solicitor",
+  description = "Martina Murphy Solicitors — Limerick-based legal experts in wills & probate, family law, employment law, conveyancing, power of attorney and more.",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://martinamurphy.ie").toString();
 ---
 
 <html lang="en">
@@ -26,7 +38,14 @@ import "../styles/global.css";
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
   </head>
 
   <body class="flex flex-col min-h-screen">

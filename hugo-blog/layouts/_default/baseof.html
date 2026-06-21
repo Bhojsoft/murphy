@@ -1,9 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>{{ .Title }}</title>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-MLJNQNS");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {{- $metaTitle := .Params.meta_title | default .Title }}
+  {{- $metaDesc := .Params.meta_description | default site.Params.defaultDescription }}
+  <title>{{ $metaTitle }}</title>
+  {{ with $metaDesc }}<meta name="description" content="{{ . }}" />{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="{{ if eq .Kind "page" }}article{{ else }}website{{ end }}" />
+  <meta property="og:title" content="{{ $metaTitle }}" />
+  {{ with $metaDesc }}<meta property="og:description" content="{{ . }}" />{{ end }}
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{ with .Params.hero_image }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="icon" href="/favicon.ico" />
 </head>
-<body>
-  {{ block "main" . }}{{ end }}
+<body class="flex flex-col min-h-screen font-sans">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLJNQNS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  {{ partial "topbar.html" . }}
+  {{ partial "navbar.html" . }}
+
+  <main class="flex-1">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuBtn = document.getElementById("menuBtn");
+      const overlay = document.getElementById("overlay");
+      const closeBtn = document.getElementById("closeBtn");
+
+      menuBtn?.addEventListener("click", () => overlay.classList.remove("hidden"));
+      closeBtn?.addEventListener("click", () => overlay.classList.add("hidden"));
+      overlay?.addEventListener("click", (e) => {
+        if (e.target === overlay) overlay.classList.add("hidden");
+      });
+
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("show");
+          });
+        },
+        { threshold: 0.15 }
+      );
+      reveals.forEach((el) => observer.observe(el));
+    });
+  </script>
 </body>
 </html>
