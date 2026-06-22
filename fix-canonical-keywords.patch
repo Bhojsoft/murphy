@@ -1,0 +1,132 @@
+From d1aa21c91dd6441cea65e08772b70c9e08cd9a90 Mon Sep 17 00:00:00 2001
+From: "Claude (assistant)" <dev@example.com>
+Date: Mon, 22 Jun 2026 13:28:07 +0000
+Subject: [PATCH] Fix canonical URLs and keywords meta tags
+
+Two bugs on the Hugo side:
+- baseURL was '/' so canonical tags output relative paths like
+  /wills-and-probate/ instead of the required absolute URL
+  https://martinamurphy.ie/wills-and-probate/. Fixed by setting
+  baseURL to the real production domain.
+- keywords meta tag was being silently dropped by Hugo's --minify
+  step. Fixed the template to use the correct 'name' attribute
+  and a nil guard so it only renders when keywords exist.
+
+Three gaps on the Astro side:
+- Homepage called <MainLayout> with no props, inheriting the generic
+  default title/description/keywords on every page.
+- Contact, Services, Redundancies, and Dispute Resolution pages had
+  title/description set but no page-specific keywords, so they all
+  rendered the same generic fallback keywords.
+- Added page-specific keywords to all four.
+---
+ hugo-blog/hugo.toml                                         | 2 +-
+ hugo-blog/layouts/_default/baseof.html                      | 5 +++--
+ src/pages/contact/index.astro                               | 1 +
+ src/pages/employment-law/employees/redundancies/index.astro | 1 +
+ .../employment-law/employers/dispute-resolution/index.astro | 1 +
+ src/pages/index.astro                                       | 6 +++++-
+ src/pages/services-2/index.astro                            | 1 +
+ 7 files changed, 13 insertions(+), 4 deletions(-)
+
+diff --git a/hugo-blog/hugo.toml b/hugo-blog/hugo.toml
+index 2452452..b5f0979 100644
+--- a/hugo-blog/hugo.toml
++++ b/hugo-blog/hugo.toml
+@@ -1,4 +1,4 @@
+-baseURL = "/"
++baseURL = "https://martinamurphy.ie"
+ defaultContentLanguage = "en-us"
+ title = "Martina Murphy Solicitors"
+ 
+diff --git a/hugo-blog/layouts/_default/baseof.html b/hugo-blog/layouts/_default/baseof.html
+index 1d9ba2d..45b969f 100644
+--- a/hugo-blog/layouts/_default/baseof.html
++++ b/hugo-blog/layouts/_default/baseof.html
+@@ -25,7 +25,8 @@
+   <title>{{ $metaTitle }}</title>
+   {{ with $metaDesc }}
+   <meta name="description" content="{{ . }}" />{{ end }}
+-  <meta name="keywords" content="{{ delimit .Params.keywords " , " }}" />
++  {{- $keywords := delimit .Params.keywords ", " }}
++  {{ if $keywords }}<meta name="keywords" content="{{ $keywords }}" />{{ end }}
+   <link rel="canonical" href="{{ .Permalink }}" />
+ 
+   <!-- Open Graph -->
+@@ -33,7 +34,7 @@
+   <meta property="og:title" content="{{ $metaTitle }}" />
+   {{ with $metaDesc }}
+   <meta property="og:description" content="{{ . }}" />{{ end }}
+-  <meta property="og:url" content="{{ .Permalink }}" />
++  <meta property="og:url" content="{{ .Permalink | absURL }}" />
+   {{ with .Params.hero_image }}
+   <meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+ 
+diff --git a/src/pages/contact/index.astro b/src/pages/contact/index.astro
+index aeb79f6..92a7785 100644
+--- a/src/pages/contact/index.astro
++++ b/src/pages/contact/index.astro
+@@ -9,6 +9,7 @@ import { Icon } from "astro-icon/components";
+ <MainLayout
+   title="Contact Us | Martina Murphy Solicitors, Limerick"
+   description="Get in touch with Martina Murphy Solicitors at Unit 7 Crescent Court, Dooradoyle, Limerick. Call (061) 303311 or email info@martinamurphy.ie to book a consultation."
++  keywords="contact solicitor limerick, martina murphy solicitors, book legal consultation limerick, solicitor dooradoyle"
+ >
+   <section class="w-full min-h-screen bg-white">
+     <div
+diff --git a/src/pages/employment-law/employees/redundancies/index.astro b/src/pages/employment-law/employees/redundancies/index.astro
+index fa97a94..f80e258 100644
+--- a/src/pages/employment-law/employees/redundancies/index.astro
++++ b/src/pages/employment-law/employees/redundancies/index.astro
+@@ -9,6 +9,7 @@ import serviceImg from "@/assets/redundancy.png";
+ <MainLayout
+   title="Redundancy Solicitors Limerick | Martina Murphy Solicitors"
+   description="Facing redundancy in Ireland? Our employment solicitors review severance agreements, verify redundancy payments, and challenge unfair selection processes."
++  keywords="redundancy solicitor limerick, redundancy pay ireland, unfair redundancy solicitor, employment law limerick, severance agreement solicitor"
+ >
+     <main class="w-full min-h-screen bg-white">
+         <!-- HERO SECTION -->
+diff --git a/src/pages/employment-law/employers/dispute-resolution/index.astro b/src/pages/employment-law/employers/dispute-resolution/index.astro
+index 3591ef9..4080784 100644
+--- a/src/pages/employment-law/employers/dispute-resolution/index.astro
++++ b/src/pages/employment-law/employers/dispute-resolution/index.astro
+@@ -9,6 +9,7 @@ import serviceImg from "@/assets/Hservice2.png";
+ <MainLayout
+   title="Dispute Resolution Solicitors Ireland | ADR & Mediation | Martina Murphy Solicitors"
+   description="Facing a legal conflict? Martina Murphy Solicitors provides expert dispute resolution for individuals and businesses, including ADR, mediation, commercial disputes, and workplace conflict resolution."
++  keywords="dispute resolution solicitor ireland, ADR solicitor limerick, mediation solicitor, commercial dispute solicitor, workplace conflict solicitor limerick"
+ >
+   <main class="w-full min-h-screen bg-white">
+ 
+diff --git a/src/pages/index.astro b/src/pages/index.astro
+index 6db6d89..78acf7b 100644
+--- a/src/pages/index.astro
++++ b/src/pages/index.astro
+@@ -88,7 +88,11 @@ const services = [
+ ];
+ ---
+ 
+-<MainLayout>
++<MainLayout
++  title="Martina Murphy Solicitors | Solicitor in Limerick"
++  description="Martina Murphy Solicitors — expert legal services in Limerick. Specialists in wills & probate, family law, employment law, conveyancing, and power of attorney."
++  keywords="solicitor limerick, family law solicitor limerick, wills and probate solicitor, conveyancing solicitor limerick, employment law solicitor, solicitor near me"
++>
+   <section class="w-full min-h-screen">
+ 
+     <!-- HERO -->
+diff --git a/src/pages/services-2/index.astro b/src/pages/services-2/index.astro
+index 32d4f5a..cbda431 100644
+--- a/src/pages/services-2/index.astro
++++ b/src/pages/services-2/index.astro
+@@ -63,6 +63,7 @@ const discussSteps = [
+ <MainLayout
+   title="Our Services | Martina Murphy Solicitors, Limerick"
+   description="Explore the full range of legal services at Martina Murphy Solicitors: wills & probate, family law, employment law, conveyancing, power of attorney and more."
++  keywords="legal services limerick, solicitor services limerick, family law, employment law, conveyancing, wills and probate, power of attorney"
+ >
+   <main class="w-full max-w-[1250px] mx-auto min-h-screen bg-white">
+ 
+-- 
+2.43.0
+

@@ -26,7 +26,11 @@
   {{ with $metaDesc }}
   <meta name="description" content="{{ . }}" />{{ end }}
   {{- $keywords := delimit .Params.keywords ", " }}
-  {{ if $keywords }}<meta name="keywords" content="{{ $keywords }}" />{{ end }}
+  {{ if $keywords }}
+  {{- $keywords := delimit .Params.keywords ", " }}
+  {{ if $keywords }}
+  <meta name="keywords" content="{{ $keywords }}" />{{ end }}
+  {{ end }}
   <link rel="canonical" href="{{ .Permalink }}" />
 
   <!-- Open Graph -->
