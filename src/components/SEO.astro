@@ -1,0 +1,22 @@
+---
+const {
+  title,
+  description,
+  keywords,
+} = Astro.props;
+
+const canonical = new URL(
+  Astro.url.pathname,
+  Astro.site ?? "https://martinamurphy.ie"
+).toString();
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<link rel="canonical" href={canonical} />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />

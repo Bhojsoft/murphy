@@ -2,7 +2,7 @@
 
 title: "Fair Deal Scheme Solicitors"
 url: "/elder-law/fair-deal-scheme/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protect Your Family's Home and Wealth While Securing the Best Care"
@@ -11,6 +11,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Proven Fair Deal Scheme Solicitors | Martina Murphy Solicitors"
 meta_description: "Worried about nursing home costs? Our dedicated Fair Deal Scheme solicitors help navigate the 5-year rule, secure Nursing Home Loan applications, and protect family assets."
+keywords:
+  -fair deal scheme solicitor
+  - nursing home loan solicitor
+  -fair deal 5 year rule
 
 show_testimonial: true
 show_cta: true

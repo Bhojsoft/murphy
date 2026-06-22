@@ -1,7 +1,7 @@
 ---
 title: "Personal Injury at Work"
 url: "/employment-law/employees/injury-at-work/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protecting Your Health, Career, and Financial Future"
@@ -10,6 +10,14 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Personal Injury at Work Solicitors | Martina Murphy Solicitors"
 meta_description: "Suffered a personal injury at work? Our expert accident at work solicitors provide comprehensive legal support to secure compensation while safeguarding your career."
+
+keywords:
+  - injury at work
+  - injury at work lawyers
+  - accident at work solicitors
+  - workplace injury claim
+  - injury at work solicitors
+  - claim accident at work
 
 show_testimonial: true
 show_cta: true

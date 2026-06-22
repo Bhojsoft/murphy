@@ -1,7 +1,7 @@
 ---
 title: "Wills and Probate"
 url: "/wills-and-probate/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Securing Your Family’s Future with Dignity and Certainty"
@@ -10,6 +10,14 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Expert Wills and Probate Solicitors | Martina Murphy Solicitors"
 meta_description: "Protect your family's future with our expert wills and probate solicitors. We provide compassionate, high-value legal guidance on registering probate, EPA, and estate planning."
+keywords:
+  - registering probate
+  - wills and probate
+  - wills and probate solicitor
+  - probate solicitor
+  - probate attorney
+  - probate lawyer
+  - cost of probate solicitor
 
 show_testimonial: true
 show_cta: true

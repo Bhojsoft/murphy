@@ -2,7 +2,7 @@
 
 title: "Corporate Governance & Compliance Solicitors"
 url: "/charity-education-law/governance-compliance/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protect Your Business, Directors, and Corporate Reputation"
@@ -11,6 +11,7 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Corporate Governance Solicitors Limerick | Martina Murphy Solicitors"
 meta_description: "Protect your company with expert corporate governance and compliance solicitors in Limerick. We help directors manage risk, ensure compliance, and safeguard business growth."
+keywords: "corporate governance and compliance law firm, governance compliance lawyer"
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

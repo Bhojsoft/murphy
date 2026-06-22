@@ -2,7 +2,7 @@
 
 title: "Power of Attorney Solicitors"
 url: "/power-of-attorney/"
-_build:
+build:
   list: never
   render: always
 
@@ -15,6 +15,23 @@ author: "Martina Murphy Solicitors"
 meta_title: "Expert Power of Attorney Solicitors | Martina Murphy Ireland"
 
 meta_description: "Secure your future with our expert Power of Attorney solicitors. We provide dignified, legally robust advice on EPA, healthcare directives, and DSS compliance."
+
+keywords:
+  - power solicitors
+  - power of attorney
+  - power of attorney cost
+  - power of attorney lawyers
+  - power of attorney solicitors
+  - power of attorney solicitors near me
+  - wills and power of attorney
+  - power of attorney for elderly parent
+  - getting power of attorney
+  - power of attorney solicitor near me
+  - setting up power of attorney
+  - solicitors near me for power of attorney
+  - emergency power of attorney
+  - power of attorney dementia
+  - making a power of attorney
 
 show_testimonial: true
 

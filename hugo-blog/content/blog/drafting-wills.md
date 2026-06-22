@@ -2,7 +2,7 @@
 
 title: "Drafting Wills"
 url: "/drafting-wills/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Preserving Your Life's Work and Protecting Your Family"
@@ -11,6 +11,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Expert Solicitors for Drafting Wills | Martina Murphy Solicitors"
 meta_description: "Looking for experienced wills solicitors? We provide expert guidance on drafting wills, estate planning, Enduring Powers of Attorney, and protecting your family's future."
+keywords:
+  -wills solicitor
+  -wills attorney
+  -lawyers that do wills near me
 
 show_testimonial: true
 show_cta: true

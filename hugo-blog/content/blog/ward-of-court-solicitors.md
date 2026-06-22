@@ -1,7 +1,7 @@
 ---
 title: "Ward of Court Solicitors in Limerick"
 url: "/elder-law/ward-of-court/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protecting Vulnerable Loved Ones Through Complex Legal Transitions."
@@ -10,6 +10,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Ward of Court Solicitors Limerick | Martina Murphy"
 meta_description: "Managing a loved one's capacity issues in Limerick? Our solicitors handle discharge from wardship and new DSS applications. Get in touch in confidence."
+keywords:
+  - ward of court solicitor
+  - discharge from wardship ireland
+  - ward of court applications
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

@@ -1,7 +1,7 @@
 ---
 title: "House Purchase Solicitor"
 url: "/conveyancing/buying-a-house/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Secure Your Dream Home Without the Administrative Stress"
@@ -10,6 +10,11 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Dedicated House Purchase Solicitor | Martina Murphy Solicitors"
 meta_description: "Need a trusted solicitor for buying a home? Our proven home buying solicitors ensure a flawless, stress-free property purchase from bidding to keys."
+
+keywords:
+  - house purchase solicitor
+  - solicitor for buying a home
+  - home buying solicitor
 
 show_testimonial: true
 show_cta: true

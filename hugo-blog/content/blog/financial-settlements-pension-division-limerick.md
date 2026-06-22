@@ -2,7 +2,7 @@
 
 title: "Financial Settlements & Pension Division"
 url: "/divorce-and-assets/financial-settlements/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protecting Your Wealth, Retirement, and Financial Independence"
@@ -11,6 +11,12 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Financial Settlements & Pension Division Limerick | Martina Murphy Solicitors"
 meta_description: "Protect your wealth and retirement during separation or divorce. Our Limerick solicitors advise on financial settlements, pension division, asset protection, and spousal maintenance."
+keywords:
+  -divorce and superannuation
+  - divorce superannuation
+  - divorce financial settlements
+  - hiding assets divorce
+  - divorce pension entitlement
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

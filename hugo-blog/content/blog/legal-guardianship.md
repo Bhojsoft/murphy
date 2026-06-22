@@ -2,7 +2,7 @@
 
 title: "Respected Legal Guardianship Solicitors"
 url: "/family-law/guardianship/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Secure Your Right to Protect and Decide for Your Loved Ones"
@@ -11,6 +11,9 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Trusted Legal Guardianship Solicitors | Martina Murphy Solicitors"
 meta_description: "Need a dedicated legal guardian lawyer? We offer compassionate, clear advice to secure your legal rights and protect vulnerable members of your family safely."
+keywords:
+  - legal guardian lawyer
+  - legal guardianship, lawyer for legal guardianship
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

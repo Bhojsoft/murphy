@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "en-us"
+defaultContentLanguage = "en-us"
 title = "Martina Murphy Solicitors"
 
 # Builds into its own folder; the root build script merges this into the

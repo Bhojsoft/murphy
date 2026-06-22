@@ -1,1 +1,39 @@
 @import "tailwindcss";
+.blog-body h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.blog-body h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.blog-body p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.blog-body ul {
+  list-style: disc;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-body li {
+  margin-bottom: 0.75rem;
+}
+
+.blog-body hr {
+  margin: 3rem 0;
+}
+
+.blog-body strong {
+  font-weight: 700;
+}

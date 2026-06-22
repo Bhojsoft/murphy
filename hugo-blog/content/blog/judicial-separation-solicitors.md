@@ -2,7 +2,7 @@
 
 title: "Judicial Separation Solicitors"
 url: "/divorce-and-assets/judicial-separation/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Providing Clarity and Protection When Your Marriage Ends"
@@ -11,6 +11,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Judicial Separation Solicitors | Family Law | Martina Murphy Solicitors"
 meta_description: "Navigating a judicial separation in Ireland? Our expert legal separation lawyers provide mature, straight-talking advice and strategic asset protection to safeguard your future."
+keywords:
+  - judicial separation ireland
+  - legal separation lawyers
+  - separation agreement solicitor
 
 show_testimonial: true
 show_cta: true

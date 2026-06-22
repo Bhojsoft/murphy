@@ -2,7 +2,7 @@
 
 title: "Accidents at Work Solicitors"
 url: "/personal-injury/accidents-at-work/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protecting Your Health, Income, and Future After a Workplace Injury"
@@ -11,6 +11,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Accidents at Work Solicitors Limerick | Martina Murphy Solicitors"
 meta_description: "Injured at work in Limerick? Our workplace accident solicitors help secure compensation for lost earnings, medical costs, and long-term recovery. Contact us today."
+keywords:
+  - work accident
+  - accident from work
+  - workers accident
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

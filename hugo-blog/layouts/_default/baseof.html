@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Google Tag Manager -->
   <script>
@@ -22,22 +23,28 @@
   {{- $metaTitle := .Params.meta_title | default .Title }}
   {{- $metaDesc := .Params.meta_description | default site.Params.defaultDescription }}
   <title>{{ $metaTitle }}</title>
-  {{ with $metaDesc }}<meta name="description" content="{{ . }}" />{{ end }}
+  {{ with $metaDesc }}
+  <meta name="description" content="{{ . }}" />{{ end }}
+  <meta name="keywords" content="{{ delimit .Params.keywords " , " }}" />
   <link rel="canonical" href="{{ .Permalink }}" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="{{ if eq .Kind "page" }}article{{ else }}website{{ end }}" />
+  <meta property="og:type" content="{{ if eq .Kind " page" }}article{{ else }}website{{ end }}" />
   <meta property="og:title" content="{{ $metaTitle }}" />
-  {{ with $metaDesc }}<meta property="og:description" content="{{ . }}" />{{ end }}
+  {{ with $metaDesc }}
+  <meta property="og:description" content="{{ . }}" />{{ end }}
   <meta property="og:url" content="{{ .Permalink }}" />
-  {{ with .Params.hero_image }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+  {{ with .Params.hero_image }}
+  <meta property="og:image" content="{{ . | absURL }}" />{{ end }}
 
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="icon" href="/favicon.ico" />
 </head>
+
 <body class="flex flex-col min-h-screen font-sans">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLJNQNS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLJNQNS" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   {{ partial "topbar.html" . }}
@@ -74,4 +81,5 @@
     });
   </script>
 </body>
+
 </html>

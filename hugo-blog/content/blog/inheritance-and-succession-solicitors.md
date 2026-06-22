@@ -2,7 +2,7 @@
 
 title: "Inheritance & Succession Solicitors"
 url: "/inheritance-solicitors/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protecting Your Family's Wealth and Legacy"
@@ -11,6 +11,9 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Inheritance & Succession Solicitors | Martina Murphy Solicitors"
 meta_description: "Looking for the best inheritance lawyer near me? Martina Murphy Solicitors offers expert, straight-talking advice on Inheritance & Succession to protect your family's wealth."
+keywords:
+  - inheritance solicitors
+  - best inheritance lawyer near me
 
 show_testimonial: true
 show_cta: true

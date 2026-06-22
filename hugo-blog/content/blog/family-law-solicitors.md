@@ -2,7 +2,7 @@
 
 title: "Leading Family Law Solicitors"
 url: "/family-law/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protecting Your Children, Your Assets, and Your Future Independence"
@@ -11,6 +11,12 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Leading Family Law Solicitors | Martina Murphy Solicitors"
 meta_description: "Searching for a trusted family lawyer near me? Our dedicated family law solicitors provide mature advice, protect your assets, and help secure your family's future."
+keywords:
+  -family law solicitors
+  -family lawyer near me
+  -family law attorney near me
+  - family law solicitors near me
+  - family lawyers
 
 show_testimonial: true
 show_cta: true

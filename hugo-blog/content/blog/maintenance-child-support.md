@@ -2,7 +2,7 @@
 
 title: "Maintenance & Child Support Solicitors in Limerick"
 url: "/family-law/maintenance/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Secure Your Financial Independence and Protect Your Children's Future"
@@ -11,6 +11,11 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Child Maintenance Solicitors Limerick | Martina Murphy"
 meta_description: "Sorting out maintenance in Limerick? Our solicitors secure fair, enforceable child and spousal support to protect your family's standard of living."
+keywords:
+  -maintenance lawyers near me
+  - child support lawyer
+  -spousal support attorneys
+  - support attorney
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

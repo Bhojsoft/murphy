@@ -1,7 +1,7 @@
 ---
 title: "Conveyancing Solicitor"
 url: "/conveyancing/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Flawless Property Transactions to Protect Your Most Valuable Asset"
@@ -10,6 +10,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Elite Conveyancing Solicitor | Martina Murphy Solicitors"
 meta_description: "Looking for property solicitors near me? Our experienced conveyancing solicitors ensure a smooth, stress-free property transfer while protecting your investment."
+keywords:
+ -conveyancing solicitor
+ -property solicitors
+ -property solicitors near me
 
 show_testimonial: true
 show_cta: true

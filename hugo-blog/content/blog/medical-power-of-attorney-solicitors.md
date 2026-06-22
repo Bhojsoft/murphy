@@ -1,7 +1,7 @@
 ---
 title: "Authoritative Medical Power of Attorney Solicitors"
 url: "/power-of-attorney/medical-healthcare/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protect Your Dignity and Control Your Future Healthcare"
@@ -10,6 +10,13 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Dedicated Medical Power of Attorney Solicitors | Martina Murphy Solicitors"
 meta_description: "Ensure your healthcare choices are respected. Our authoritative solicitors draft watertight medical power of attorney documents to protect your dignity and welfare."
+
+keywords:
+  - medical power of attorney
+  - medical attorney, medical poa
+  - power of attorney for medical decisions
+  - durable power of attorney for healthcare
+  - health and welfare power of attorney
 
 show_testimonial: true
 show_cta: true

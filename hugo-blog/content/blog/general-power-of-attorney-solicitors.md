@@ -2,7 +2,7 @@
 
 title: "General Power of Attorney Solicitors"
 url: "/power-of-attorney/general/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Secure Your Affairs with Legally Watertight POA Paperwork"
@@ -11,6 +11,11 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Dedicated General Power of Attorney Solicitors | Martina Murphy Solicitors"
 meta_description: "Need legally binding POA documents? Our authoritative solicitors provide straight-talking advice on drafting a General Power of Attorney to protect your assets."
+keywords:
+  - poa
+  - general power of attorney
+  - poa paperwork, poa documents
+  - general poa
 
 show_testimonial: true
 show_cta: true

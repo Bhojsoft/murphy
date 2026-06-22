@@ -2,70 +2,261 @@
 const menuLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about-us-2" },
-  { name: "Wills and Probate", href: "/wills-and-probate/" },
-  { name: "Family Law", href: "/family-law/" },
-  { name: "Divorce & Assets", href: "/divorce-and-assets/" },
-  { name: "Power of Attorney", href: "/power-of-attorney/" },
-  { name: "Personal Injury & Accidents", href: "/personal-injury/" },
-  { name: "Conveyancing", href: "/conveyancing/" },
-  { name: "Employment Law (Employees)", href: "/employment-law/employees/redundancies/" },
-  { name: "Employment Law (Employers)", href: "/employment-law/employers/dispute-resolution/" },
-  { name: "Elder Law", href: "/elder-law/" },
-  { name: "Charities & Educational Law", href: "/charity-education-law/" },
+
+  {
+    name: "Wills and Probate",
+    href: "/wills-and-probate/",
+    children: [
+      { name: "Drafting Wills", href: "/Drafting-Wills/" },
+      { name: "Inheritance Solicitors", href: "/inheritance-solicitors/" },
+      { name: "Probate Dispute", href: "/probate-dispute/" },
+      { name: "Estate Planning", href: "/Estate-Planning/" },
+    ],
+  },
+
+  {
+    name: "Family Law",
+    href: "/family-law/",
+    children: [
+      { name: "Child Custody", href: "/family-law/child-custody/" },
+      { name: "Legal Guardianship", href: "/family-law/guardianship/" },
+      { name: "Maintenance & Child Support", href: "/family-law/maintenance/" },
+    ],
+  },
+
+  {
+    name: "Divorce & Assets",
+    href: "/divorce-and-assets/",
+    children: [
+      {
+        name: "Divorce Solicitors",
+        href: "/divorce-and-assets/solicitors/",
+      },
+      {
+        name: "Family Home & Property",
+        href: "/divorce-and-assets/family-home-property/",
+      },
+      {
+        name: "Financial Settlements & Assets",
+        href: "/divorce-and-assets/financial-settlements/",
+      },
+      {
+        name: "Judicial Separation",
+        href: "/divorce-and-assets/judicial-separation/",
+      },
+    ],
+  },
+
+  {
+    name: "Power of Attorney",
+    href: "/power-of-attorney/",
+    children: [
+      {
+        name: "Enduring Power of Attorney (EPA)",
+        href: "/power-of-attorney/enduring/",
+      },
+      {
+        name: "Financial POA",
+        href: "/power-of-attorney/financial/",
+      },
+      {
+        name: "General Power of Attorney",
+        href: "/power-of-attorney/general/",
+      },
+      {
+        name: "Lasting Power of Attorney (LPA)",
+        href: "/power-of-attorney/lasting/",
+      },
+      {
+        name: "Medical / Healthcare POA",
+        href: "/power-of-attorney/medical-healthcare/",
+      },
+    ],
+  },
+
+  {
+    name: "Personal Injury & Accidents",
+    href: "/personal-injury/",
+    children: [
+      {
+        name: "Accidents at Work",
+        href: "/personal-injury/accidents-at-work/",
+      },
+      {
+        name: "Road Traffic Accidents",
+        href: "/personal-injury/road-traffic/",
+      },
+      {
+        name: "Car Injury Solicitors",
+        href: "/personal-injury/car-injury/",
+      },
+    ],
+  },
+
+  {
+    name: "Employment Law (Employees)",
+    href: "/employment-law/employees/redundancies/",
+    children: [
+      {
+        name: "Personal Injury at Work",
+        href: "/employment-law/employees/injury-at-work/",
+      },
+    ],
+  },
+
+  {
+    name: "Employment Law (Employers)",
+    href: "/employment-law/employers/dispute-resolution/",
+  },
+
+  {
+    name: "Elder Law",
+    href: "/elder-law/",
+    children: [
+      {
+        name: "Fair Deal Scheme",
+        href: "/elder-law/fair-deal-scheme/",
+      },
+      {
+        name: "Ward of Court",
+        href: "/elder-law/ward-of-court/",
+      },
+    ],
+  },
+
+  {
+    name: "Charities & Educational Law",
+    href: "/charity-education-law/",
+    children: [
+      {
+        name: "Corporate Governance & Compliance",
+        href: "/charity-education-law/governance-compliance/",
+      },
+      {
+        name: "Boards of Management",
+        href: "/charity-education-law/boards-of-management/",
+      },
+    ],
+  },
+
+  {
+    name: "Conveyancing",
+    href: "/conveyancing/",
+    children: [
+      {
+        name: "Selling a Property",
+        href: "/conveyancing/selling-a-house/",
+      },
+      {
+        name: "Commercial Property",
+        href: "/conveyancing/commercial-property/",
+      },
+      {
+        name: "Conveyancing Fees / Costs",
+        href: "/conveyancing/fees/",
+      },
+    ],
+  },
+
   { name: "Commissioner for Oaths", href: "/commissioner-for-oaths/" },
-  { name: "News & Blog", href: "/blog/" },
+  { name: "News & Blog", href: "/blog-2/" },
   { name: "Contact Us", href: "/contact" },
 ];
 ---
 
 <header class="top-0 left-0 w-full z-50">
   <div class="flex justify-between items-center px-6 py-4">
-    <button id="menuBtn" class="text-3xl">
-      ☰
-    </button>
-
-
-<a
-  href="/contact"
-  class="hidden md:inline-block bg-[rgb(11,131,142)] text-white px-6 py-3 rounded-full"
+    <button
+  id="menuBtn"
+  type="button"
+  class="text-3xl cursor-pointer"
 >
-  Contact Us ↗
-</a>
+  ☰
+</button>
 
-
+    <a
+      href="/contact"
+      class="hidden md:inline-block bg-[rgb(11,131,142)] text-white px-6 py-3 rounded-full"
+    >
+      Contact Us ↗
+    </a>
   </div>
 </header>
 
 <div id="overlay" class="fixed inset-0 bg-black/40 hidden z-[999]">
-  <div class="absolute left-0 top-0 h-full w-[320px] bg-white p-6 overflow-y-auto">
+  <div
+    class="absolute left-0 top-0 h-full w-[320px] bg-white p-6 overflow-y-auto"
+  >
+    <div class="flex justify-between items-center mb-6">
+      <h3 class="text-xl font-semibold">Menu</h3>
 
+      <button id="closeBtn" class="text-2xl"> ✕ </button>
+    </div>
 
-<div class="flex justify-between items-center mb-6">
-  <h3 class="text-xl font-semibold">Menu</h3>
+    <div class="flex flex-col">
+  {
+    menuLinks.map((link, index) =>
+      link.children ? (
+        <div class="border-b border-gray-200">
+          <div
+  class="accordion-btn w-full flex items-center justify-between py-3"
+  data-index={index}
+>
+  <a
+    href={link.href}
+    class="flex-1 text-left hover:text-[rgb(11,131,142)]"
+  >
+    {link.name}
+  </a>
 
-  <button id="closeBtn" class="text-2xl">
-    ✕
+  <button
+    type="button"
+    class="accordion-toggle px-2"
+  >
+    <span class="accordion-icon">+</span>
   </button>
 </div>
 
-<div class="flex flex-col gap-4">
-  {
-    menuLinks.map((link) => (
-      <a
-        href={link.href}
-        class="border-b border-gray-200 pb-3 hover:text-[rgb(11,131,142)] transition-colors"
-      >
-        {link.name}
-      </a>
-    ))
+          <div class="accordion-content hidden pb-3">
+           
+            {link.children.map((child) => (
+              <a
+                href={child.href}
+                class="block pl-8 py-2 text-gray-600 hover:text-[rgb(11,131,142)]"
+              >
+                {child.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <a
+          href={link.href}
+          class="border-b border-gray-200 py-3 hover:text-[rgb(11,131,142)]"
+        >
+          {link.name}
+        </a>
+      )
+    )
   }
 </div>
-
-
   </div>
 </div>
 
-<script is:inline>
+<!-- <script is:inline>
+  const menuBtn = document.getElementById("menuBtn");
+  const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("closeBtn");
+
+  menuBtn?.addEventListener("click", () => {
+    overlay.classList.remove("hidden");
+  });
+
+  closeBtn?.addEventListener("click", () => {
+    overlay.classList.add("hidden");
+  });
+
+  <script is:inline>
   const menuBtn = document.getElementById("menuBtn");
   const overlay = document.getElementById("overlay");
   const closeBtn = document.getElementById("closeBtn");
@@ -82,5 +273,64 @@ const menuLinks = [
     if (e.target === overlay) {
       overlay.classList.add("hidden");
     }
+  });
+
+  document.querySelectorAll(".accordion-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector(".accordion-icon");
+
+      content?.classList.toggle("hidden");
+
+      if (icon) {
+        icon.textContent = content?.classList.contains("hidden")
+          ? "+"
+          : "−";
+      }
+    });
+  });
+</script> -->
+<script is:inline>
+  window.addEventListener("load", () => {
+    const menuBtn = document.getElementById("menuBtn");
+    const overlay = document.getElementById("overlay");
+    const closeBtn = document.getElementById("closeBtn");
+
+    console.log("menuBtn:", menuBtn);
+    console.log("overlay:", overlay);
+
+    menuBtn?.addEventListener("click", () => {
+      console.log("Hamburger clicked");
+      overlay?.classList.remove("hidden");
+    });
+
+    closeBtn?.addEventListener("click", () => {
+      overlay?.classList.add("hidden");
+    });
+
+    overlay?.addEventListener("click", (e) => {
+      if (e.target === overlay) {
+        overlay.classList.add("hidden");
+      }
+    });
+
+    document.querySelectorAll(".accordion-toggle").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const wrapper = btn.closest(".accordion-btn");
+    const content = wrapper?.nextElementSibling;
+    const icon = btn.querySelector(".accordion-icon");
+
+    content?.classList.toggle("hidden");
+
+    if (icon) {
+      icon.textContent = content?.classList.contains("hidden")
+        ? "+"
+        : "−";
+    }
+  });
+});
   });
 </script>

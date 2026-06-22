@@ -2,7 +2,7 @@
 
 title: "Authoritative Financial POA Solicitors"
 url: "/power-of-attorney/financial/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Secure Your Wealth, Property, and Business Interests"
@@ -11,6 +11,11 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Dedicated Financial POA Solicitors | Martina Murphy Solicitors"
 meta_description: "Protect your assets and business with a robust financial power of attorney. Our trusted solicitors provide practical advice on property management, asset protection, and future planning."
+keywords:
+  -power of attorney for property
+  - financial poa, power of attorney to sell property
+  - financial power of attorney
+  - durable power of attorney for financial management
 
 show_testimonial: true
 show_cta: true

@@ -2,7 +2,7 @@
 
 title: "Elder Law Solicitors"
 url: "/elder-law/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protecting the Dignity, Wealth, and Autonomy of Older Adults"
@@ -11,6 +11,11 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Premier Elder Law Solicitors | Martina Murphy Solicitors"
 meta_description: "Searching for dedicated elder care lawyers? We provide expert legal advice on future planning, Enduring Powers of Attorney, DSS compliance, and protecting family wealth."
+keywords:
+  -elder law
+  -elder care lawyer
+  -elder law attorneys near me
+  - elder care lawyers near me
 
 show_testimonial: true
 show_cta: true

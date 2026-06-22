@@ -1,7 +1,7 @@
 ---
 title: "House Purchase Solicitor Fees"
 url: "/conveyancing/fees/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Absolute Financial Certainty Before You Sign the Contracts"
@@ -10,6 +10,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Transparent House Purchase Solicitor Fees | Martina Murphy Solicitors"
 meta_description: "Need clarity on the cost of solicitor for house purchase? We provide transparent, itemised quotes with no hidden fees to help protect your property investment."
+keywords:
+  - house purchase solicitor fees
+  - cost of solicitor for house purchase
+  - solicitor costs for buying a house
 
 show_testimonial: true
 show_cta: true

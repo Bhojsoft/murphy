@@ -2,7 +2,7 @@
 
 title: "Enduring Power of Attorney Solicitors in Limerick"
 url: "/power-of-attorney/lasting/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Secure Your Autonomy and Protect Your Family's Peace of Mind"
@@ -11,6 +11,11 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Lasting Power of Attorney Limerick | Martina Murphy"
 meta_description: "Our Limerick solicitors handle Lasting Power of Attorney (EPA in Ireland); transparent costs, watertight drafting and DSS registration. Get in touch."
+keywords:
+  -lasting power of attorney
+  - lpa power of attorney
+  - lpa's
+  - lasting power of attorney cost
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

@@ -1,7 +1,7 @@
 ---
 title: "Proven Solicitors for Selling a Property"
 url: "/conveyancing/selling-a-house/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Maximise Your Return Without the Administrative Stress."
@@ -10,6 +10,9 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Proven Solicitors for Selling a Property | Martina Murphy Solicitors"
 meta_description: "Preparing to sell your home? We provide complete clarity on solicitor charges for selling a house, ensuring a swift, secure, and stress-free transaction."
+keywords:
+  - solicitors fees for selling a house
+  - solicitor charges for selling a house
 
 show_testimonial: true
 show_cta: true

@@ -2,7 +2,7 @@
 
 title: "Charities & Education Law Solicitors in Limerick"
 url: "/charity-education-law/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Safeguarding the Mission of Schools and Non-Profit Organizations"
@@ -11,6 +11,9 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Charity & Education Law Solicitors Limerick | Martina Murphy"
 meta_description: "Running a school or charity in Limerick? Our solicitors handle governance, CRA compliance and employment law so your board can focus on its mission."
+keywords:
+  -charity & education solicitors
+  -charities & educational law lawyer
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

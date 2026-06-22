@@ -2,7 +2,7 @@
 
 title: "Commercial Property Solicitors in Limerick"
 url: "/conveyancing/commercial-property/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Secure Your Commercial Assets and Accelerate Your Business Growth"
@@ -11,6 +11,9 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Commercial Property Solicitors Limerick | Martina Murphy"
 meta_description: "Commercial property solicitors in Limerick - purchases, FRI leases, rent reviews and VAT structuring. Arrange a confidential consultation."
+keywords:
+  -commercial property solicitor
+  -business property solicitors
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

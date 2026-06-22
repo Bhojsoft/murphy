@@ -2,7 +2,7 @@
 
 title: "Redundancy Solicitors for Employees in Limerick"
 url: "/employment-law/employees/redundancies/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protect Your Rights, Secure Your Entitlements, and Move Forward with Confidence"
@@ -11,6 +11,18 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Redundancy Solicitors Limerick | Martina Murphy Solicitors"
 meta_description: "Facing redundancy in Ireland? Our employment solicitors review severance agreements, verify redundancy payments, and challenge unfair selection processes."
+keywords:
+  - calculating redundancy ireland
+  - statutory redundancy ireland
+  - irish redundancy
+  - redundancy payment
+  - redundancy legal advice
+  - solicitor for redundancy
+  - tupe ireland redundancy
+  - redundancy lawyer
+  - solicitor for redundancy
+  - tupe ireland redundancy
+  - redundancy lawyer
 image: /images/Service1.png
 show_testimonial: true
 show_cta: true

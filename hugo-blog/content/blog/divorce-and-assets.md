@@ -2,7 +2,7 @@
 
 title: "Divorce & Assets"
 url: "/divorce-and-assets/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Protecting Your Financial Independence and Your Family's Future"
@@ -11,6 +11,11 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Divorce & Assets Solicitors | Expert Family Law | Martina Murphy Solicitors"
 meta_description: "Protect your financial future with expert advice on divorce and asset division. Our skilled family law solicitors provide forensic asset tracing and strategic legal guidance."
+keywords:
+  -divorce mediator near me
+  - uncontested divorce near me
+  -divorce advocate, divorce law near me
+  -divorce & family law
 
 show_testimonial: true
 show_cta: true

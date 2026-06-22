@@ -1,7 +1,7 @@
 ---
 title: "Proven Personal Injury & Accidents Solicitors"
 url: "/personal-injury/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Aggressive Compensation Recovery. Total Career Protection."
@@ -10,6 +10,12 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Proven Personal Injury Solicitor | Martina Murphy Solicitors"
 meta_description: "Searching for injury lawyers near me? Our dedicated personal injury firm secures your rightful compensation while fiercely protecting your career and livelihood."
+
+keywords:
+  -personal injury solicitor
+  - personal injury firm
+  - personal accident lawyer
+  - injury lawyers near me
 
 show_testimonial: true
 show_cta: true

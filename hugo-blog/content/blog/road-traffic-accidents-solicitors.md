@@ -1,7 +1,7 @@
 ---
 title: "Proven Road Traffic Accidents Solicitors"
 url: "/personal-injury/road-traffic/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Aggressive Compensation Recovery. Total Focus on Your Healing."
@@ -10,6 +10,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Proven Road Traffic Accidents Solicitors | Martina Murphy Solicitors"
 meta_description: "Need a trusted lawyer for a car accident? Our dedicated solicitors secure maximum compensation while you focus on your physical recovery."
+
+keywords:
+  -lawyer for auto accident
+  - lawyer for a car accident
 
 show_testimonial: true
 show_cta: true

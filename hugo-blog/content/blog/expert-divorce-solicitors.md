@@ -2,7 +2,7 @@
 
 title: "Expert Divorce Solicitors"
 url: "/divorce-and-assets/solicitors/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Securing Your Future with Clarity and Dignity"
@@ -11,6 +11,18 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Expert Divorce Solicitors | Family Law | Martina Murphy Solicitors"
 meta_description: "Searching for the best divorce solicitors near me? Martina Murphy Solicitors provides high-value, straight-talking legal advice, forensic asset tracing, and dedicated family law support."
+keywords:
+  -divorce attorney
+  - divorce solicitor
+  -divorce solicitor near me
+  - divorce lawyers near me
+  - divorce lawyers
+  - divorce attorney near me
+  -divorce lawyer
+  - top divorce lawyers near me
+  - divorce attorney for men
+  - uncontested divorce lawyers near me
+  - best divorce solicitors near me
 
 show_testimonial: true
 show_cta: true

@@ -1,7 +1,7 @@
 ---
 title: "Probate Disputes"
 url: "/probate-dispute/"
-_build:
+build:
   list: never
   render: always
 subtitle: "Resolving Family Conflicts with Clarity and Gravitas"
@@ -10,6 +10,10 @@ author: "Martina Murphy Solicitors"
 
 meta_title: "Expert Probate Disputes Solicitors | Martina Murphy Solicitors"
 meta_description: "Facing a probate dispute? Our expert contested wills and probate lawyers provide clear, strategic representation to protect your inheritance and resolve family conflicts."
+keywords:
+  -probate dispute
+  - contested wills & probate lawyers
+  - best solicitors for contesting a will
 
 show_testimonial: true
 show_cta: true
