@@ -8,6 +8,8 @@
     "build-css": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./assets/css/main.css -o ./static/css/main.css --minify"
   },
 
+  
+
   "keywords": [],
   "author": "",
   "license": "ISC",
