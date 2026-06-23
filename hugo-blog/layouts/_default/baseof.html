@@ -30,13 +30,13 @@
   {{ end }}
 
   {{ with .Params.keywords }}
-  <meta name="keywords" content="{{ delimit . ", " }}" />
+  <meta name="keywords" content="{{ delimit . " , " }}" />
   {{ end }}
 
   <link rel="canonical" href="{{ .Permalink }}" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="{{ if eq .Kind "page" }}article{{ else }}website{{ end }}" />
+  <meta property="og:type" content="{{ if eq .Kind " page" }}article{{ else }}website{{ end }}" />
   <meta property="og:title" content="{{ $metaTitle }}" />
 
   {{ with $metaDesc }}
@@ -50,17 +50,15 @@
   {{ end }}
 
   <link rel="stylesheet" href="/css/main.css" />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/MM_Black_2.png?v=1" />
+
 </head>
 
 <body class="flex flex-col min-h-screen font-sans">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript>
-    <iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-MLJNQNS"
-      height="0"
-      width="0"
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLJNQNS" height="0" width="0"
       style="display:none;visibility:hidden">
     </iframe>
   </noscript>
