@@ -11,6 +11,12 @@ author: "Martina Murphy Solicitors"
 meta_title: "Dedicated Child Custody Solicitors | Martina Murphy Solicitors"
 meta_description: "Searching for a trusted child custody lawyer? We provide experienced, compassionate legal advocacy to protect your parental rights and prioritise your children's wellbeing."
 
+keywords:
+  - custody solicitor
+  - child custody lawyer
+  - legal custody lawyer
+  - lawyer custody near me
+
 show_testimonial: true
 show_cta: true
 draft: false
