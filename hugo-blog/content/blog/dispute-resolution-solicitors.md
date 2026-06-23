@@ -10,13 +10,13 @@ date: 2026-06-20
 author: "Martina Murphy Solicitors"
 
 meta_title: "Dispute Resolution Solicitors Ireland | ADR & Mediation | Martina Murphy Solicitors"
-meta_description: "Facing a legal conflict? Martina Murphy Solicitors provides expert dispute resolution for individuals and businesses, including ADR, mediation, commercial disputes, and workplace conflict resolution."\
+meta_description: "Facing a legal conflict? Martina Murphy Solicitors provides expert dispute resolution for individuals and businesses, including ADR, mediation, commercial disputes, and workplace conflict resolution."
 keywords:
-  -alternative dispute resolution
+  - alternative dispute resolution
   - financial dispute resolution
   - adr
-  -dispute resolution
-  -dispute resolution ireland
+  - dispute resolution
+  - dispute resolution ireland
   - workplace mediation
 
 image: /images/Service1.png
