@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
-    "dev-css": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./static/css/main.css --watch",
-    "build-css": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./static/css/main.css --minify"
+    "build-css": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./assets/css/main.css -o ./static/css/main.css --minify"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
