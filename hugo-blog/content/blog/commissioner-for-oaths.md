@@ -15,6 +15,7 @@ keywords:
   - solicitor commissioner for oaths near me
   - commissioner for oaths solicitor
 
+hero_image: /images/Service1.png
 show_testimonial: true
 show_cta: true
 draft: false

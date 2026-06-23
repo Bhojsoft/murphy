@@ -16,7 +16,7 @@ keywords:
   - uncontested divorce near me
   - divorce advocate, divorce law near me
   - divorce & family law
-
+hero_image: /images/divorce-and-assets.jpeg
 show_testimonial: true
 show_cta: true
 draft: false

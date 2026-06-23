@@ -4,6 +4,9 @@ import disputeHero from "@/assets/Service1.png";
 import martinaImg from "@/assets/martina-2.png";
 import weightImg from "@/assets/Weight.png";
 import serviceImg from "@/assets/redundancy.png";
+import hero from "@/assets/redhero.jpeg";
+import test from "@/assets/redu2.jpeg";
+import redu3 from "@/assets/redu3.jpg";
 ---
 
 <MainLayout
@@ -34,12 +37,14 @@ import serviceImg from "@/assets/redundancy.png";
             >
                 <!-- BACKGROUND IMAGE -->
                 <img
-                    src={disputeHero.src}
+                    src={hero.src}
                     alt="Redundancy Legal Services"
                     class="absolute inset-0 w-full h-full object-cover"
                 />
 
                 <!-- OVERLAY -->
+
+                <div class="absolute inset-0 bg-black/40"></div>
 
                 <!-- CONTENT -->
                 <div
@@ -605,7 +610,7 @@ import serviceImg from "@/assets/redundancy.png";
             shrink-0"
                 >
                     <img
-                        src={weightImg.src}
+                        src={test.src}
                         alt="Testimonial"
                         class="w-full h-full object-cover"
                     />
@@ -919,7 +924,7 @@ import serviceImg from "@/assets/redundancy.png";
           overflow-hidden"
             >
                 <img
-                    src={serviceImg.src}
+                    src={redu3.src}
                     alt="Our Services"
                     class="w-full h-full object-cover"
                 />

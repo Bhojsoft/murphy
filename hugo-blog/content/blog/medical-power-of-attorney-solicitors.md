@@ -18,6 +18,8 @@ keywords:
   - durable power of attorney for healthcare
   - health and welfare power of attorney
 
+hero_image: /images/Service1.png
+
 show_testimonial: true
 show_cta: true
 draft: false

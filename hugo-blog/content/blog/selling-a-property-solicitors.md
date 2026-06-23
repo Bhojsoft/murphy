@@ -14,6 +14,8 @@ keywords:
   - solicitors fees for selling a house
   - solicitor charges for selling a house
 
+hero_image: /images/property-house.jpg
+
 show_testimonial: true
 show_cta: true
 draft: false

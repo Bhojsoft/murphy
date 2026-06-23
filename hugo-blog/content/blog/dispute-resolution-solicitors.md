@@ -19,7 +19,7 @@ keywords:
   - dispute resolution ireland
   - workplace mediation
 
-image: /images/Service1.png
+hero_image: /images/Service1.png
 show_testimonial: true
 show_cta: true
 draft: true # superseded by the Figma-built Astro page at this URL (src/pages/employment-law/employers/dispute-resolution/) — kept here only as a content/SEO-copy reference

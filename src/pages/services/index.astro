@@ -4,6 +4,7 @@ import Footer from "@/components/common/Footer.astro";
 import serviceImg1 from "@/assets/Service1.png";
 import serviceImg2 from "@/assets/Service2.png";
 import logoImg from "@/assets/MM - Black 2.png";
+import service from "@/assets/service.jpeg";
 
 import "@/styles/global.css";
 
@@ -130,7 +131,7 @@ const services = [
         >
           <!-- BG IMAGE -->
           <img
-            src={serviceImg1.src}
+            src={service.src}
             alt="Services"
             class="
               absolute
@@ -144,7 +145,7 @@ const services = [
           />
 
           <!-- OVERLAY -->
-          
+          <div class="absolute inset-0 bg-black/40"></div>
 
           <!-- NAVBAR -->
           <div

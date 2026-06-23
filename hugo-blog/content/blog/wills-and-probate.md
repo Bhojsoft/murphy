@@ -19,6 +19,8 @@ keywords:
   - probate lawyer
   - cost of probate solicitor
 
+hero_image: /images/.jpeg
+
 show_testimonial: true
 show_cta: true
 

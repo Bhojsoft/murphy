@@ -15,7 +15,7 @@ keywords:
   - wills solicitor
   - wills attorney
   - lawyers that do wills near me
-
+hero_image: /images/wills.jpg
 show_testimonial: true
 show_cta: true
 draft: false

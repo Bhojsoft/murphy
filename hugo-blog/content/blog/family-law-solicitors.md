@@ -18,6 +18,8 @@ keywords:
   - family law solicitors near me
   - family lawyers
 
+hero_image: /images/family-law.jpg
+
 show_testimonial: true
 show_cta: true
 draft: false

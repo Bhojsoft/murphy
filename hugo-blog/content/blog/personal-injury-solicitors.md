@@ -17,6 +17,8 @@ keywords:
   - personal accident lawyer
   - injury lawyers near me
 
+hero_image: /images/personal-accident.jpeg
+
 show_testimonial: true
 show_cta: true
 draft: false

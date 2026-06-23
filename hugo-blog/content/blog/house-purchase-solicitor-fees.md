@@ -15,6 +15,7 @@ keywords:
   - cost of solicitor for house purchase
   - solicitor costs for buying a house
 
+hero_image: /images/property-house.jpg
 show_testimonial: true
 show_cta: true
 draft: false

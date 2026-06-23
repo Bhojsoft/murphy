@@ -14,7 +14,7 @@ meta_description: "Need a dedicated legal guardian lawyer? We offer compassionat
 keywords:
   - legal guardian lawyer
   - legal guardianship, lawyer for legal guardianship
-image: /images/Service1.png
+hero_image: /images/Service1.png
 show_testimonial: true
 show_cta: true
 draft: false

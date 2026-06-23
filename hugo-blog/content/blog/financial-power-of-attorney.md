@@ -17,6 +17,8 @@ keywords:
   - financial power of attorney
   - durable power of attorney for financial management
 
+hero_image: /images/Service1.png
+
 show_testimonial: true
 show_cta: true
 draft: false

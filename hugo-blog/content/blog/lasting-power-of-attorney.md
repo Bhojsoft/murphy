@@ -16,7 +16,7 @@ keywords:
   - lpa power of attorney
   - lpa's
   - lasting power of attorney cost
-image: /images/Service1.png
+hero_image: /images/Service1.png
 show_testimonial: true
 show_cta: true
 draft: false

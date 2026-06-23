@@ -15,6 +15,8 @@ keywords:
  - property solicitors
  - property solicitors near me
 
+hero_image: /images/convenyencing.jpeg
+
 show_testimonial: true
 show_cta: true
 draft: false

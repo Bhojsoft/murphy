@@ -15,6 +15,8 @@ keywords:
   - inheritance solicitors
   - best inheritance lawyer near me
 
+hero_image: /images/inherit.jpg
+
 show_testimonial: true
 show_cta: true
 draft: false

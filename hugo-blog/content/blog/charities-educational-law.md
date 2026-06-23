@@ -14,7 +14,7 @@ meta_description: "Running a school or charity in Limerick? Our solicitors handl
 keywords:
   - charity & education solicitors
   - charities & educational law lawyer
-image: /images/Service1.png
+hero_image: /images/Service1.png
 show_testimonial: true
 show_cta: true
 draft: false

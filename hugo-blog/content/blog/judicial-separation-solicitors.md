@@ -16,6 +16,8 @@ keywords:
   - legal separation lawyers
   - separation agreement solicitor
 
+hero_image: /images/judicial.jpeg
+
 show_testimonial: true
 show_cta: true
 draft: false

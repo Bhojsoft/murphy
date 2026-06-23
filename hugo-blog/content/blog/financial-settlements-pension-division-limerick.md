@@ -17,7 +17,7 @@ keywords:
   - divorce financial settlements
   - hiding assets divorce
   - divorce pension entitlement
-image: /images/Service1.png
+hero_image: /images/settlement.jpeg
 show_testimonial: true
 show_cta: true
 draft: false

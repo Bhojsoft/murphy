@@ -15,6 +15,8 @@ keywords:
   - estate planning solicitors
   - deceased estate solicitors
 
+hero_image: /images/property-house.jpg
+
 show_testimonial: true
 show_cta: true
 draft: false

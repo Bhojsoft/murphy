@@ -15,6 +15,8 @@ keywords:
   - lawyer for auto accident
   - lawyer for a car accident
 
+hero_image: /images/car-accident.jpeg
+
 show_testimonial: true
 show_cta: true
 draft: false

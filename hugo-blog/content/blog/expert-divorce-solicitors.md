@@ -23,7 +23,7 @@ keywords:
   - divorce attorney for men
   - uncontested divorce lawyers near me
   - best divorce solicitors near me
-
+hero_image: /images/divorce-and-assets.jpeg
 show_testimonial: true
 show_cta: true
 draft: false

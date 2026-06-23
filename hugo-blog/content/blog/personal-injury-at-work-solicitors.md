@@ -19,6 +19,7 @@ keywords:
   - injury at work solicitors
   - claim accident at work
 
+hero_image: /images/personal-injury.jpeg
 show_testimonial: true
 show_cta: true
 draft: false

@@ -17,6 +17,8 @@ keywords:
   - poa paperwork, poa documents
   - general poa
 
+hero_image: /images/Service1.png
+
 show_testimonial: true
 show_cta: true
 draft: false

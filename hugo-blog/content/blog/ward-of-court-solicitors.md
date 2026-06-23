@@ -14,7 +14,8 @@ keywords:
   - ward of court solicitor
   - discharge from wardship ireland
   - ward of court applications
-image: /images/Service1.png
+
+hero_image: /images/Service1.png
 show_testimonial: true
 show_cta: true
 draft: false

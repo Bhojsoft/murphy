@@ -17,6 +17,8 @@ keywords:
   - elder law attorneys near me
   - elder care lawyers near me
 
+hero_image: /images/elderlaw.jpeg
+
 show_testimonial: true
 show_cta: true
 draft: false

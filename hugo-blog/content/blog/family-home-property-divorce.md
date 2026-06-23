@@ -16,6 +16,8 @@ keywords:
   - divorce property settlement
   - buying out partner house divorce
 
+hero_image: /images/property-house.jpg
+
 show_testimonial: true
 show_cta: true
 draft: false

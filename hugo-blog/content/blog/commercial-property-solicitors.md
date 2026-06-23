@@ -14,7 +14,7 @@ meta_description: "Commercial property solicitors in Limerick - purchases, FRI l
 keywords:
   - commercial property solicitor
   - business property solicitors
-image: /images/Service1.png
+hero_image: /images/Service1.png
 show_testimonial: true
 show_cta: true
 draft: false

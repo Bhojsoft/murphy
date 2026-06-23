@@ -23,7 +23,7 @@ keywords:
   - solicitor for redundancy
   - tupe ireland redundancy
   - redundancy lawyer
-image: /images/Service1.png
+image: /images/redu.jpg
 show_testimonial: true
 show_cta: true
 draft: true # superseded by the Figma-built Astro page at this URL (src/pages/employment-law/employees/redundancies/) — kept here only as a content/SEO-copy reference

@@ -15,7 +15,7 @@ keywords:
   - work accident
   - accident from work
   - workers accident
-image: /images/Service1.png
+hero_image: /images/accident-at-work.jpg
 show_testimonial: true
 show_cta: true
 draft: false

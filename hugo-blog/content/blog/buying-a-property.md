@@ -16,6 +16,8 @@ keywords:
   - solicitor for buying a home
   - home buying solicitor
 
+hero_image: /images/property-house.jpg
+
 show_testimonial: true
 show_cta: true
 draft: false

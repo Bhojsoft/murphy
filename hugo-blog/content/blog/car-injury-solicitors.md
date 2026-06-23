@@ -14,6 +14,8 @@ keywords:
   - car injury lawyer near me
   - car accident lawyers near me
 
+hero_image: /images/car-accident.jpeg
+
 show_testimonial: true
 show_cta: true
 draft: false

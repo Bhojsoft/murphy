@@ -16,6 +16,8 @@ keywords:
   - nursing home loan solicitor
   - fair deal 5 year rule
 
+hero_image: /images/fair.jpeg
+
 show_testimonial: true
 show_cta: true
 draft: false
