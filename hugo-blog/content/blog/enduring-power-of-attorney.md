@@ -12,10 +12,10 @@ author: "Martina Murphy Solicitors"
 meta_title: "Expert Enduring Power of Attorney Solicitors | Martina Murphy Solicitors"
 meta_description: "Protect your family's future with a legally robust Enduring Power of Attorney (EPA). Our expert solicitors provide dignified advice and handle DSS registration."
 keywords:
-  -enduring power of attorney
+  - enduring power of attorney
   - epa power of attorney, power of attorney and enduring power of attorney
   - enduring poa
-  -enduring power of attorney dementia
+  - enduring power of attorney dementia
   - registering an enduring power of attorney
 
 show_testimonial: true

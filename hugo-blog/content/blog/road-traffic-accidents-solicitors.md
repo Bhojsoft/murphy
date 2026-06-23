@@ -12,7 +12,7 @@ meta_title: "Proven Road Traffic Accidents Solicitors | Martina Murphy Solicitor
 meta_description: "Need a trusted lawyer for a car accident? Our dedicated solicitors secure maximum compensation while you focus on your physical recovery."
 
 keywords:
-  -lawyer for auto accident
+  - lawyer for auto accident
   - lawyer for a car accident
 
 show_testimonial: true

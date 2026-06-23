@@ -11,8 +11,8 @@ author: "Martina Murphy Solicitors"
 meta_title: "Dedicated Car Injury Solicitors | Martina Murphy Solicitors"
 meta_description: "Searching for a trusted car injury lawyer? Our experienced solicitors aggressively pursue compensation while protecting your financial independence and future."
 keywords:
-  -car injury lawyer near me
-  -car accident lawyers near me
+  - car injury lawyer near me
+  - car accident lawyers near me
 
 show_testimonial: true
 show_cta: true

@@ -12,9 +12,9 @@ author: "Martina Murphy Solicitors"
 meta_title: "Proven Fair Deal Scheme Solicitors | Martina Murphy Solicitors"
 meta_description: "Worried about nursing home costs? Our dedicated Fair Deal Scheme solicitors help navigate the 5-year rule, secure Nursing Home Loan applications, and protect family assets."
 keywords:
-  -fair deal scheme solicitor
+  - fair deal scheme solicitor
   - nursing home loan solicitor
-  -fair deal 5 year rule
+  - fair deal 5 year rule
 
 show_testimonial: true
 show_cta: true

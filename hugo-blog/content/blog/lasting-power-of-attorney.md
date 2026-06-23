@@ -12,7 +12,7 @@ author: "Martina Murphy Solicitors"
 meta_title: "Lasting Power of Attorney Limerick | Martina Murphy"
 meta_description: "Our Limerick solicitors handle Lasting Power of Attorney (EPA in Ireland); transparent costs, watertight drafting and DSS registration. Get in touch."
 keywords:
-  -lasting power of attorney
+  - lasting power of attorney
   - lpa power of attorney
   - lpa's
   - lasting power of attorney cost

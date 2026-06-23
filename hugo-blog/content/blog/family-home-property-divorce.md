@@ -12,7 +12,7 @@ author: "Martina Murphy Solicitors"
 meta_title: "Family Home & Property Solicitors | Divorce Asset Division | Martina Murphy Solicitors"
 meta_description: "Worried about who gets the house in a divorce? Our expert solicitors provide clear legal advice on divorce property settlements, family home rights, and property transfers."
 keywords:
-  -who gets the house in a divorce
+  - who gets the house in a divorce
   - divorce property settlement
   - buying out partner house divorce
 

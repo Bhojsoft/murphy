@@ -12,9 +12,9 @@ author: "Martina Murphy Solicitors"
 meta_title: "Expert Solicitors for Drafting Wills | Martina Murphy Solicitors"
 meta_description: "Looking for experienced wills solicitors? We provide expert guidance on drafting wills, estate planning, Enduring Powers of Attorney, and protecting your family's future."
 keywords:
-  -wills solicitor
-  -wills attorney
-  -lawyers that do wills near me
+  - wills solicitor
+  - wills attorney
+  - lawyers that do wills near me
 
 show_testimonial: true
 show_cta: true

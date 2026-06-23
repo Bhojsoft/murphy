@@ -12,7 +12,7 @@ author: "Martina Murphy Solicitors"
 meta_title: "Expert Estate Planning Solicitors | Martina Murphy Solicitors"
 meta_description: "Secure your family's future with our expert estate planning solicitors. We provide mature, straight-talking advice on wealth protection, EPA, and tax mitigation."
 keywords:
-  -estate planning solicitors
+  - estate planning solicitors
   - deceased estate solicitors
 
 show_testimonial: true
