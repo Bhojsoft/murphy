@@ -22,34 +22,48 @@
 
   {{- $metaTitle := .Params.meta_title | default .Title }}
   {{- $metaDesc := .Params.meta_description | default site.Params.defaultDescription }}
+
   <title>{{ $metaTitle }}</title>
+
   {{ with $metaDesc }}
-  <meta name="description" content="{{ . }}" />{{ end }}
-  {{- $keywords := delimit .Params.keywords ", " }}
-  {{ if $keywords }}
-  {{- $keywords := delimit .Params.keywords ", " }}
-  {{ if $keywords }}
-  <meta name="keywords" content="{{ $keywords }}" />{{ end }}
+  <meta name="description" content="{{ . }}" />
   {{ end }}
+
+  {{ with .Params.keywords }}
+  <meta name="keywords" content="{{ delimit . ", " }}" />
+  {{ end }}
+
   <link rel="canonical" href="{{ .Permalink }}" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="{{ if eq .Kind " page" }}article{{ else }}website{{ end }}" />
+  <meta property="og:type" content="{{ if eq .Kind "page" }}article{{ else }}website{{ end }}" />
   <meta property="og:title" content="{{ $metaTitle }}" />
+
   {{ with $metaDesc }}
-  <meta property="og:description" content="{{ . }}" />{{ end }}
+  <meta property="og:description" content="{{ . }}" />
+  {{ end }}
+
   <meta property="og:url" content="{{ .Permalink | absURL }}" />
+
   {{ with .Params.hero_image }}
-  <meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+  {{ end }}
 
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="icon" href="/favicon.ico" />
 </head>
 
 <body class="flex flex-col min-h-screen font-sans">
+
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLJNQNS" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-MLJNQNS"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   {{ partial "topbar.html" . }}
@@ -67,24 +81,37 @@
       const overlay = document.getElementById("overlay");
       const closeBtn = document.getElementById("closeBtn");
 
-      menuBtn?.addEventListener("click", () => overlay.classList.remove("hidden"));
-      closeBtn?.addEventListener("click", () => overlay.classList.add("hidden"));
+      menuBtn?.addEventListener("click", () => {
+        overlay.classList.remove("hidden");
+      });
+
+      closeBtn?.addEventListener("click", () => {
+        overlay.classList.add("hidden");
+      });
+
       overlay?.addEventListener("click", (e) => {
-        if (e.target === overlay) overlay.classList.add("hidden");
+        if (e.target === overlay) {
+          overlay.classList.add("hidden");
+        }
       });
 
       const reveals = document.querySelectorAll(".reveal");
+
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            if (entry.isIntersecting) entry.target.classList.add("show");
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
           });
         },
         { threshold: 0.15 }
       );
+
       reveals.forEach((el) => observer.observe(el));
     });
   </script>
+
 </body>
 
 </html>
