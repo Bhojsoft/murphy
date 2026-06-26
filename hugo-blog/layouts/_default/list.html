@@ -1,26 +1,137 @@
 {{ define "main" }}
-<section class="w-full flex justify-center px-4 md:px-6">
-  <div class="w-full max-w-[1200px] flex flex-col items-center gap-6 pt-16 pb-10 text-center">
-    <h1 class="font-dm-sans text-[42px] md:text-[64px] tracking-[-0.03em] text-black">{{ .Title }}</h1>
-    {{ with .Params.meta_description }}<p class="text-[18px] text-black/60 max-w-[700px]">{{ . }}</p>{{ end }}
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     BLOG LIST PAGE — redesigned to match redundancy page design system
+     Same fonts, spacing, brand color, and section rhythm as the Astro pages.
+═══════════════════════════════════════════════════════════════════════════ -->
+
+<!-- HERO SECTION (no image — uses gradient with dark overlay style) -->
+<section class="w-full max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 pt-6 md:pt-8">
+  <div class="relative mx-auto rounded-[30px] overflow-hidden min-h-[400px] md:min-h-[500px] flex flex-col justify-end items-start px-[32px] py-[50px] md:px-[50px] md:pb-[70px] bg-gradient-to-br from-[#0B838E] to-[#085f68]">
+
+    <!-- Subtle texture overlay -->
+    <div class="absolute inset-0 bg-black/20"></div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10 flex flex-col gap-[10px] max-w-[1100px]">
+      <h1 class="font-['DM_Sans'] font-normal text-white tracking-[-0.04em] leading-[100%] text-[50px] max-w-[275px] md:text-[80px] md:max-w-[620px] lg:max-w-[1100px]">
+        {{ .Title | default "News & Insights" }}
+      </h1>
+      {{ with .Params.meta_description }}
+      <p class="font-['Crimson_Text'] font-normal text-white tracking-[-0.03em] text-[28px] leading-[110%] max-w-[600px] md:text-[36px]">
+        {{ . }}
+      </p>
+      {{ end }}
+    </div>
   </div>
 </section>
 
-<section class="w-full flex justify-center px-4 md:px-6 pb-20">
-  <div class="w-full max-w-[1200px]">
+<!-- INTRO LINE -->
+<section class="w-full px-4 md:px-6 lg:px-8">
+  <div class="max-w-[1200px] mx-auto flex flex-col items-center px-[32px] py-[40px] gap-[24px] md:px-[50px] md:pt-[60px] md:pb-[40px]">
+    <p class="font-['DM_Sans'] font-normal text-[#6F6F6F] tracking-[-0.005em] leading-[140%] text-[21px] md:max-w-[620px] lg:max-w-[900px] text-center">
+      Legal news, updates and insights from Martina Murphy Solicitors, Limerick.
+    </p>
+  </div>
+</section>
+
+<!-- BLOG GRID -->
+<section class="w-full px-4 md:px-6 lg:px-8 pb-[80px] md:pb-[100px]">
+  <div class="max-w-[1200px] mx-auto">
     {{ if .Pages }}
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
         {{ range .Pages }}
-          <a href="{{ .RelPermalink }}" class="block rounded-[20px] border border-black/10 p-6 hover:shadow-lg transition">
-            <p class="text-black/45 text-[14px] mb-2">{{ .Date.Format "January 2, 2006" }}</p>
-            <h2 class="text-[22px] text-black mb-2">{{ .Title }}</h2>
-            {{ with .Params.subtitle }}<p class="text-black/70 text-[15px]">{{ . }}</p>{{ end }}
-          </a>
+        <a
+          href="{{ .RelPermalink }}"
+          class="reveal flex flex-col gap-0 rounded-[20px] overflow-hidden border border-black/10 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
+        >
+          <!-- CARD IMAGE -->
+          <div class="w-full h-[220px] overflow-hidden bg-[#F7F4EB] shrink-0">
+            {{ with .Params.hero_image }}
+            <img
+              src="{{ . }}"
+              alt="{{ $.Title }}"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            {{ else }}
+            <!-- Fallback teal block when no image -->
+            <div class="w-full h-full bg-[#0B838E]/10 flex items-center justify-center">
+              <span class="font-['Crimson_Text'] text-[#0B838E] text-[48px] leading-none">MM</span>
+            </div>
+            {{ end }}
+          </div>
+
+          <!-- CARD BODY -->
+          <div class="flex flex-col gap-[12px] p-[24px] md:p-[28px] flex-1">
+            <!-- DATE + CATEGORY -->
+            <div class="flex items-center gap-3">
+              <p class="font-['DM_Sans'] font-normal text-black/45 text-[14px] leading-[140%] tracking-[-0.005em]">
+                {{ .Date.Format "January 2, 2006" }}
+              </p>
+              {{ with .Params.category }}
+              <span class="bg-[#0B838E]/10 text-[#0B838E] font-['DM_Sans'] text-[11px] font-normal leading-[140%] tracking-[-0.005em] px-2 py-[2px] rounded-full">
+                {{ . }}
+              </span>
+              {{ end }}
+            </div>
+
+            <!-- TITLE -->
+            <h2 class="font-['Crimson_Text'] font-normal text-black text-[26px] leading-[110%] tracking-[-0.03em] group-hover:text-[#0B838E] transition-colors duration-300">
+              {{ .Title }}
+            </h2>
+
+            <!-- SUBTITLE / EXCERPT -->
+            {{ with .Params.subtitle }}
+            <p class="font-['DM_Sans'] font-normal text-black/70 text-[16px] leading-[140%] tracking-[-0.005em]">
+              {{ . }}
+            </p>
+            {{ end }}
+
+            <!-- READ MORE ARROW -->
+            <div class="mt-auto pt-[16px] flex items-center gap-[4px]">
+              <span class="font-['DM_Sans'] font-normal text-[16px] leading-[140%] tracking-[-0.005em] text-[#767676] group-hover:text-[#0B838E] transition-colors duration-300">
+                Read more
+              </span>
+              <span class="font-['Instrument_Sans'] font-medium text-[16px] leading-[110%] tracking-[-0.03em] text-[#767676] group-hover:text-[#0B838E] transition-colors duration-300">
+                →
+              </span>
+            </div>
+          </div>
+        </a>
         {{ end }}
       </div>
     {{ else }}
-      <p class="text-center text-black/50 py-10">No news posts yet — check back soon.</p>
+      <div class="flex flex-col items-center gap-[20px] py-[80px]">
+        <p class="font-['DM_Sans'] font-normal text-[21px] text-black/50 text-center">
+          No news posts yet — check back soon.
+        </p>
+      </div>
     {{ end }}
   </div>
 </section>
+
+<!-- CTA SECTION -->
+<section class="w-full max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8 mt-[20px] mb-[60px]">
+  <div class="w-full max-w-[720px] mx-auto flex flex-col items-center gap-10 max-md:gap-[30px]">
+
+    <h2 class="font-['Crimson_Text'] font-normal text-[60px] leading-[90%] tracking-[-0.03em] text-black text-center md:text-[54px] max-md:text-[50px] max-md:leading-[95%]">
+      Have a Legal Question?
+    </h2>
+
+    <p class="font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F] text-center w-full">
+      Our team is here to help. Contact us today to schedule a confidential consultation with a specialist solicitor.
+    </p>
+
+    <a
+      href="/contact"
+      class="flex items-center justify-center px-[22px] py-[14px] w-[260px] h-12 bg-[#0B838E] rounded-full shadow-[0px_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 hover:bg-[#096d76]"
+    >
+      <span class="font-['DM_Sans'] font-bold text-sm leading-[140%] tracking-[-0.025em] text-white text-center">
+        Book a Confidential Consultation
+      </span>
+    </a>
+
+  </div>
+</section>
+
 {{ end }}

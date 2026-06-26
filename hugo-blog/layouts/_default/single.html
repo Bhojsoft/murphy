@@ -1,232 +1,533 @@
 {{ define "main" }}
 
-<!-- BLOG HEADER -->
-<section class="w-full flex justify-center px-4 md:px-6">
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     BLOG / SERVICE POST — SINGLE TEMPLATE
+     Matches /employment-law/employees/redundancies/ reference design:
+     - rounded-[30px] hero with overlay
+     - teal bento grid of service cards (from front matter `service_cards`)
+     - body content with FAQ auto-converted to accordion
+     - stats + Let's Discuss sections
+     Markdown content is preserved exactly.
+═══════════════════════════════════════════════════════════════════════════ -->
+
+<!-- HERO SECTION -->
+<section class="w-full max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 pt-6 md:pt-8">
   <div
-    class="w-full max-w-[1500px]
-           flex flex-col items-center justify-center
-           pt-12 pb-8 px-6
-           md:pt-12 md:pb-8
-           xl:py-[80px]
-           gap-8"
-  >
+    class="relative mx-auto rounded-[30px] overflow-hidden min-h-[600px] md:min-h-[750px] flex flex-col justify-end items-start px-[32px] py-[50px] md:px-[50px] md:pb-[70px]">
 
-    <!-- DATE -->
-    <p
-      class="font-dm-sans font-normal
-             text-[21px]
-             leading-[140%]
-             tracking-[-0.005em]
-             text-black/45
-             text-center"
-    >
-      {{ .Date.Format "January 2, 2006" }}
-    </p>
+    {{ with .Params.hero_image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" class="absolute inset-0 w-full h-full object-cover" />
+    {{ else }}
+    <div class="absolute inset-0 bg-gradient-to-br from-[#0B838E] to-[#085f68]"></div>
+    {{ end }}
 
-    <!-- TITLE AREA -->
-    <div
-      class="flex flex-col items-center
-             gap-6
-             w-full
-             max-w-[900px]"
-    >
+    <div class="absolute inset-0 bg-black/40"></div>
 
+    <div class="relative z-10 flex flex-col gap-[10px] max-w-[1100px]">
       <h1
-        class="font-dm-sans font-normal
-               text-center
-               text-black
-               tracking-[-0.04em]
-               leading-[100%]
-               text-[50px]
-               md:text-[80px]"
-      >
+        class="font-['DM_Sans'] font-normal text-white tracking-[-0.04em] leading-[100%] text-[50px] max-w-[275px] md:text-[80px] md:max-w-[620px] lg:max-w-[1100px]">
         {{ .Title }}
       </h1>
-
       {{ with .Params.subtitle }}
-      <p
-        class="font-dm-sans
-               text-[21px]
-               leading-[140%]
-               tracking-[-0.005em]
-               text-black/70
-               text-center"
-      >
+      <h2
+        class="font-['Crimson_Text'] font-normal text-white tracking-[-0.04em] text-[32px] leading-[110%] max-w-[275px] md:text-[40px] md:max-w-[620px] lg:max-w-[1100px]">
         {{ . }}
-      </p>
+      </h2>
       {{ end }}
-
-      {{ with .Params.author }}
-      <p
-        class="font-dm-sans
-               font-normal
-               text-[21px]
-               leading-[140%]
-               tracking-[-0.005em]
-               text-black/45
-               text-center"
-      >
-        {{ . }}
-      </p>
-      {{ end }}
-
     </div>
-
   </div>
 </section>
 
-<!-- HERO IMAGE -->
-{{ with .Params.hero_image }}
-<section class="w-full flex justify-center px-4 md:px-6 pb-12">
-
-  <div
-    class="w-full max-w-[1200px]
-           relative overflow-hidden
-           rounded-[30px]
-           h-[500px]
-           md:h-[750px]"
-  >
-
-    <img
-      src="{{ . }}"
-      alt="{{ $.Title }}"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-
-    <div class="absolute inset-0 bg-black/30"></div>
-
-  </div>
-
-</section>
-{{ end }}
-
-<!-- BLOG CONTENT -->
-<section class="w-full flex justify-center px-4 md:px-6">
-
-  <div
-    class="w-full max-w-[1200px]
-           flex flex-col
-           gap-[60px]
-           pb-20"
-  >
-
-    <div
-      class="blog-body
-             w-full
-             max-w-[1060px]
-             mx-auto
-             text-[21px]
-             leading-[140%]
-             tracking-[-0.005em]
-             text-black"
-    >
-      {{ .Content }}
-    </div>
-
-  </div>
-
-</section>
-
-<!-- TESTIMONIAL -->
-{{ if .Params.show_testimonial }}
-
-<section class="w-full py-20 px-4">
-
+{{ with .Params.intro_paragraph }}
+<section class="w-full px-4 md:px-6 lg:px-8 py-[40px]">
   <div class="max-w-[1200px] mx-auto">
 
+    <p
+      class="max-w-[1060px] font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">
+      {{ . }}
+    </p>
+
+    <div class="flex justify-center mt-[40px]">
+      <a href="/contact"
+        class="flex items-center justify-center px-[22px] py-[14px] w-[160px] h-12 bg-[#0B838E] rounded-full shadow-[0px_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 hover:bg-[#096d76]">
+        <span class="font-['DM_Sans'] font-bold text-sm leading-[140%] tracking-[-0.025em] text-white">
+          Contact Us
+        </span>
+      </a>
+    </div>
+
+  </div>
+</section>
+{{ end }}
+
+
+
+<!-- INTRO SECTION (uses `intro` front matter, falls back to `summary`) -->
+{{ with (.Params.intro | default .Params.summary) }}
+<section class="w-full px-4 md:px-6 lg:px-8">
+  <div
+    class="max-w-[1200px] mx-auto flex flex-col justify-center items-center px-[32px] py-[40px] gap-[40px] md:px-[50px] md:pt-[60px] md:pb-[0px] lg:pb-[80px]">
+    <p
+      class="font-['DM_Sans'] font-normal text-[#6F6F6F] tracking-[-0.005em] leading-[140%] text-[21px] md:max-w-[620px] lg:max-w-[1100px]">
+      {{ . }}
+    </p>
+    <a href="/contact"
+      class="bg-[#0B838E] text-white rounded-full shadow-md px-[22px] py-[14px] font-['DM_Sans'] font-bold text-[14px] leading-[140%] tracking-[-0.025em]">
+      Contact Us
+    </a>
+  </div>
+</section>
+{{ end }}
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SERVICES BENTO GRID — teal cards, content from front matter `service_cards`
+     Front matter shape:
+       services_heading: "Our Redundancy Legal Services for Employees"
+       services_intro: "We offer comprehensive support ..."
+       service_cards:
+         - title: "Severance & Compromise Agreements"
+           text: "Employers often offer enhanced severance packages ..."
+         - title: "Calculating Redundancy Payments"
+           text: "We verify that your employer ..."
+═══════════════════════════════════════════════════════════════════════════ -->
+
+
+
+
+
+{{ if .Params.service_cards }}
+<section class="w-full px-4 md:px-6 lg:px-8">
+  <div
+    class="max-w-[1200px] mx-auto bg-white flex flex-col justify-center items-center px-[20px] py-[40px] gap-[50px] md:px-[40px] md:py-[60px]">
+
+    <!-- HEADER -->
+    <div class="flex flex-col items-center gap-[10px] w-full max-w-[1017px]">
+      <h2
+        class="font-['Crimson_Text'] font-normal text-black text-center max-w-[1200px] tracking-[-0.03em] leading-[95%] text-[50px] md:text-[54px] lg:text-[55px]">
+        {{ .Params.services_heading | default "Our Legal Services" }}
+      </h2>
+      {{ with .Params.services_intro }}
+      <p
+        class="font-['DM_Sans'] font-normal text-[#5D5D5D] text-center tracking-[-0.005em] leading-[140%] text-[21px] max-w-[335px] md:max-w-[620px] lg:max-w-[732px]">
+        {{ . }}
+      </p>
+      {{ end }}
+    </div>
+
+    {{ with .Params.cards_heading }}
+<div class="w-full mb-8">
+  <h3 class="font-['Crimson_Text']
+             text-[40px]
+             md:text-[46px]
+             leading-[100%]
+             tracking-[-0.03em]
+             text-center">
+    {{ . }}
+  </h3>
+</div>
+{{ end }}
+
+    <!-- GRID: rows of 2 teal cards -->
+    <div class="w-full flex flex-col gap-[30px]">
+      {{ $cards := .Params.service_cards }}
+      {{ $n := len $cards }}
+      {{ range $i, $card := $cards }}
+      {{ if eq (mod $i 2) 0 }}
+      <div class="flex flex-col md:flex-row gap-[30px]">
+        {{ end }}
+
+        <div
+          class="flex-1 bg-[#0B838E] rounded-[10px] px-[20px] py-[30px] flex flex-col items-center justify-center text-center">
+          <div class="flex flex-col items-center gap-[20px]">
+            <h3
+              class="font-['DM_Sans'] font-medium text-white tracking-[-0.03em] leading-[100%] text-[16px] md:text-[20px] lg:text-[36px]">
+              {{ $card.title }}
+            </h3>
+            <p
+              class="font-['DM_Sans'] font-normal text-white text-center tracking-[-0.01em] leading-[140%] text-[12px] md:text-[14px] lg:text-[18px]">
+              {{ $card.text }}
+            </p>
+          </div>
+        </div>
+
+        {{ if or (eq (mod $i 2) 1) (eq (add $i 1) $n) }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.content_sections }}
+<section class="w-full px-4 md:px-6 lg:px-8 py-[80px]">
+  <div class="max-w-[1200px] mx-auto flex flex-col gap-[80px]">
+
+    {{ range $index, $section := . }}
+    <div class="grid md:grid-cols-2 gap-[50px] items-center">
+
+      {{ if modBool $index 2 }}
+      <div>
+        <img src="{{ $section.image }}" alt="{{ $section.heading }}" class="w-full rounded-[20px] object-cover">
+      </div>
+
+      <div>
+        <h2 class="font-['Crimson_Text'] text-[50px] mb-6">
+          {{ $section.heading }}
+        </h2>
+
+        <div class="font-['DM_Sans'] text-[21px] leading-[140%] text-[#6F6F6F]">
+          {{ $section.content | markdownify }}
+        </div>
+      </div>
+
+      {{ else }}
+
+      <div>
+        <h2 class="font-['Crimson_Text'] text-[50px] mb-6">
+          {{ $section.heading }}
+        </h2>
+
+        <div class="font-['DM_Sans'] text-[21px] leading-[140%] text-[#6F6F6F]">
+          {{ $section.content | markdownify }}
+        </div>
+      </div>
+
+      <div>
+        <img src="{{ $section.image }}" alt="{{ $section.heading }}" class="w-full rounded-[20px] object-cover">
+      </div>
+
+      {{ end }}
+
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}
+
+<!-- MAIN BODY CONTENT (FAQ inside gets turned into accordion by JS below) -->
+<section class="w-full px-4 md:px-6 lg:px-8">
+  <div class="max-w-[1200px] mx-auto pt-[40px] pb-[60px] md:pb-[80px]">
     <div
-      class="bg-[#F7F4EB]
-             rounded-[30px]
-             p-8
-             md:p-12"
-    >
+      class="blog-body w-full max-w-[1060px] mx-auto font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-black"
+      data-has-faq="true">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
 
-      <p
-        class="text-[24px]
-               md:text-[32px]
-               leading-[140%]
-               text-black"
-      >
-        “Martina Murphy Solicitors guided us through a difficult legal
-        process with professionalism, clarity and genuine care.”
-      </p>
 
-      <p
-        class="mt-6
-               text-black/60"
-      >
-        Client Testimonial
-      </p>
+
+{{ with .Params.faqs }}
+<section class="w-full px-4 md:px-6 lg:px-8 py-[80px]">
+
+  <div class="max-w-[1200px] mx-auto flex flex-col gap-[55px]">
+
+    <h2
+      class="font-['Crimson_Text'] font-normal text-black text-[50px] sm:text-[54px] lg:text-[60px] leading-[95%] tracking-[-0.03em]">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="flex flex-col gap-5">
+
+      {{ range . }}
+      <details class="group w-full bg-[#0B838E] rounded-[20px] overflow-hidden transition-all duration-300">
+
+        <summary
+          class="list-none cursor-pointer flex items-start justify-between gap-5 px-[24px] sm:px-[40px] py-[28px] sm:py-[40px]">
+
+          <h3
+            class="font-['DM_Sans'] font-medium text-white text-[30px] sm:text-[35px] leading-[100%] tracking-[-0.04em] flex-1 max-w-[90%]">
+            {{ .question }}
+          </h3>
+
+          <div
+            class="min-w-[48px] w-[48px] h-[48px] rounded-full bg-[#F3F5F6] flex items-center justify-center transition-transform duration-300 group-open:rotate-45">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+
+              <path d="M6 0H8V6H14V8H8V14H6V8H0V6H6V0Z" fill="black" />
+
+            </svg>
+
+          </div>
+
+        </summary>
+
+        <div class="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-all duration-300 ease-in-out">
+
+          <div class="overflow-hidden">
+
+            <div
+              class="px-[24px] sm:px-[40px] pb-[28px] sm:pb-[40px] max-w-[865px] font-['DM_Sans'] font-normal text-white/90 text-[19px] sm:text-[21px] leading-[140%] tracking-[-0.005em]">
+
+              {{ .answer | markdownify }}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </details>
+      {{ end }}
 
     </div>
 
   </div>
 
 </section>
-
 {{ end }}
 
-<!-- CTA -->
-{{ if .Params.show_cta }}
+<!-- WHY CHOOSE US — Stats -->
+<section class="w-full mx-auto flex flex-col items-center py-[40px] sm:py-[70px] gap-[10px]">
+  <div class="w-full max-w-[911px] flex flex-col items-center gap-[10px]">
+    <h2
+      class="font-['Crimson_Text'] font-normal text-black text-center tracking-[-0.03em] leading-[95%] text-[50px] sm:text-[54px] lg:text-[55px]">
+      Why Choose Martina Murphy Solicitors?
+    </h2>
+  </div>
+</section>
 
-<section
-  class="w-full
-         px-4 md:px-6 lg:px-8
-         py-[80px]
-         md:py-[100px]"
->
-
+<section class="w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row items-start px-[15px] pb-[50px] gap-[20px]">
   <div
-    class="max-w-[1200px]
-           mx-auto
-           flex flex-col
-           gap-20"
-  >
+    class="reveal w-full lg:flex-1 flex flex-col items-start gap-[40px] py-[16px] pr-[16px] border-b lg:border-b-0 lg:border-r border-black">
+    <h3
+      class="font-['Crimson_Text'] font-normal text-[#0B838E] text-[60px] sm:text-[84px] lg:text-[120px] leading-[95%] tracking-[-0.03em]">
+      100+</h3>
+    <p class="font-['DM_Sans'] font-normal text-black text-[21px] leading-[140%] tracking-[-0.005em]">
+      years of combined experience. Our partners have successfully negotiated and resolved complex disputes across all
+      areas of Irish law.
+    </p>
+  </div>
+  <div
+    class="reveal w-full lg:flex-1 flex flex-col items-start gap-[40px] py-[16px] pr-[16px] border-b lg:border-b-0 lg:border-r border-black">
+    <h3
+      class="font-['Crimson_Text'] font-normal text-[#0B838E] text-[60px] sm:text-[84px] lg:text-[120px] leading-[95%] tracking-[-0.03em]">
+      LQ</h3>
+    <p class="font-['DM_Sans'] font-normal text-black text-[21px] leading-[140%] tracking-[-0.005em]">
+      We are proud to hold the LQ Standard of Excellence — an independent verification that we treat every single client
+      with respect, transparency, and genuine care.
+    </p>
+  </div>
+  <div class="reveal w-full lg:flex-1 flex flex-col items-start gap-[40px] py-[16px]">
+    <h3
+      class="font-['Crimson_Text'] font-normal text-[#0B838E] text-[60px] sm:text-[84px] lg:text-[120px] leading-[95%] tracking-[-0.03em]">
+      200+</h3>
+    <p class="font-['DM_Sans'] font-normal text-black text-[21px] leading-[140%] tracking-[-0.005em]">
+      different clients have sought our expertise. We will give you a candid, realistic assessment of your case from day
+      one.
+    </p>
+  </div>
+</section>
 
-    <div
-      class="flex flex-col
-             md:flex-row
-             md:items-start
-             md:justify-between
-             gap-10"
-    >
+<!-- CTA (opt-in via show_cta: true) -->
+{{ if .Params.show_cta }}
+<section class="w-full max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8 mt-[60px] mb-[60px]">
+  <div class="w-full max-w-[720px] mx-auto flex flex-col items-center gap-10 max-md:gap-[30px]">
+    <h2
+      class="font-['Crimson_Text'] font-normal text-[60px] leading-[90%] tracking-[-0.03em] text-black text-center md:text-[54px] max-md:text-[50px] max-md:leading-[95%]">
+      Protect Your Rights Today
+    </h2>
+    <p
+      class="font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F] text-center w-full">
+      Don't wait to get the answers you need. Contact our office today to schedule a confidential consultation with a
+      specialist solicitor.
+    </p>
+    <a href="/contact"
+      class="flex items-center justify-center px-[22px] py-[14px] w-[280px] h-12 bg-[#0B838E] rounded-full shadow-[0px_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 hover:bg-[#096d76]">
+      <span class="font-['DM_Sans'] font-bold text-sm leading-[140%] tracking-[-0.025em] text-white text-center">
+        Book a Confidential Consultation
+      </span>
+    </a>
+  </div>
+</section>
+{{ end }}
 
+<!-- LET'S DISCUSS SECTION -->
+<section class="w-full max-w-[1250px] mx-auto px-4 md:px-8 lg:px-0 pb-[100px] lg:pb-[120px]">
+  <div class="mx-auto flex flex-col gap-[80px]">
+    <div class="reveal flex flex-col md:flex-row md:items-start md:justify-between gap-10 md:gap-20">
       <h2
-        class="font-['Crimson_Text']
-               text-[50px]
-               md:text-[54px]
-               lg:text-[60px]
-               leading-[95%]
-               tracking-[-0.03em]
-               text-black"
-      >
+        class="font-['Crimson_Text'] font-normal text-[50px] leading-[95%] md:text-[54px] lg:text-[60px] lg:leading-[90%] tracking-[-0.03em] text-black">
         Let's Discuss
       </h2>
-
-      <a
-        href="/contact"
-        class="inline-flex
-               items-center
-               gap-2
-               bg-[#0B838E]
-               text-white
-               px-5
-               py-3
-               rounded-full
-               transition-all
-               duration-300
-               hover:scale-105"
-      >
-        Book Appointment
-        <span>→</span>
+      <a href="/contact"
+        class="w-[174px] h-[48px] bg-[#0B838E] rounded-full flex items-center justify-center text-white font-['DM_Sans'] font-bold text-[14px] leading-[140%] tracking-[-0.025em] transition-all duration-300 hover:bg-[#096d75]">
+        Learn More
       </a>
-
     </div>
 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="flex flex-col items-start pt-[60px] pr-[30px] pb-[20px] gap-[60px]">
+        <span
+          class="font-['DM_Sans'] font-normal text-[64px] md:text-[80px] leading-[100%] tracking-[-0.04em] text-[#0B838E]">01</span>
+        <div class="flex flex-col gap-5">
+          <h3 class="font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-black">Free
+            Consultation</h3>
+          <p class="font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">
+            Schedule a complimentary consultation to discuss your legal needs. Our experienced solicitors will assess
+            your situation, provide initial guidance, and outline potential strategies.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col items-start pt-[60px] pr-[30px] pb-[20px] gap-[60px]">
+        <span
+          class="font-['DM_Sans'] font-normal text-[64px] md:text-[80px] leading-[100%] tracking-[-0.04em] text-[#0B838E]">02</span>
+        <div class="flex flex-col gap-5">
+          <h3 class="font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-black">
+            Personalised Case Evaluation</h3>
+          <p class="font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">
+            If you choose to move forward, we conduct a detailed review of your case. This includes gathering key
+            documents, outlining your legal options, and developing a tailored plan.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col items-start pt-[60px] pr-[30px] pb-[20px] gap-[60px]">
+        <span
+          class="font-['DM_Sans'] font-normal text-[64px] md:text-[80px] leading-[100%] tracking-[-0.04em] text-[#0B838E]">03</span>
+        <div class="flex flex-col gap-5">
+          <h3 class="font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-black">Formal
+            Engagement & Representation</h3>
+          <p class="font-['DM_Sans'] font-normal text-[21px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]">
+            Once you decide to proceed, we finalise the paperwork and begin representing you. Our team will keep you
+            informed at every stage.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-
 </section>
 
-{{ end }}
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     FAQ ACCORDION SCRIPT
+     Finds the "Frequently Asked Questions" h2 in the rendered body and converts
+     each following h3 (question) + its content into a collapsible item.
+     No markdown changes needed — works on existing content.
+═══════════════════════════════════════════════════════════════════════════ -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const body = document.querySelector(".blog-body[data-has-faq]");
+    if (!body) return;
+
+    const headings = Array.from(body.querySelectorAll("h2"));
+    const faqHeading = headings.find((h) =>
+      /frequently asked questions|^faqs?$/i.test(h.textContent.trim())
+    );
+    if (!faqHeading) return;
+
+    // Collect sibling nodes after the FAQ heading until HR or next H2
+    const faqNodes = [];
+    let node = faqHeading.nextElementSibling;
+    while (node) {
+      if (node.tagName === "HR" || node.tagName === "H2") break;
+      faqNodes.push(node);
+      node = node.nextElementSibling;
+    }
+
+    // Group into question (h3) + answer (everything until next h3)
+    const items = [];
+    let current = null;
+    faqNodes.forEach((n) => {
+      if (n.tagName === "H3") {
+        current = { question: n.textContent.trim(), answer: [] };
+        items.push(current);
+      } else if (current) {
+        current.answer.push(n);
+      }
+    });
+    if (!items.length) return;
+
+    const accordion = document.createElement("div");
+    accordion.className = "faq-accordion flex flex-col gap-[12px] mt-[24px] max-w-[900px] mx-auto";
+
+    items.forEach((item) => {
+      const wrap = document.createElement("div");
+      wrap.className =
+        "faq-item border border-black/10 rounded-[16px] overflow-hidden bg-white transition-colors duration-300";
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className =
+        "faq-question w-full flex items-center justify-between gap-4 text-left px-[24px] py-[20px] md:px-[28px] md:py-[24px] cursor-pointer";
+      btn.setAttribute("aria-expanded", "false");
+      btn.innerHTML =
+        '<span class="font-[\'DM_Sans\'] font-medium text-[18px] md:text-[21px] leading-[130%] tracking-[-0.01em] text-black pr-2">' +
+        item.question +
+        "</span>" +
+        '<span class="faq-icon shrink-0 text-[#0B838E] text-[32px] leading-none font-light transition-transform duration-300">+</span>';
+
+      const panel = document.createElement("div");
+      panel.className = "faq-answer px-[24px] md:px-[28px] overflow-hidden transition-all duration-300";
+      panel.style.maxHeight = "0px";
+
+      const answerInner = document.createElement("div");
+      answerInner.className =
+        "faq-answer-inner font-['DM_Sans'] font-normal text-[16px] md:text-[18px] leading-[150%] tracking-[-0.005em] text-[#6F6F6F] pb-[24px]";
+      item.answer.forEach((n) => answerInner.appendChild(n));
+      panel.appendChild(answerInner);
+
+      btn.addEventListener("click", () => {
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        accordion.querySelectorAll(".faq-question").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          const icon = b.querySelector(".faq-icon");
+          icon.style.transform = "rotate(0deg)";
+          const p = b.parentElement.querySelector(".faq-answer");
+          p.style.maxHeight = "0px";
+          b.parentElement.classList.remove("border-[#0B838E]");
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".faq-icon").style.transform = "rotate(45deg)";
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          wrap.classList.add("border-[#0B838E]");
+        }
+      });
+
+
+
+      wrap.appendChild(btn);
+      wrap.appendChild(panel);
+      accordion.appendChild(wrap);
+    });
+
+    faqNodes.forEach((n) => n.remove());
+    faqHeading.insertAdjacentElement("afterend", accordion);
+    faqHeading.classList.add("text-center");
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const faqButtons = document.querySelectorAll(".faq-question");
+
+    faqButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector(".faq-icon");
+
+        const isOpen = !answer.classList.contains("hidden");
+
+        document.querySelectorAll(".faq-answer").forEach((item) => {
+          item.classList.add("hidden");
+        });
+
+        document.querySelectorAll(".faq-icon").forEach((item) => {
+          item.textContent = "+";
+        });
+
+        if (!isOpen) {
+          answer.classList.remove("hidden");
+          icon.textContent = "−";
+        }
+      });
+    });
+  });
+</script>
 
 {{ end }}
