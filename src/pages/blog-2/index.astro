@@ -20,21 +20,25 @@ const blogPosts = [
   {
     image: weightImg,
     title: "Workplace Rights",
+    navigate:"/employment-law/employees/redundancies/",
     description: "Understanding employee rights and employer obligations.",
   },
   {
     image: blog3,
     title: "Family Law",
+    navigate:"/family-law/",
     description: "Guidance through sensitive family legal matters.",
   },
   {
     image: blog4,
     title: "Dispute Resolution",
+    navigate:"/employment-law/employers/dispute-resolution/",
     description: "Effective solutions for resolving legal disputes.",
   },
   {
     image: blog5,
     title: "Property Law",
+    navigate:"/conveyancing/selling-a-house/",
     description: "Everything you need to know about property transactions.",
   },
 ];
@@ -374,7 +378,7 @@ const blogPosts = [
           <div
             class="w-full xl:w-1/2"
           >
-            <a href="/blog/accidents-at-work/"><img
+            <a href={post.navigate}><img
               src={post.image.src}
               alt={post.title}
 
@@ -390,7 +394,7 @@ const blogPosts = [
               <h2
                 class="font-['Crimson_Text'] text-[50px] leading-[95%] tracking-[-0.03em] text-black md:text-[54px] xl:text-[60px] xl:leading-[90%]"
               >
-                <a href="/blog/accidents-at-work/">{post.title}</a>
+                <a href={post.navigate}>{post.title}</a>
               </h2>
 
               <p
