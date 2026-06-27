@@ -84,12 +84,12 @@ content_sections:
 
       We pay close attention to:
 
-             - Dates
-             - Signatures
-             - Witnessing requirements
-             - Exhibit markings
-             - Jurat wording
-             - Identification procedures
+      - Dates
+      - Signatures
+      - Witnessing requirements
+      - Exhibit markings
+      - Jurat wording
+      - Identification procedures
 
        This meticulous approach helps ensure your documentation withstands scrutiny from courts, government agencies, banks, and regulatory bodies.
 
@@ -105,10 +105,10 @@ content_sections:
 
               Our goal is simple:
 
-                     - Certify documents correctly
-                     - Avoid unnecessary delays
-                     - Protect important transaction deadlines
-                     - Ensure compliance with legal requirements
+              - Certify documents correctly
+              - Avoid unnecessary delays
+              - Protect important transaction deadlines
+              - Ensure compliance with legal requirements
 
               There is no unnecessary complexity—just efficient professional service that keeps your matter moving forward.
 
@@ -133,19 +133,19 @@ content_sections:
 
      We ensure:
 
-           - Documents are complete
-           - Identification requirements are satisfied
-           - Witnessing procedures are properly followed
-           - Legal formalities are correctly executed
+     - Documents are complete
+     - Identification requirements are satisfied
+     - Witnessing procedures are properly followed
+     - Legal formalities are correctly executed
 
      Mobile Services Where Appropriate
 
      Where circumstances require, we can arrange visits to:
 
-           - Hospitals
-           - Nursing homes
-           - Care facilities
-           - Private residences
+     - Hospitals
+     - Nursing homes
+     - Care facilities
+     - Private residences
 
       This ensures clients with mobility difficulties can complete important legal documentation with dignity and convenience.
 
@@ -161,11 +161,11 @@ content_sections:
 
      Clients trust Martina Murphy Solicitors because we provide:
 
-           - Prompt service
-           - Meticulous attention to detail
-           - Professional legal oversight
-           - Clear communication
-           - Reliable execution of legal documents
+     - Prompt service
+     - Meticulous attention to detail
+     - Professional legal oversight
+     - Clear communication
+     - Reliable execution of legal documents
 
       When accuracy matters, we ensure your documents are completed correctly and accepted without unnecessary complications.
 

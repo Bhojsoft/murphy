@@ -75,12 +75,12 @@ content_sections:
 
      Clients choose us because we provide:
 
-     * Compassionate legal support
-     * Clear practical advice
-     * Comprehensive future planning
-     * Expertise in capacity-related matters
-     * Asset protection strategies
-     * Exceptional client care
+      Compassionate legal support,
+      Clear practical advice,
+      Comprehensive future planning,
+      Expertise in capacity-related matters,
+      Asset protection strategies,
+      Exceptional client care,
 
      We are dedicated to helping older adults and their families plan confidently for the future while preserving dignity, independence, and peace of mind.
 

@@ -94,13 +94,13 @@ content_sections:
 
         Instead, we carefully review:
 
-               - Title deeds
-               - Land Registry records
-               - Planning permissions
-               - Certificates of compliance
-               - Property maps
-               - Rights of way
-               - Boundary documentation
+        - Title deeds
+        - Land Registry records
+        - Planning permissions
+        - Certificates of compliance
+        - Property maps
+        - Rights of way
+        - Boundary documentation
 
         If there is an unauthorised extension, mapping discrepancy, planning issue, or title defect, we identify it before it becomes your problem.
 
@@ -115,11 +115,11 @@ content_sections:
 
                 Our team provides clear guidance on:
 
-                       - Stamp Duty
-                       - Land Registry fees
-                       - Search fees
-                       - Legal costs
-                       - Property registration expenses
+                - Stamp Duty
+                - Land Registry fees
+                - Search fees
+                - Legal costs
+                - Property registration expenses
 
                 There are no hidden charges and no surprises at closing.
 
@@ -145,20 +145,20 @@ content_sections:
 
       This includes:
 
-             - Reviewing contracts for sale
-             - Conducting legal searches
-             - Investigating title issues
-             - Liaising with mortgage providers
-             - Coordinating with engineers and surveyors
+      - Reviewing contracts for sale
+      - Conducting legal searches
+      - Investigating title issues
+      - Liaising with mortgage providers
+      - Coordinating with engineers and surveyors
 
       Execution and Closing -
  
       We oversee:
 
-             - Mortgage drawdown
-             - Transfer of funds
-             - Completion documentation
-             - Registration requirements
+      - Mortgage drawdown
+      - Transfer of funds
+      - Completion documentation
+      - Registration requirements
 
       allowing you to focus on preparing for your move.
 
@@ -177,11 +177,11 @@ content_sections:
 
             Clients trust us because we provide:
 
-                    - Personal service
-                    - Clear communication
-                    - Thorough due diligence
-                    - Practical legal advice
-                    - Proven experience in residential conveyancing
+            - Personal service
+            - Clear communication
+            - Thorough due diligence
+            - Practical legal advice
+            - Proven experience in residential conveyancing
 
             When you instruct Martina Murphy Solicitors, you gain a dedicated legal team committed to protecting one of the most important investments you will ever make.
 
