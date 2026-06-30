@@ -5,6 +5,10 @@ import martinaImg from "@/assets/martina-2.png";
 import testimonialImg from "@/assets/H5.png";
 import serviceImg from "@/assets/Hservice2.png";
 import dis2 from "@/assets/dispute2.jpg";
+import asian from "@/assets/asian.jpg";
+import redu2 from "@/assets/redu2.jpeg";
+import redhero from "@/assets/redhero.jpeg";
+import { redirectToDefaultLocale } from "astro:i18n";
 ---
 
 <MainLayout
@@ -314,18 +318,18 @@ import dis2 from "@/assets/dispute2.jpg";
 
     
     <article class="flex flex-col gap-[19px]">
-      <!-- <img
-        src={benefitImg1.src}
+      <img
+        src={asian.src}
         alt="Workplace Mediation"
         class="w-full h-[260px] sm:h-[280px] object-cover rounded-[20px]"
-      /> -->
+      />
 
-       <div
+       <!-- <div
               class="w-full
               h-[220px] sm:h-[296px]
               rounded-[20px]
               bg-[#0B838E]"
-            ></div>
+            ></div> -->
 
       <div class="flex flex-col">
         <h3
@@ -347,17 +351,17 @@ import dis2 from "@/assets/dispute2.jpg";
 
     
     <article class="flex flex-col gap-[19px]">
-      <!-- <img
-        src={benefitImg2.src}
+      <img
+        src={redu2.src}
         alt="Financial Dispute Resolution"
         class="w-full h-[260px] sm:h-[280px] object-cover rounded-[20px]"
-      /> -->
-       <div
+      />
+       <!-- <div
               class="w-full
               h-[220px] sm:h-[296px]
               rounded-[20px]
               bg-[#0B838E]"
-            ></div>
+            ></div> -->
 
       <div class="flex flex-col">
         <h3
@@ -379,17 +383,17 @@ import dis2 from "@/assets/dispute2.jpg";
 
     
     <article class="flex flex-col gap-[19px]">
-      <!-- <img
-        src={benefitImg3.src}
+      <img
+        src={redhero.src}
         alt="Consumer Disputes"
         class="w-full h-[260px] sm:h-[280px] object-cover rounded-[20px]"
-      /> -->
-       <div
+      />
+       <!-- <div
               class="w-full
               h-[220px] sm:h-[296px]
               rounded-[20px]
               bg-[#0B838E]"
-            ></div>
+            ></div> -->
 
       <div class="flex flex-col">
         <h3
@@ -472,12 +476,11 @@ import dis2 from "@/assets/dispute2.jpg";
           <!-- CARD 1 -->
           <div class="flex flex-col items-start gap-[15px] flex-1">
 
-            <div
-              class="w-full
-              h-[220px] sm:h-[296px]
-              rounded-[20px]
-              bg-[#0B838E]"
-            ></div>
+            <img
+        src={asian.src}
+        alt="Workplace Mediation"
+        class="w-full h-[260px] sm:h-[280px] object-cover rounded-[20px]"
+      />
 
             <div class="flex flex-col items-start">
 
@@ -509,12 +512,11 @@ import dis2 from "@/assets/dispute2.jpg";
           <!-- CARD 2 -->
           <div class="flex flex-col items-start gap-[15px] flex-1">
 
-            <div
-              class="w-full
-              h-[220px] sm:h-[296px]
-              rounded-[20px]
-              bg-[#0B838E]"
-            ></div>
+            <img
+        src={redu2.src}
+        alt="Financial Dispute Resolution"
+        class="w-full h-[260px] sm:h-[280px] object-cover rounded-[20px]"
+      />
 
             <div class="flex flex-col items-start">
 
@@ -547,12 +549,11 @@ import dis2 from "@/assets/dispute2.jpg";
           <!-- CARD 3 -->
           <div class="flex flex-col items-start gap-[15px] flex-1">
 
-            <div
-              class="w-full
-              h-[220px] sm:h-[296px]
-              rounded-[20px]
-              bg-[#0B838E]"
-            ></div>
+            <img
+        src={redhero.src}
+        alt="Consumer Disputes"
+        class="w-full h-[260px] sm:h-[280px] object-cover rounded-[20px]"
+      />
 
             <div class="flex flex-col items-start">
 
