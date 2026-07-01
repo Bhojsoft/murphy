@@ -25,9 +25,7 @@ show_cta: true
 draft: false
 ---
 
-# Personal Injury at Work
 
-## Protecting Your Health, Career, and Financial Future
 
 A serious workplace injury can affect far more than your physical wellbeing.
 

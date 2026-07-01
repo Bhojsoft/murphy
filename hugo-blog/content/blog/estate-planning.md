@@ -22,9 +22,7 @@ show_cta: true
 draft: false
 ------------
 
-# Estate Planning
 
-## Securing Your Wealth and Protecting Your Family’s Future
 
 Estate planning is far more than preparing a legal document. It is about ensuring that everything you have built over a lifetime—your property, savings, and business—is protected and passed on smoothly to the people you care about most.
 

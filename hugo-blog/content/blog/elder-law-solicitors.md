@@ -43,9 +43,9 @@ content_sections:
       Many families face difficult questions when a loved one begins to experience declining health or reduced decision-making capacity.
 
       Common concerns include:
-      - Who will manage financial affairs if capacity is lost?
-      - How can healthcare decisions be protected?
-      - What legal authority is required to assist an elderly parent?
+             - Who will manage financial affairs if capacity is lost?
+             - How can healthcare decisions be protected?
+             - What legal authority is required to assist an elderly parent?
 
   - heading: "The Strategic Advantage: Planning Within the Modern Legal Framework"
     image: "/images/retirement-4.jpg"
@@ -75,12 +75,12 @@ content_sections:
 
      Clients choose us because we provide:
 
-      Compassionate legal support,
-      Clear practical advice,
-      Comprehensive future planning,
-      Expertise in capacity-related matters,
-      Asset protection strategies,
-      Exceptional client care,
+             Compassionate legal support
+             Clear practical advice
+             Comprehensive future planning
+             Expertise in capacity-related matters
+             Asset protection strategies
+             Exceptional client care
 
      We are dedicated to helping older adults and their families plan confidently for the future while preserving dignity, independence, and peace of mind.
 

@@ -24,9 +24,7 @@ show_cta: true
 draft: false
 ---
 
-# Child Custody Solicitors
 
-## Protect Your Children, Secure Your Rights, and Restore Stability
 
 A child custody dispute is often the most emotionally challenging aspect of any family separation.
 

@@ -25,9 +25,7 @@ show_cta: true
 draft: false
 ------------
 
-# Enduring Power of Attorney (EPA)
 
-## Secure Your Future Autonomy and Protect Your Family’s Peace of Mind
 
 Planning for the future is one of the most important decisions you can make for yourself and your loved ones.
 

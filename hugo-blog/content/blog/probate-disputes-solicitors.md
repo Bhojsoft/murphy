@@ -24,7 +24,7 @@ draft: false
 
 
 
-## Resolving Family Conflicts with Clarity and Gravitas
+
 
 When a loved one passes away, the grieving process is difficult enough without the added strain of a legal dispute over their estate.
 

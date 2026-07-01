@@ -23,9 +23,7 @@ show_cta: true
 draft: false
 ------------
 
-# Judicial Separation Solicitors
 
-## Providing Clarity and Protection When Your Marriage Ends
 
 The breakdown of a marriage is one of life's most challenging experiences.
 

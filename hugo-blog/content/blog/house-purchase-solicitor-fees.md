@@ -21,9 +21,7 @@ show_cta: true
 draft: false
 ---
 
-# House Purchase Solicitor Fees
 
-## Absolute Financial Certainty Before You Sign the Contracts
 
 Buying a property is one of the largest financial commitments most people will ever make.
 

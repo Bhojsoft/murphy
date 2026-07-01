@@ -21,9 +21,6 @@ show_cta: true
 draft: false
 ---
 
-# Car Injury Solicitors
-
-## Protecting Your Recovery, Financial Security, and Future After a Serious Collision
 
 A severe car accident can disrupt your physical health and immediately threaten your financial security.
 

@@ -22,9 +22,7 @@ show_cta: true
 draft: false
 ------------
 
-# Divorce & Assets
 
-## Protecting Your Financial Independence and Your Family's Future
 
 The breakdown of a marriage is one of life's most challenging experiences.
 

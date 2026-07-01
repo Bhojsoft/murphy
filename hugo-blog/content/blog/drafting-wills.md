@@ -21,9 +21,7 @@ show_cta: true
 draft: false
 ------------
 
-# Drafting Wills
 
-## Preserving Your Life's Work and Protecting Your Family
 
 Creating a will is one of the most important steps you can take to protect your family and preserve the assets you have worked hard to build.
 

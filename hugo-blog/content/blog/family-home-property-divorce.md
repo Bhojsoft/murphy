@@ -23,9 +23,7 @@ show_cta: true
 draft: false
 ------------
 
-# Family Home & Property
 
-## Securing Your Most Valuable Asset in a Divorce
 
 The family home is often the most valuable asset involved in a separation or divorce.
 

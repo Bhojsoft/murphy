@@ -463,16 +463,27 @@
     }
 
     // Group into question (h3) + answer (everything until next h3)
-    const items = [];
-    let current = null;
-    faqNodes.forEach((n) => {
-      if (n.tagName === "H3") {
-        current = { question: n.textContent.trim(), answer: [] };
-        items.push(current);
-      } else if (current) {
-        current.answer.push(n);
-      }
-    });
+   const items = [];
+
+faqHeading.parentElement.querySelectorAll("h3").forEach((question) => {
+  const item = {
+    question: question.textContent.trim(),
+    answer: []
+  };
+
+  let node = question.nextElementSibling;
+
+  while (
+    node &&
+    node.tagName !== "H3" &&
+    node.tagName !== "H2"
+  ) {
+    item.answer.push(node.cloneNode(true));
+    node = node.nextElementSibling;
+  }
+
+  items.push(item);
+});
     if (!items.length) return;
 
     const accordion = document.createElement("div");
@@ -537,7 +548,7 @@
   });
 </script>
 
-<script>
+<!-- <script>
   document.addEventListener("DOMContentLoaded", () => {
     const faqButtons = document.querySelectorAll(".faq-question");
 
@@ -563,6 +574,6 @@
       });
     });
   });
-</script>
+</script> -->
 
 {{ end }}

@@ -29,9 +29,7 @@ show_cta: true
 draft: false
 ------------
 
-# Expert Divorce Solicitors
 
-## Securing Your Future with Clarity and Dignity
 
 Navigating the breakdown of a marriage is one of the most emotionally exhausting and financially significant transitions in life.
 

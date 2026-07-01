@@ -24,9 +24,7 @@ show_cta: true
 draft: false
 ------------
 
-# General Power of Attorney Solicitors
 
-## Secure Your Affairs with Legally Watertight POA Paperwork
 
 Life does not stop when you are travelling, recovering from illness, managing business commitments abroad, or otherwise unavailable to handle important matters personally.
 

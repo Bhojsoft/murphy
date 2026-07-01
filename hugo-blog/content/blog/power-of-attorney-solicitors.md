@@ -43,9 +43,7 @@ show_cta: true
 
 ---
 
-# Power of Attorney Solicitors
 
-## Retain Control of Your Future and Protect Your Family’s Peace of Mind
 
 Planning for the future means ensuring that your financial, property, and personal affairs remain protected if you become unable to make decisions for yourself.
 

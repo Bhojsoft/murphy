@@ -23,9 +23,7 @@ show_cta: true
 draft: false
 ------------
 
-# Fair Deal Scheme Solicitors
 
-## Protect Your Family's Home and Wealth While Securing the Best Care
 
 Making decisions about long-term care for a loved one can be one of the most difficult experiences a family faces.
 

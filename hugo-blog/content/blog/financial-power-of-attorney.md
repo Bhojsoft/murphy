@@ -24,9 +24,7 @@ show_cta: true
 draft: false
 ------------
 
-# Authoritative Financial POA Solicitors
 
-## Secure Your Wealth, Property, and Business Interests
 
 Financial planning is not only about building wealth. It is also about ensuring that your affairs can continue to be managed if you become unavailable, incapacitated, or unable to make decisions for yourself.
 

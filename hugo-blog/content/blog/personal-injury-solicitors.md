@@ -26,7 +26,7 @@ draft: false
 
 
 
-## Aggressive Compensation Recovery. Total Career Protection.
+
 
 A sudden accident can affect far more than your physical health.
 

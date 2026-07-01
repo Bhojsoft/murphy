@@ -22,9 +22,7 @@ show_cta: true
 draft: false
 ------------
 
-# Inheritance & Succession Solicitors
 
-## Protecting Your Family's Wealth and Legacy
 
 Managing the transfer of wealth to the next generation is one of the most important legal and financial decisions you will ever make.
 

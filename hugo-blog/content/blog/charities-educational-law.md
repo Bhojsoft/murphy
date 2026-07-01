@@ -55,18 +55,18 @@ content_sections:
 
       We regularly advise on matters involving:
 
-      - The Education Act 1998
-      - The Charities Act 2009
-      - Governance Code obligations
-      - Data protection legislation
-      - Employment law regulations
-      - Public funding requirements
+             - The Education Act 1998
+             - The Charities Act 2009
+             - Governance Code obligations
+             - Data protection legislation
+             - Employment law regulations
+             - Public funding requirements
 
       Whether you are preparing for a Department of Education inspection, responding to a Charities Regulator review, or implementing governance reforms, we ensure your policies and procedures are capable of withstanding rigorous scrutiny.
 
       Our objective is simple:
 
-             To protect your institution before legal issues become legal crises.
+      To protect your institution before legal issues become legal crises.
 
 
   - heading: "Financial Clarity: Protecting Funding and Minimising Liability"
@@ -80,12 +80,12 @@ content_sections:
 
               By implementing robust governance structures, clear employment procedures, and legally compliant policies, we help organisations reduce exposure to:
 
-              - Workplace Relations Commission claims
-              - Regulatory investigations
-              - Funding disputes
-              - Employment litigation
-              - Data protection penalties
-              - Governance breaches               
+                     - Workplace Relations Commission claims
+                     - Regulatory investigations
+                     - Funding disputes
+                     - Employment litigation
+                     - Data protection penalties
+                     - Governance breaches               
 
                 We provide transparent advice from the outset regarding costs, risks, and available options.
 
@@ -112,10 +112,10 @@ content_sections:
 
       Where appropriate, we can meet with you:
 
-      - At your school
-      - At your charity's premises
-      - In your boardroom
-      - At our Limerick office
+             - At your school
+             - At your charity's premises
+             - In your boardroom
+             - At our Limerick office
 
       Our consultations are conducted with complete discretion and professionalism.
 
@@ -123,12 +123,12 @@ content_sections:
 
       We conduct a detailed review of:
 
-      - Governance structures
-      - Constitutions and trust deeds
-      - Employment documentation
-      - Policies and procedures
-      - Compliance history
-      - Regulatory obligations
+             - Governance structures
+             - Constitutions and trust deeds
+             - Employment documentation
+             - Policies and procedures
+             - Compliance history
+             - Regulatory obligations
 
       Following this review, we develop a tailored legal strategy designed specifically for your organisation.
 
@@ -136,12 +136,12 @@ content_sections:
 
       We manage all legal implementation, including:
 
-      - Drafting policies
-      - Updating governance documentation
-      - Liaising with regulators
-      - Advising trustees and boards
-      - Handling employment disputes
-      - Representing your interests when challenges arise
+             - Drafting policies
+             - Updating governance documentation
+             - Liaising with regulators
+             - Advising trustees and boards
+             - Handling employment disputes
+             - Representing your interests when challenges arise
 
       This allows your leadership team to focus on serving students, beneficiaries, and the wider community.
   # - heading: "A Dignified and Supportive Process"
@@ -154,12 +154,12 @@ content_sections:
     content: |
      With more than 100 years of combined legal experience, we have built a reputation based upon:
 
-     - Absolute discretion
-     - Thorough preparation
-     - Practical advice
-     - Regulatory expertise
-     - Strong advocacy
-     - Exceptional client care
+           - Absolute discretion
+           - Thorough preparation
+           - Practical advice
+           - Regulatory expertise
+           - Strong advocacy
+           - Exceptional client care
 
      We proudly hold the LQ Standard of Excellence and remain committed to protecting the schools, charities, and non-profit organisations that make such a valuable contribution to our communities.
 

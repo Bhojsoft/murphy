@@ -27,7 +27,7 @@ draft: false
 
 
 
-## Protect Your Dignity and Control Your Future Healthcare
+
 
 If you suffer an unexpected medical emergency, ensure your healthcare and end-of-life choices are made by someone you explicitly trust.
 

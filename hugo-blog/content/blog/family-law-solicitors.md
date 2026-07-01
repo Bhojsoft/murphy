@@ -93,12 +93,12 @@ content_sections:
 
       In more complex cases, we assist clients with:
 
-      - Business ownership issues
-      - Property portfolio division
-      - Farm succession concerns
-      - Pension adjustment orders
-      - Hidden asset investigations
-      - Financial disclosure reviews
+             - Business ownership issues
+             - Property portfolio division
+             - Farm succession concerns
+             - Pension adjustment orders
+             - Hidden asset investigations
+             - Financial disclosure reviews
 
       Our aim is to ensure that all relevant financial information is available before important decisions are made.
 
@@ -112,11 +112,11 @@ content_sections:
 
               We provide practical advice regarding:
 
-              - Property transfers
-              - Pension entitlements
-              - Debt allocation
-              - Ongoing maintenance obligations
-              - Future financial planning considerations
+                     - Property transfers
+                     - Pension entitlements
+                     - Debt allocation
+                     - Ongoing maintenance obligations
+                     - Future financial planning considerations
 
               By understanding the long-term implications of any settlement, clients are better positioned to make informed decisions.
 
@@ -133,19 +133,19 @@ content_sections:
 
       We begin by understanding:
 
-      - Your family circumstances
-      - Your immediate concerns
-      - Your long-term objectives
-      - Any urgent legal issues
+             - Your family circumstances
+             - Your immediate concerns
+             - Your long-term objectives
+             - Any urgent legal issues
 
       Strategy and Case Preparation -
 
       We then:
 
-      - Review financial documentation
-      - Assess property and asset positions
-      - Identify legal risks
-      - Develop a tailored legal strategy
+             - Review financial documentation
+             - Assess property and asset positions
+             - Identify legal risks
+             - Develop a tailored legal strategy
 
       Negotiation and Representation -
 
@@ -164,12 +164,12 @@ content_sections:
 
      Clients choose us because we provide:
 
-     - Clear legal advice
-     - Practical solutions
-     - Strong advocacy
-     - Compassionate support
-     - Thorough preparation
-     - Effective communication
+           - Clear legal advice
+           - Practical solutions
+           - Strong advocacy
+           - Compassionate support
+           - Thorough preparation
+           - Effective communication
 
       We understand that family law matters affect every aspect of your life, and we are committed to helping you navigate them with confidence.
 

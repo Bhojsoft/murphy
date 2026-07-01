@@ -24,7 +24,7 @@ draft: false
 
 
 
-## Aggressive Compensation Recovery. Total Focus on Your Healing.
+
 
 A serious road traffic accident can change your life in an instant.
 

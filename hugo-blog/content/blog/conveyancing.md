@@ -22,9 +22,7 @@ show_cta: true
 draft: false
 ---
 
-# Conveyancing Solicitor
 
-## Flawless Property Transactions to Protect Your Most Valuable Asset
 
 Buying or selling property should be a milestone of success, not a source of sleepless nights over title defects, planning concerns, or delayed mortgage approvals.
 

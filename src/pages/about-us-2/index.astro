@@ -2,6 +2,14 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import disputeHero from "@/assets/Service1.png";
 import martinaImg from "@/assets/martina-2.png";
+import antoinetteImg from "@/assets/team/Antoinette-Cusack.jpg";
+import caroline from "@/assets/team/Caroline Kennely.jpg";
+import Lynda from "@/assets/team/Lynda-Ivess.jpg";
+import shirley from "@/assets/team/Shirley-Cossavella.jpg";
+import yvonne from "@/assets/team/Yvonne-Nolan.jpg";
+import a from "@/assets/team/MartinaMurphySolicitors-179.jpg";
+import b from "@/assets/team/MartinaMurphySolicitors-284.jpg";
+import c from "@/assets/team/MartinaMurphySolicitors-467.jpg";
 import weightImg from "@/assets/Weight.png";
 import redundancyImg from "@/assets/redundancy.png";
 import hero from "@/assets/abouthero.jpeg";
@@ -12,7 +20,6 @@ import hero from "@/assets/abouthero.jpeg";
   <section
     class="w-full max-w-[1250px] mx-auto px-4 md:px-8 lg:px-0 pt-16 md:pt-30"
   >
-  
     <div
       class="w-full
       md:w-[95%]
@@ -40,8 +47,7 @@ import hero from "@/assets/abouthero.jpeg";
       <div class="absolute inset-0 bg-black/40"></div>
       <!-- ABOUT US -->
       <h1
-        class="
-        reveal
+        class="reveal
         w-full
         font-dm
         font-normal
@@ -52,15 +58,13 @@ import hero from "@/assets/abouthero.jpeg";
         md:text-[80px]
         leading-[100%]
         brightness-125"
-        
       >
         About us
       </h1>
 
       <!-- SUBTITLE -->
       <h2
-        class="
-        reveal
+        class="reveal
         w-full
         font-['Crimson_Text']
         font-normal
@@ -296,6 +300,7 @@ import hero from "@/assets/abouthero.jpeg";
           class="reveal w-full md:max-w-[345px] lg:max-w-[585px] flex flex-col gap-10 md:gap-[41px]"
         >
           <!-- Headshots -->
+
           <div class="flex flex-col sm:flex-row gap-5">
             <!-- Person 1 -->
             <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
@@ -328,7 +333,7 @@ import hero from "@/assets/abouthero.jpeg";
             <!-- Person 2 -->
             <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
               <img
-                src={martinaImg.src}
+                src={antoinetteImg.src}
                 alt="Team Member"
                 class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
               object-cover rounded-[15px]"
@@ -340,7 +345,7 @@ import hero from "@/assets/abouthero.jpeg";
                 text-[16px] sm:text-[18px] md:text-[21px]
                 leading-[140%] tracking-[-0.005em] text-black"
                 >
-                  Sarah O’Brien
+                  Antoinette Cusack
                 </h3>
 
                 <p
@@ -348,7 +353,7 @@ import hero from "@/assets/abouthero.jpeg";
                 text-[14px] sm:text-[16px] md:text-[21px]
                 leading-[140%] tracking-[-0.005em] text-[#767676]"
                 >
-                  Legal Executive
+                  Associate Partner
                 </p>
               </div>
             </div>
@@ -357,9 +362,240 @@ import hero from "@/assets/abouthero.jpeg";
           <!-- Divider -->
           <div class="w-full border-t border-black"></div>
 
+          <div class="flex flex-col sm:flex-row gap-5">
+            <!-- Person 1 -->
+            <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+              <img
+                src={caroline.src}
+                alt="Caroline Kennely"
+                class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+              />
+
+              <div class="flex flex-col gap-2 md:gap-[9px]">
+                <h3
+                  class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+                >
+                  Caroline Kennely
+                </h3>
+
+                <p
+                  class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+                >
+                  Practice Manager
+                </p>
+              </div>
+            </div>
+
+            <!-- Person 2 -->
+            <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+              <img
+                src={yvonne.src}
+                alt="Team Member"
+                class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+              />
+
+              <div class="flex flex-col gap-2 md:gap-[9px]">
+                <h3
+                  class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+                >
+                  Yvonne Nolan
+                </h3>
+
+                <p
+                  class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+                >
+                  Solicitor
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-5">
+            <!-- Person 1 -->
+            <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+              <img
+                src={Lynda.src}
+                alt="Lynda Ivess"
+                class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+              />
+
+              <div class="flex flex-col gap-2 md:gap-[9px]">
+                <h3
+                  class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+                >
+                  Lynda Ivess
+                </h3>
+
+                <p
+                  class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+                >
+                  Legal Secretary
+                </p>
+              </div>
+            </div>
+
+            <!-- Person 2 -->
+            <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+              <img
+                src={shirley.src}
+                alt="Shirley Cossavella"
+                class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+              />
+
+              <div class="flex flex-col gap-2 md:gap-[9px]">
+                <h3
+                  class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+                >
+                  Shirley Cossavella
+                </h3>
+
+                <p
+                  class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+                >
+                  Team Member
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-5">
+            <!-- Person 1 -->
+            <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+              <img
+                src={a.src}
+                alt="Martina Murphy"
+                class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+              />
+
+              <div class="flex flex-col gap-2 md:gap-[9px]">
+                <h3
+                  class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+                >
+                  Team Member
+                </h3>
+
+                <p
+                  class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+                >
+                  Team Member
+                </p>
+              </div>
+            </div>
+
+            <!-- Person 2 -->
+            <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+              <img
+                src={b.src}
+                alt="Team Member"
+                class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+              />
+
+              <div class="flex flex-col gap-2 md:gap-[9px]">
+                <h3
+                  class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+                >
+                  Team Member
+                </h3>
+
+                <p
+                  class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+                >
+                  Team Member
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-start">
+            <!-- Person 1 -->
+            <div class="w-full sm:w-[calc(50%-10px)] flex flex-col gap-4 md:gap-[17px]">
+              <img
+                src={c.src}
+                alt="Martina Murphy"
+                class="w-full h-[240px] sm:h-[220px] lg:h-[279px] object-cover rounded-[15px]"
+              />
+
+              <div class="flex flex-col gap-2 md:gap-[9px]">
+                <h3
+                  class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+                >
+                  Team Member
+                </h3>
+
+                <p
+                  class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+                >
+                  Team Member
+                </p>
+              </div>
+            </div>
+
+            <!-- Person 2 -->
+            <!-- <div class="flex-1 flex flex-col gap-4 md:gap-[17px]">
+              <img
+                src={b.src}
+                alt="Team Member"
+                class="w-full h-[240px] sm:h-[220px] lg:h-[279px]
+              object-cover rounded-[15px]"
+              />
+
+              <div class="flex flex-col gap-2 md:gap-[9px]">
+                <h3
+                  class="font-['DM_Sans'] font-normal
+                text-[16px] sm:text-[18px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-black"
+                >
+                  Team Member
+                </h3>
+
+                <p
+                  class="font-['DM_Sans'] font-normal
+                text-[14px] sm:text-[16px] md:text-[21px]
+                leading-[140%] tracking-[-0.005em] text-[#767676]"
+                >
+                  Team Member
+                </p>
+              </div>
+            </div> -->
+          </div>
+
           <!-- Team Rows -->
-          <div class="flex flex-col gap-6 md:gap-10">
-            <!-- Row 1 -->
+          <!-- <div class="flex flex-col gap-6 md:gap-10">
+           
             <div class="grid grid-cols-2 gap-4 md:gap-[41px]">
               <div class="flex flex-col gap-1 md:gap-[9px]">
                 <h4
@@ -388,7 +624,7 @@ import hero from "@/assets/abouthero.jpeg";
               </div>
             </div>
 
-            <!-- Row 2 -->
+           
             <div class="grid grid-cols-2 gap-4 md:gap-[41px]">
               <div class="flex flex-col gap-1 md:gap-[9px]">
                 <h4
@@ -417,7 +653,7 @@ import hero from "@/assets/abouthero.jpeg";
               </div>
             </div>
 
-            <!-- Row 3 -->
+            
             <div class="grid grid-cols-2 gap-4 md:gap-[51px]">
               <div class="flex flex-col gap-1 md:gap-[9px]">
                 <h4
@@ -445,7 +681,7 @@ import hero from "@/assets/abouthero.jpeg";
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -689,10 +925,13 @@ import hero from "@/assets/abouthero.jpeg";
                tracking-[-0.04em]
                text-black"
         >
-          “Martina Murphy Solicitors handled my estate planning with such care
-          and professionalism. They listened to my concerns and made the process
-          clear and straightforward. I now have complete peace of mind knowing
-          my family's future is secure.”
+          “I’ve dealt with Alva, Shirley and Carol across multiple property
+          transactions, and the experience has been excellent. Alva in
+          particular is fantastic — extremely well organised and a real source
+          of reassurance throughout the process. Since changing solicitors, our
+          property deals have progressed much faster and with far less stress.
+          It makes a huge difference having such a capable conveyancer on your
+          side. Highly recommend.”
         </h2>
 
         <!-- NAME -->
@@ -705,18 +944,7 @@ import hero from "@/assets/abouthero.jpeg";
                  tracking-[-0.005em]
                  text-black"
           >
-            Dave Luca
-          </span>
-
-          <span
-            class="font-[DM_Sans]
-                 font-normal
-                 text-[10.5px] md:text-[12px]
-                 leading-[140%]
-                 tracking-[-0.03em] md:tracking-[-0.01em]
-                 text-[#8E9C78]"
-          >
-            Business Owner
+            Michael Houghton
           </span>
         </div>
       </div>

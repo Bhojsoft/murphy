@@ -165,11 +165,13 @@ import { Icon } from "astro-icon/components";
             </div>
 
             <button
+              id="openCallbackModal"
+              type="button"
               class="flex justify-center items-center px-6 py-[18px]
-           w-[230px] h-[58px]
-           bg-[#ffffff] hover:bg-[#0B838E] hover:text-[#ffffff]
-           border border-[#0B838E]
-           rounded-[500px] text-[#0B838E] transition-all duration-200"
+  w-[230px] h-[58px]
+  bg-[#ffffff] hover:bg-[#0B838E] hover:text-[#ffffff]
+  border border-[#0B838E]
+  rounded-[500px] text-[#0B838E] transition-all duration-200"
             >
               <span class="font-geist text-[18px]"> Request a Call Back </span>
             </button>
@@ -266,31 +268,191 @@ import { Icon } from "astro-icon/components";
           Contacting us couldn’t be easier
         </p>
 
-        <a
-          href="/contact"
+        <button
+          id="openConsultModal"
           class="w-full
-            max-w-[600px]
-            bg-[#0B838E]
-            text-white
-            rounded-full
-            px-[22px]
-            py-[14px]
-            flex
-            items-center
-            justify-center
-            gap-2
-            text-[14px]
-            font-bold
-            tracking-[-0.025em]
-            hover:bg-[#086c74]
-            transition-all
-            duration-300"
+    max-w-[600px]
+    bg-[#0B838E]
+    text-white
+    rounded-full
+    px-[22px]
+    py-[14px]
+    flex
+    items-center
+    justify-center
+    gap-2
+    text-[14px]
+    font-bold
+    tracking-[-0.025em]
+    hover:bg-[#086c74]
+    transition-all
+    duration-300"
         >
           Schedule a Consult
 
           <Icon name="lucide:arrow-up-right" class="w-4 h-4" />
-        </a>
+        </button>
       </section>
     </div>
   </section>
+
+  <!-- CONSULT MODAL -->
+  <div
+    id="consultModal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 px-4"
+  >
+    <div class="bg-white rounded-3xl w-full max-w-xl p-8 relative">
+      <!-- Close -->
+      <button
+        id="closeConsultModal"
+        class="absolute top-5 right-5 text-3xl text-gray-500 hover:text-black"
+      >
+        ×
+      </button>
+
+      <h2 class="text-3xl font-semibold mb-6">Schedule a Consultation</h2>
+
+      <form class="space-y-5">
+        <input
+          type="text"
+          placeholder="Full Name"
+          class="w-full border rounded-lg p-3"
+          required
+        />
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="w-full border rounded-lg p-3"
+          required
+        />
+
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          class="w-full border rounded-lg p-3"
+        />
+
+        <textarea
+          rows="5"
+          placeholder="How can we help?"
+          class="w-full border rounded-lg p-3"></textarea>
+
+        <a
+          href="mailto:info@martinamurphy.ie?subject=Consultation Request"
+          class="w-full bg-[#0B838E] text-white rounded-full py-3 px-6 font-semibold hover:bg-[#086c74] transition-all duration-300"
+        >
+          Submit
+        </a>
+      </form>
+    </div>
+  </div>
+
+  <!-- CALLBACK MODAL -->
+  <div
+    id="callbackModal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 px-4"
+  >
+    <div class="bg-white rounded-3xl w-full max-w-xl p-8 relative">
+      <!-- Close -->
+      <button
+        id="closeCallbackModal"
+        class="absolute top-5 right-5 text-3xl text-gray-500 hover:text-black"
+      >
+        ×
+      </button>
+
+      <h2 class="text-3xl font-semibold mb-6">Request a Call Back</h2>
+
+      <form class="space-y-5">
+        <input
+          type="text"
+          placeholder="Full Name"
+          class="w-full border rounded-lg p-3"
+          required
+        />
+
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          class="w-full border rounded-lg p-3"
+          required
+        />
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="w-full border rounded-lg p-3"
+        />
+
+        <!-- <select class="w-full border rounded-lg p-3">
+          <option>Morning</option>
+          <option>Afternoon</option>
+          <option>Evening</option>
+        </select> -->
+
+        <textarea
+          rows="4"
+          placeholder="Additional Information"
+          class="w-full border rounded-lg p-3"></textarea>
+
+        <a
+          href="mailto:info@martinamurphy.ie?subject=Request a Call Back"
+          class="block text-center w-full bg-[#0B838E] text-white rounded-full py-3 font-semibold hover:bg-[#086c74] transition-all duration-300"
+        >
+          Submit
+        </a>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("consultModal");
+    const openBtn = document.getElementById("openConsultModal");
+    const closeBtn = document.getElementById("closeConsultModal");
+
+    openBtn?.addEventListener("click", () => {
+      modal?.classList.remove("hidden");
+      modal?.classList.add("flex");
+    });
+
+    closeBtn?.addEventListener("click", () => {
+      modal?.classList.add("hidden");
+      modal?.classList.remove("flex");
+    });
+
+    modal?.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        modal?.classList.add("hidden");
+        modal?.classList.remove("flex");
+      }
+    });
+    const callbackModal = document.getElementById("callbackModal");
+    const openCallbackBtn = document.getElementById("openCallbackModal");
+    const closeCallbackBtn = document.getElementById("closeCallbackModal");
+
+    openCallbackBtn?.addEventListener("click", () => {
+      callbackModal?.classList.remove("hidden");
+      callbackModal?.classList.add("flex");
+    });
+
+    closeCallbackBtn?.addEventListener("click", () => {
+      callbackModal?.classList.add("hidden");
+      callbackModal?.classList.remove("flex");
+    });
+
+    callbackModal?.addEventListener("click", (e) => {
+      if (e.target === callbackModal) {
+        callbackModal.classList.add("hidden");
+        callbackModal.classList.remove("flex");
+      }
+    });
+  </script>
 </MainLayout>

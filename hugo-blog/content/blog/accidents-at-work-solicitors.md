@@ -125,13 +125,13 @@ content_sections:
 
       We help clients pursue compensation for :
 
-      - Pain and suffering
-      - Medical expenses
-      - Rehabilitation costs
-      - Loss of earnings
-      - Future income loss
-      - Travel expenses
-      - Care and assistance costs
+             - Pain and suffering
+             - Medical expenses
+             - Rehabilitation costs
+             - Loss of earnings
+             - Future income loss
+             - Travel expenses
+             - Care and assistance costs
 
       Our goal is to ensure that every financial consequence of your injury is properly considered.
 
@@ -149,10 +149,10 @@ content_sections:
 
       We begin by discussing:
 
-      - How the accident occurred
-      - The injuries sustained
-      - Medical treatment received
-      - Financial losses experienced
+             - How the accident occurred
+             - The injuries sustained
+             - Medical treatment received
+             - Financial losses experienced
 
       This allows us to assess your circumstances and advise on the most appropriate course of action.
 
@@ -160,11 +160,11 @@ content_sections:
 
       Our team assists with obtaining:
 
-        - Medical reports
-        - Workplace accident records
-        - Witness statements
-        - Photographic evidence
-        - Financial documentation
+             - Medical reports
+             - Workplace accident records
+             - Witness statements
+             - Photographic evidence
+             - Financial documentation
 
       Strong evidence is essential to building a successful claim.
 
@@ -172,10 +172,10 @@ content_sections:
 
       We handle communications with:
 
-      - Employers
-      - Insurers
-      - Medical experts
-      - Relevant authorities
+             - Employers
+             - Insurers
+             - Medical experts
+             - Relevant authorities
 
       This allows you to focus on your recovery while we manage the legal process.
 
@@ -190,11 +190,11 @@ content_sections:
     content: |
      With over 100 years of combined legal experience, we have built a reputation for:
 
-     - Compassionate client care,
-     - Practical legal advice,
-     - Thorough case preparation,
-     - Strong advocacy
-     - Proven results,
+           - Compassionate client care,
+           - Practical legal advice,
+           - Thorough case preparation,
+           - Strong advocacy
+           - Proven results,
 
       We understand that workplace accidents can have a profound impact on individuals and families.
 
