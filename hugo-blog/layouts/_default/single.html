@@ -11,7 +11,7 @@
 ═══════════════════════════════════════════════════════════════════════════ -->
 
 <!-- HERO SECTION -->
-<section class="w-full max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 pt-6 md:pt-8">
+<section class="w-full max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 pt-[100px] md:pt-[120px]">
   <div
     class="relative mx-auto rounded-[30px] overflow-hidden min-h-[600px] md:min-h-[750px] flex flex-col justify-end items-start px-[32px] py-[50px] md:px-[50px] md:pb-[70px]">
 
@@ -195,9 +195,12 @@
     <div class="grid md:grid-cols-2 gap-[50px] items-center">
 
       {{ if modBool $index 2 }}
-      <div>
-        <img src="{{ $section.image }}" alt="{{ $section.heading }}" class="w-full rounded-[20px] object-cover">
-      </div>
+      <div class="w-full max-w-[960px] h-[750px] overflow-hidden rounded-[20px] mx-auto">
+  <img
+    src="{{ $section.image }}"
+    alt="{{ $section.heading }}"
+    class="w-full h-full object-cover">
+</div>
 
       <div>
         <h2 class="font-['Crimson_Text']
