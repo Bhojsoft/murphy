@@ -9,6 +9,7 @@ import blog5 from "@/assets/blog-5.png";
 import martinaImg from "@/assets/martina-2.png";
 import { ArrowRight } from "lucide-react";
 import { navigate } from "astro:transitions/client";
+import ScheduleConsult from "@/components/ScheduleConsult.astro";
 
 const blogPosts = [
   {
@@ -494,13 +495,11 @@ const blogPosts = [
       </h2>
 
       <!-- BUTTON -->
-      <a
-  href="/contact"
-  class="inline-flex items-center gap-2 bg-[#0B838E] text-white px-5 py-3 rounded-full"
+     <button
+  class="openConsultModal bg-[#0B838E] text-white rounded-full px-7 py-4 font-bold text-sm tracking-[-0.025em] hover:bg-[#086c74] transition-all duration-300"
 >
   Schedule a Consult
-  
-</a>
+</button>
     </div>
 
     <!-- 3 CARDS -->
@@ -603,5 +602,5 @@ const blogPosts = [
 
 
 
-
+<ScheduleConsult/>
 </MainLayout>

@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import ScheduleConsult from "../components/ScheduleConsult.astro";
 
 import martina from "@/assets/martina.png";
 import martina2 from "../assets/martina-2.png";
@@ -247,20 +248,10 @@ const services = [
             </p>
 
             <button
-              class="bg-[#0B838E]
-            text-white
-            rounded-full
-            px-7
-            py-4
-            font-bold
-            text-sm
-            tracking-[-0.025em]
-            hover:bg-[#086c74]
-            transition-all
-            duration-300"
-            >
-              Schedule a Consult
-            </button>
+  class="openConsultModal bg-[#0B838E] text-white rounded-full px-7 py-4 font-bold text-sm tracking-[-0.025em] hover:bg-[#086c74] transition-all duration-300"
+>
+  Schedule a Consult
+</button>
           </div>
         </div>
 
@@ -743,21 +734,10 @@ const services = [
           </h2>
 
           <button
-            class="bg-[#0B838E]
-          text-white
-          rounded-full
-          px-[22px]
-          py-[14px]
-          text-[14px]
-          font-bold
-          tracking-[-0.025em]
-          hover:bg-[#086c74]
-          transition-all
-          duration-300
-          w-fit"
-          >
-            <a href="/contact">Schedule a Consult</a>
-          </button>
+  class="openConsultModal bg-[#0B838E] text-white rounded-full px-7 py-4 font-bold text-sm tracking-[-0.025em] hover:bg-[#086c74] transition-all duration-300"
+>
+  Schedule a Consult
+</button>
         </div>
 
         <!-- CARDS -->
@@ -913,4 +893,5 @@ const services = [
       </div>
     </section>
   </section>
+  <ScheduleConsult />
 </MainLayout>

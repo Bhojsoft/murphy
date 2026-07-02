@@ -1,5 +1,6 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import ScheduleConsult from "../../components/ScheduleConsult.astro";
 
 import serviceImg1 from "@/assets/Service1.png";
 import martinaImg from "@/assets/martina-2.png";
@@ -313,12 +314,11 @@ const discussSteps = [
             Let’s Discuss
           </h2>
 
-          <a
-            href="/contact"
-            class="w-fit inline-flex items-center justify-center px-[22px] py-[14px] rounded-full bg-[#0B838E] font-dm font-bold text-white text-[14px] leading-[140%] tracking-[-0.025em] transition-all duration-300 hover:bg-[#096d75]"
-          >
-            Schedule a Consult
-          </a>
+          <button
+  class="openConsultModal bg-[#0B838E] text-white rounded-full px-7 py-4 font-bold text-sm tracking-[-0.025em] hover:bg-[#086c74] transition-all duration-300"
+>
+  Schedule a Consult
+</button>
 
         </div>
 
@@ -389,4 +389,5 @@ const discussSteps = [
     </div>
 
   </main>
+  <ScheduleConsult/>
 </MainLayout>

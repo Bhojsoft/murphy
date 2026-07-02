@@ -13,6 +13,7 @@ import c from "@/assets/team/MartinaMurphySolicitors-467.jpg";
 import weightImg from "@/assets/Weight.png";
 import redundancyImg from "@/assets/redundancy.png";
 import hero from "@/assets/abouthero.jpeg";
+import ScheduleConsult from "../../components/ScheduleConsult.astro";
 ---
 
 <MainLayout>
@@ -778,7 +779,7 @@ import hero from "@/assets/abouthero.jpeg";
           <!-- Link -->
           <div class="flex flex-col gap-2">
             <a
-              href="#"
+              href="/blog-2"
               class="flex items-center gap-[3px]
                    font-[DM_Sans] text-[16px] sm:text-[18px] lg:text-[21px]
                    text-[#767676] hover:text-black transition-colors"
@@ -857,7 +858,7 @@ import hero from "@/assets/abouthero.jpeg";
 
         <!-- BUTTON -->
         <a
-          href="#"
+          href="/personal-injury/accidents-at-work/"
           class="flex items-center justify-center
                px-[22px] py-[14px]
                h-12
@@ -976,23 +977,11 @@ import hero from "@/assets/abouthero.jpeg";
         Let’s Discuss
       </h2>
 
-      <a
-        href="/contact"
-        class="h-12 px-[22px]
-             rounded-full
-             bg-[#0B838E]
-             flex items-center justify-center
-             text-white
-             text-sm
-             font-bold
-             tracking-[-0.025em]
-             leading-[140%]
-             whitespace-nowrap
-             hover:opacity-90
-             transition"
-      >
-        Schedule Consultation
-      </a>
+      <button
+  class="openConsultModal bg-[#0B838E] text-white rounded-full px-7 py-4 font-bold text-sm tracking-[-0.025em] hover:bg-[#086c74] transition-all duration-300"
+>
+  Schedule a Consult
+</button>
     </div>
 
     <!-- 3 CARDS -->
@@ -1137,4 +1126,5 @@ import hero from "@/assets/abouthero.jpeg";
       </div>
     </div>
   </section>
+  <ScheduleConsult/>
 </MainLayout>
